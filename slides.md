@@ -46,9 +46,11 @@ Fastest Server Wins!
 
 ---
 
-class: middle, center
+class: middle
 
-# 1. GraphQL Journey
+# GraphQL Journey
+
+## .font-grey[Section 1]
 
 ---
 
@@ -106,9 +108,11 @@ class: middle, center
 
 ---
 
-class: middle center
+class: middle
 
-# 2. Challenges & Resolutions
+# Challenges & Workarounds
+
+## .font-grey[Section 2]
 
 ---
 
@@ -178,13 +182,15 @@ class: middle center
 
 --
 
-.block[.center[.font-size-3[🤷]]]
+.block[.center[.font-size-6[🤷]]]
 
 ---
 
 class: middle
 
-# 3. Learnings of 8 Years
+# Learnings of 8 Years
+
+## .font-grey[Section 3]
 
 ---
 
@@ -325,7 +331,9 @@ class: middle
 
 class:middle
 
-# 4. Applying Learnings
+# Applying Learnings
+
+## .font-grey[Section 4]
 
 ---
 
@@ -477,15 +485,23 @@ class: middle
 
 ---
 
+class: middle
+
 # Summary
 
-- Innovation on GraphQL performance is necessary
+## .font-grey[Section 5]
 
-- A 2 pass executor is a key for performance and reliability
+---
 
-- Handwritten GraphQL is difficult to maintain
+## Summary
 
-- Library authors should take inspiration from SQL engines
+1. Innovation on GraphQL performance is necessary
+
+2. A 2 pass executor is a key for performance and reliability
+
+3. Handwritten GraphQL is difficult to maintain
+
+4. Library authors should take inspiration from SQL engines
 
 ---
 
