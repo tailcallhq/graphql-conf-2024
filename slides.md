@@ -305,7 +305,7 @@ class:middle
 
 ---
 
-# .tc-highlight[2020] Rewrite GraphQL
+# 2020 .tc-highlight[Rewrite] GraphQL
 
 1. High performance & reliability
 
