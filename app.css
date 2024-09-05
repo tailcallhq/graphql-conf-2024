@@ -165,9 +165,9 @@ body {
 }
 .custom-table td,
 .custom-table th {
-  padding: 8px;
+  padding: 1rem 1rem;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid #fdea2e;
 }
 
 .custom-table th {

@@ -195,9 +195,10 @@ background-image: url(./img/rush-hour.png)
 ---
 
 class: middle custom-table
-![alt text](img/graphql-logo-white.png)
 
-| Constraint      | Liberty           |
+![GraphQL Logo](img/graphql-logo-white.png)
+
+| 🚧 Constraint      | 🕊️ Liberty           |
 | :-------------- | :---------------- |
 | Schema          | Type System       |
 | Query           | Efficiency        |
