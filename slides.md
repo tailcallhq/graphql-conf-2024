@@ -20,7 +20,9 @@ GraphQL Conf 2024
 
 3. Open Source Author and Maintainer
 
-## <!-- TODO: add social icons -->
+ <!-- TODO: add social icons -->
+
+---
 
 # Agenda
 
@@ -451,3 +453,25 @@ class: middle
 - Send Response
 
 ---
+
+# Project
+
+<!-- Github Repo -->
+<!-- Contributors + Releases + Commits -->
+<!-- Looking for Contributors and Feedback! -->
+
+---
+
+# Summary
+
+- GraphQL is closer to SQL than REST or gRPC
+
+- A 2 pass executor is the key for performance
+
+---
+
+class: center flex-col
+
+# Thank You!
+
+.font-size-5[❤️]
