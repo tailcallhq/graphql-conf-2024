@@ -117,6 +117,7 @@ class: middle
 ❌ .weight-700[Speculative Performance]
 ]
 ]
+
 .font-grey[🛠️ Benchmarking Infrastructure]
 
 ---
@@ -165,6 +166,8 @@ class: middle
 ]
 ]
 
+.block[.center[.font-size-5[🤷]]]
+
 ---
 
 class: middle
@@ -175,7 +178,7 @@ class: middle
 
 class:middle
 
-.font-size-4.weight-700[Liberties Constraint and Constraint Liberate]
+.font-size-4.weight-700["Liberties Constraint and Constraint Liberate"]
 
 ---
 
@@ -196,7 +199,6 @@ class: middle
 - TODO: add borders to table
 - TODO: add GraphQL Logo "./img/"
 
-
 ![alt text](img/graphql-logo-white.png)
 
 | Constraint      | Liberty           |
@@ -206,6 +208,4 @@ class: middle
 | Single Endpoint | Discovery         |
 | DSL             | Language Agnostic |
 
-
 ---
-
