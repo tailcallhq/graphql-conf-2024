@@ -176,9 +176,10 @@ class: middle
 
 ---
 
-class:middle
+class:middle center
 
-.font-size-4.weight-700["Liberties Constraint and Constraint Liberate"]
+.font-size-3.weight-700[
+🕊️ Liberties Constraint and Constraint Liberate 🕊️]
 
 ---
 
@@ -204,3 +205,27 @@ class: middle custom-table
 | DSL             | Language Agnostic |
 
 ---
+
+class: middle
+
+.custom-underline.weight-500[Liberties]
+
+- Schema
+
+- Query
+
+- Resolver
+
+.custom-underline.weight-500[Constraint]
+
+- Performance
+
+- Reliability
+
+- Security
+
+.block.center[ .font-size-5[😥 .weight-700[Difficult]]]
+
+<!-- TODO: Convert to Two Columns -->
+<!-- TODO: Add Yellow Border on column headers -->
+
