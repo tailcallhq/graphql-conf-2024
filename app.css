@@ -127,3 +127,17 @@ body {
     }
   }
 }
+
+.custom-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  left: 17.5%;
+  bottom: 32%;
+  width: 25%;
+  border-bottom: 10px solid #fdea2e;
+}

@@ -112,12 +112,30 @@ class: middle center
 
 class: middle
 
-.center[ .font-size-5[❌ .weight-700[Performance]]]
+class: middle
+
+class: middle
+
+class: middle
+
+.center[
+.font-size-5[
+.custom-underline[
+❌ .weight-700[Performance]
+]
+]
+]
 
 ---
 
 class: middle
 
-.center[ .font-size-5[❌ .weight-700[Specialized]]]
+.center[
+.font-size-5[
+.custom-underline[
+❌ .weight-700[Specialized]
+]
+]
+]
 
 ---
