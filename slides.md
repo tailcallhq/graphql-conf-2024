@@ -208,16 +208,40 @@ background-image: url(./img/rush-hour.png)
 
 ---
 
-class: middle custom-table
-
+class: middle
 .block.half[![GraphQL Logo](img/graphql-logo-white.png)]
+.two-columns[
+.column[
+.font-size-3[
+.custom-underline[
+🚧 .weight-500[Constraint]
+]
+]
 
-| 🚧 Constraint   | 🕊️ Liberty     |
-| :-------------- | :------------- |
-| Schema          | Type System    |
-| Query           | Efficiency     |
-| Single Endpoint | Unification    |
-| DSL             | Specialization |
+- Schema
+
+- Query
+
+- Single Endpoint
+
+- DSL
+  ]
+  .column[
+  .font-size-3[
+  .custom-underline[
+  🕊️ .weight-500[Liberties]
+  ]
+  ]
+
+- Type System
+
+- Efficiency
+
+- Unification
+
+- Specialization
+  ]
+  ]
 
 ---
 
