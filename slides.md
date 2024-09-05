@@ -20,7 +20,7 @@ GraphQL Conf 2024
 
 3. Open Source Author and Maintainer
 
----
+## <!-- TODO: add social icons -->
 
 # Agenda
 
@@ -338,30 +338,27 @@ class:middle
 
 # 2022 .tc-highlight[Open Source]
 
---
-
-- Battle tested it
+Before open sourcing:
 
 --
 
-- Before open sourcing:
+- ~~JS~~ to Rust
 
 --
 
-- Port from JS to .tc-highlight[Rust]
-
---
-
-- Configuration Based
+- ~~Declarative~~ to Configuration
 
 ---
 
-class: center flex-col flex-top
+class: flex-col flex-top
+
 .logo[![Tailcall Logo](./img/taicall.svg)]
 
---
+## 🚀 High Performance
 
-A high-performance, general-purpose GraphQL runtime written in Rust.
+## 🌍 General Purpose
+
+## 👐 Apache 2.0
 
 ---
 
@@ -415,49 +412,10 @@ tailcall start ./config.graphql
 
 ---
 
-```js
-const { graphqlHTTP } = require("express-graphql");
-const { buildSchema } = require("graphql");
-const express = require("express");
-const fetch = require("node-fetch");
 
-const schema = buildSchema(`
-  type Query {
-    posts: [Post]
-  }
+<!-- TODO:  Scale in this image -->
 
-  type Post {
-    id: ID
-    title: String
-    body: String
-  }
-`);
-
-const root = {
-  posts: async () => {
-    try {
-      const response = await fetch("https://api.d11.local/posts");
-      return await response.json();
-    } catch (error) {
-      console.error("Error fetching posts:", error);
-      return [];
-    }
-  },
-};
-
-const app = express();
-app.use(
-  "/graphql",
-  graphqlHTTP({
-    schema: schema,
-    rootValue: root,
-  })
-);
-
-app.listen(4000, () => {
-  console.log("Running a GraphQL API server at http://localhost:4000/graphql");
-});
-```
+![JS Version](./img/js-graphql-server.png)
 
 ---
 
