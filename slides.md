@@ -142,7 +142,7 @@ class: middle
 ]
 ]
 
-.font-size-3[🛠️] .font-grey[ Generalize Runtime]
+.font-size-3[🛠️] .font-grey[Generalize Runtime]
 
 ---
 
@@ -214,7 +214,7 @@ class: middle custom-table
 | :-------------- | :---------------- |
 | Schema          | Type System       |
 | Query           | Efficiency        |
-| Single Endpoint | Discovery         |
+| Single Endpoint | Unification       |
 | DSL             | Language Agnostic |
 
 ---
@@ -228,11 +228,13 @@ class: two-columns
 ]
 ]
 
-- Schema
+- Type System
 
-- Query
+- Efficiency
 
-- Resolver
+- Unification
+
+- Language Agnostic
 
 ]
 
@@ -245,14 +247,15 @@ class: two-columns
 ]
 ]
 
-- Performance
+- Learning Curve
+
+- Complexity
 
 - Reliability
 
-- Security
-  ]
+- Interoperability
 
-<!-- TODO: Add Yellow Border on column headers -->
+]
 
 ---
 
@@ -296,16 +299,110 @@ class: middle
 
 ---
 
-class: middle
+class:middle
 
-<!-- TODO: Put schema and Query in one line  -->
+# 4. Applying Learnings
 
-.font-size-3.weight-500[🕊️ Schema]
+---
 
-.font-size-3.weight-500[🕊️ Query]
+# .tc-highlight[2020] Rewrite GraphQL
+
+1. High performance & reliability
+
+2. Declarative, extendable & modular Design
+
+3. Connect to any data-source
+
+---
+
+# .tc-highlight[2021] 1 Year Later
 
 --
 
-.font-size-3.weight-500[🚧 Resolver]
+.stat[
+
+.stat-item[💪 3 .title[Team]]
+
+.stat-item[🚀 7x .title[Performance]]
+
+.stat-item[💵 85% .title[Cost]]
+
+]
+
+---
+
+# .tc-highlight[2022] Open Source
+
+--
+
+Before open sourcing:
+
+--
+
+- Port from JS to .tc-highlight[Rust]
+
+--
+
+- Configuration Based
+
+---
+
+class: center flex-col
+
+# Tailcall
+
+<!-- TODO add Logo -->
+
+A high-performance, general-purpose GraphQL runtime
+
+---
+
+<!-- TODO: add a more Dream11 Example -->
+
+### Write your schema
+
+```graphql
+schema {
+  query: Query
+}
+
+type Query {
+  posts: [Post]
+}
+
+type Post {
+  id: ID
+  title: String
+  body: String
+}
+```
+
+---
+
+### Describe your .tc-highlight[resolvers]
+
+```graphql
+schema @upstream(baseURL: "https://api.d11.local") {
+  query: Query
+}
+
+type Query {
+  posts: [Post] @http(path: "/posts")
+}
+
+type Post {
+  id: ID
+  title: String
+  body: String
+}
+```
+
+--
+
+### Start the server
+
+```bash
+tailcall start ./config.graphql
+```
 
 ---

@@ -44,7 +44,7 @@ body {
 .tc-highlight {
   background-color: rgb(253 234 46);
   padding: 0rem 0.5rem;
-  border-radius: 1rem;
+  border-radius: 8px;
   color: #000;
   font-weight: 700;
 }
