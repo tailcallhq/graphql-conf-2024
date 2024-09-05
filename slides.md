@@ -112,19 +112,17 @@ class: middle center
 
 ---
 
-class: middle
-
 .font-size-3[
 .custom-underline[
 ❌ .weight-700[Speculative Performance]
 ]
 ]
 
+--
+
 .font-size-3[🛠️] .font-grey[ Benchmarking Infrastructure]
 
 ---
-
-class: middle
 
 .font-size-3[
 .custom-underline[
@@ -132,11 +130,11 @@ class: middle
 ]
 ]
 
+--
+
 .font-size-3[🛠️] .font-grey[ Declarative Design]
 
 ---
-
-class: middle
 
 .font-size-3[
 .custom-underline[
@@ -148,19 +146,17 @@ class: middle
 
 ---
 
-class: middle
-
 .font-size-3[
 .custom-underline[
 ❌ .weight-700[Caching]
 ]
 ]
 
-.font-size-3[🛠️] .font-grey[ On Services]
+--
+
+.font-size-3[🛠️] .font-grey[On Services]
 
 ---
-
-class: middle
 
 .font-size-3[
 .custom-underline[
@@ -168,17 +164,19 @@ class: middle
 ]
 ]
 
+--
+
 .font-size-3[🛠️] .font-grey[ Follow Traditions]
 
 ---
-
-class: middle
 
 .font-size-3[
 .custom-underline[
 ❌ .weight-700[Maintenance]
 ]
 ]
+
+--
 
 .block[.center[.font-size-3[🤷]]]
 
@@ -200,6 +198,8 @@ class:middle center
 class:middle custom-background-image
 background-image: url(./img/rush-hour.png)
 
+--
+
 .font-size-3.weight-500[🚦 Traffic Signal]
 
 .font-size-3.weight-500[👮 Fine]
@@ -212,12 +212,12 @@ class: middle custom-table
 
 .block.half[![GraphQL Logo](img/graphql-logo-white.png)]
 
-| 🚧 Constraint   | 🕊️ Liberty        |
-| :-------------- | :---------------- |
-| Schema          | Type System       |
-| Query           | Efficiency        |
-| Single Endpoint | Unification       |
-| DSL             | Language Agnostic |
+| 🚧 Constraint   | 🕊️ Liberty     |
+| :-------------- | :------------- |
+| Schema          | Type System    |
+| Query           | Efficiency     |
+| Single Endpoint | Unification    |
+| DSL             | Specialization |
 
 ---
 
@@ -236,11 +236,9 @@ class: two-columns
 
 - Unification
 
-- Language Agnostic
+- Specialization
 
 ]
-
---
 
 .column[
 .font-size-3[
