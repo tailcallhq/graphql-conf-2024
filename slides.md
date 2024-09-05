@@ -193,11 +193,7 @@ background-size: cover
 
 ---
 
-class: middle
-
-- TODO: add borders to table
-- TODO: add GraphQL Logo "./img/"
-
+class: middle custom-table
 ![alt text](img/graphql-logo-white.png)
 
 | Constraint      | Liberty           |

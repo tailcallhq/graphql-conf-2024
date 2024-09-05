@@ -158,3 +158,19 @@ body {
   width: 18%;
   border-bottom: 6px solid #fdea2e;
 }
+
+.custom-table table {
+  border-collapse: collapse;
+  margin: auto;
+}
+.custom-table td,
+.custom-table th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.custom-table th {
+  background-color: #fdea2e;
+  color: #000;
+}
