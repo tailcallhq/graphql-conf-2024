@@ -112,30 +112,60 @@ class: middle center
 
 class: middle
 
-class: middle
+.font-size-3[❌ .weight-700[Speculative Performance]]
 
-class: middle
-
-class: middle
-
-.center[
-.font-size-5[
-.custom-underline[
-❌ .weight-700[Performance]
-]
-]
-]
+.font-grey[🛠️ Benchmarking Infrastructure]
 
 ---
 
 class: middle
 
-.center[
-.font-size-5[
-.custom-underline[
-❌ .weight-700[Specialized]
-]
-]
-]
+.font-size-3[❌ .weight-700[Highly Specialized]]
+
+.font-grey[🛠️ Declarative Design]
 
 ---
+
+class: middle
+
+.font-size-3[❌ .weight-700[Fragile]]
+
+.font-grey[🛠️ Generalize Runtime]
+
+---
+
+class: middle
+
+.font-size-3[❌ .weight-700[Resiliency]]
+
+.font-grey[🛠️ Follow Traditions]
+
+---
+
+class: middle
+
+.font-size-3[❌ .weight-700[Maintenance]]
+
+---
+
+class: middle
+
+# 3. Learnings of 8 Years
+
+---
+
+class:middle
+
+.font-size-4.weight-700[Liberties Constraint and Constraint Liberate]
+
+---
+
+class:middle
+
+🚦 Traffic Signal
+
+👮 Fine
+
+🛣 Marking
+
+![Traffic Signal](./img/rush-hour.png)

@@ -82,6 +82,14 @@ body {
   font-size: 3rem;
 }
 
+.font-grey {
+  color: #bbb;
+}
+
+.italics {
+  font-style: italic;
+}
+
 .text-center {
   text-align: center;
 }
