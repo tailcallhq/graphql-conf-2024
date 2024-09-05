@@ -182,9 +182,9 @@ class:middle
 
 ---
 
-class:middle
+class:middle custom-background-image
 background-image: url(./img/rush-hour.png)
-background-size: cover
+
 🚦 Traffic Signal
 
 👮 Fine
