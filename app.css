@@ -216,6 +216,10 @@ img {
 }
 
 .js-code-screenshot img {
-  height: 62vh; /* Ensure the image height fits within the viewport */
-  max-width: 100%; /* Prevent the image from exceeding the slide width */
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 100vh;
+  display: block;
+  margin: 0 auto;
 }
