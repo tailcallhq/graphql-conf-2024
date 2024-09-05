@@ -357,10 +357,7 @@ class:middle
 ---
 
 class: center flex-col flex-top
-
-# Tailcall
-
-<!-- TODO add Logo -->
+.logo[![Tailcall Logo](./img/taicall.svg)]
 
 --
 
