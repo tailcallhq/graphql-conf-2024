@@ -191,3 +191,12 @@ body {
   color: #fff; /* Ensures text is white */
   z-index: 1;
 }
+
+.two-columns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.column {
+  flex: 1; /* Each column takes equal space */
+  flex-direction: row;
+}

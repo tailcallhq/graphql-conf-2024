@@ -198,7 +198,7 @@ class: middle custom-table
 
 ![GraphQL Logo](img/graphql-logo-white.png)
 
-| 🚧 Constraint      | 🕊️ Liberty           |
+| 🚧 Constraint   | 🕊️ Liberty        |
 | :-------------- | :---------------- |
 | Schema          | Type System       |
 | Query           | Efficiency        |
@@ -207,26 +207,31 @@ class: middle custom-table
 
 ---
 
-class: middle
+class: two-columns
 
-.custom-underline.weight-500[Liberties]
+.column[
+.font-size-3[
+.custom-underline[
+🕊️ .weight-500[Liberties]
+]
+]
 
 - Schema
-
 - Query
-
 - Resolver
+  ]
 
-.custom-underline.weight-500[Constraint]
+.column[
+.font-size-3[
+.custom-underline[
+🚧 .weight-500[Constraint]
+]
+]
 
 - Performance
-
 - Reliability
-
 - Security
-
-.block.center[ .font-size-5[😥 .weight-700[Difficult]]]
+  ]
 
 <!-- TODO: Convert to Two Columns -->
 <!-- TODO: Add Yellow Border on column headers -->
-
