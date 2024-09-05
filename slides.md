@@ -436,21 +436,9 @@ class: middle
 
 ---
 
-# Execution
+# Query Execution
 
-<!-- TODO: add an excalidraw visual  -->
-
-- Parse the incoming request
-
-- Create Execution Plan
-
-- Optimize the Plan
-
-- Execute the Plan
-
-- Create Response Body
-
-- Send Response
+![Query Engine](./img/query-engine.svg)
 
 ---
 
@@ -464,9 +452,13 @@ class: middle
 
 # Summary
 
-- GraphQL is closer to SQL than REST or gRPC
+- Innovation on GraphQL performance is necessary
 
-- A 2 pass executor is the key for performance
+- A 2 pass executor is a key for performance and reliability
+
+- Handwritten GraphQL is difficult to maintain
+
+- Library authors should take inspiration from SQL engines
 
 ---
 
@@ -475,3 +467,6 @@ class: center flex-col
 # Thank You!
 
 .font-size-5[❤️]
+
+<!-- Links to Runar's Talk  -->
+<!-- Links to SQL Engine  -->
