@@ -112,15 +112,22 @@ class: middle center
 
 class: middle
 
-.font-size-3[❌ .weight-700[Speculative Performance]]
-
+.font-size-3[
+.custom-underline[
+❌ .weight-700[Speculative Performance]
+]
+]
 .font-grey[🛠️ Benchmarking Infrastructure]
 
 ---
 
 class: middle
 
-.font-size-3[❌ .weight-700[Highly Specialized]]
+.font-size-3[
+.custom-underline[
+❌ .weight-700[Highly Specialized]
+]
+]
 
 .font-grey[🛠️ Declarative Design]
 
@@ -128,7 +135,11 @@ class: middle
 
 class: middle
 
-.font-size-3[❌ .weight-700[Fragile]]
+.font-size-3[
+.custom-underline[
+❌ .weight-700[Fragile]
+]
+]
 
 .font-grey[🛠️ Generalize Runtime]
 
@@ -136,7 +147,11 @@ class: middle
 
 class: middle
 
-.font-size-3[❌ .weight-700[Resiliency]]
+.font-size-3[
+.custom-underline[
+❌ .weight-700[Resiliency]
+]
+]
 
 .font-grey[🛠️ Follow Traditions]
 
@@ -144,7 +159,11 @@ class: middle
 
 class: middle
 
-.font-size-3[❌ .weight-700[Maintenance]]
+.font-size-3[
+.custom-underline[
+❌ .weight-700[Maintenance]
+]
+]
 
 ---
 
