@@ -1,6 +1,6 @@
-class: center, middle
+class: center middle
 
-.text-xl[.tc-highlight[Scaling] GraphQL for 500,000,000 req/min]
+.font-size-5[.tc-highlight[Scaling] GraphQL for 500,000,000 req/min]
 
 GraphQL Conf 2024
 
@@ -36,7 +36,7 @@ GraphQL Conf 2024
 
 ---
 
-# .text-xl.tc-highlight[\#TailcallHack]
+# .font-size-5.tc-highlight[\#TailcallHack]
 
 Fastest Server Wins!
 
@@ -50,7 +50,7 @@ class: middle, center
 
 ---
 
-# 2016 .tc-highlight[Dream11]
+# .tc-highlight[2016] Dream11
 
 .stat[
 
@@ -64,4 +64,60 @@ class: middle, center
 
 ---
 
-.block.center[ .text-xl[💰 .tc-color.weight-700[Series B]]]
+.block.center[ .font-size-5[💰 .weight-700[Series B]]]
+
+--
+
+- Android
+
+- iOS
+
+- PWA
+
+- Microservices
+
+--
+
+.block.center[ .font-size-5[🧐 .weight-700[GraphQL?]]]
+
+---
+
+# .tc-highlight[2024] Dream11
+
+.stat[
+
+.stat-item[500 .title[Engineers]]
+
+.stat-item[10,000,000 .title[Concurrency]]
+
+.stat-item[200,000,000 .title[Users]]
+
+]
+
+---
+
+![Architecture](./img/architecture.svg)
+
+--
+
+.block.center[ .font-size-5[🙌 .weight-700[GraphQL]]]
+
+---
+
+class: middle center
+
+# 2. Challenges & Resolutions
+
+---
+
+class: middle
+
+.center[ .font-size-5[❌ .weight-700[Performance]]]
+
+---
+
+class: middle
+
+.center[ .font-size-5[❌ .weight-700[Specialized]]]
+
+---

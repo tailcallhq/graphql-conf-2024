@@ -1,0 +1,129 @@
+body {
+  font-family: "Space Grotesk";
+  font-family: #fff;
+}
+.remark-code,
+.remark-inline-code {
+  font-family: "Space Mono";
+}
+.remark-container {
+  background-color: rgb(253 234 46);
+}
+
+.remark-slide-content {
+  background-color: #000;
+  font-size: 2rem;
+  background-image: radial-gradient(
+      circle at 100% 10%,
+      #ffffff11 10%,
+      #000000 60%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #ffffff22,
+      #ffffff22 0.5px,
+      #0000 1px,
+      #0000 27px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #ffffff22,
+      #ffffff22 0.5px,
+      #0000 1px,
+      #0000 70px
+    );
+  height: 100%;
+  color: #fff;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.tc-highlight {
+  background-color: rgb(253 234 46);
+  padding: 0rem 0.5rem;
+  border-radius: 1rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.font-mono {
+  font-family: "Space Mono";
+}
+
+.tc-color {
+  color: rgb(253 234 46);
+}
+
+.tc-bg {
+  background-color: rgb(253 234 46);
+  color: #000;
+}
+
+.font-size-5 {
+  font-size: 5rem;
+}
+
+.font-size-4 {
+  font-size: 4rem;
+}
+
+.font-size-3 {
+  font-size: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-col,
+.middle {
+  flex-direction: column;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2rem 0;
+  p {
+    padding: 0.5rem;
+    flex: 0 0 50%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .stat-item {
+    background-color: #1c1d1f;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: column;
+    font-family: "Space Mono";
+    .title {
+      color: rgb(253 234 46);
+      font-size: 1rem;
+    }
+  }
+}
