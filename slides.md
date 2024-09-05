@@ -412,10 +412,7 @@ tailcall start ./config.graphql
 
 ---
 
-
-<!-- TODO:  Scale in this image -->
-
-![JS Version](./img/js-graphql-server.png)
+.js-code-screenshot[![JS Version](./img/js-graphql-server.png)]
 
 ---
 
