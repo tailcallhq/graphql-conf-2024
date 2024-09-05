@@ -216,10 +216,8 @@ img {
 }
 
 .js-code-screenshot img {
-  width: auto;
-  height: auto;
-  max-width: 70%;
-  max-height: 100vh;
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
 }

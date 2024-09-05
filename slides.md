@@ -414,6 +414,11 @@ tailcall start ./config.graphql
 
 ---
 
+# Javascript
+
+- TODO
+- TODO
+
 .js-code-screenshot[![JS Version](./img/js-graphql-server.png)]
 
 ---
