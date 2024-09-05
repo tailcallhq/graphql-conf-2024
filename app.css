@@ -39,6 +39,11 @@ body {
     max-height: 100%;
     max-width: 100%;
   }
+
+  td,
+  th {
+    padding: 0.5rem 2rem;
+  }
 }
 
 .tc-highlight {

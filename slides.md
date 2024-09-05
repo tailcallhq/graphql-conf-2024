@@ -188,3 +188,24 @@ class:middle
 🛣 Marking
 
 ![Traffic Signal](./img/rush-hour.png)
+
+---
+
+class: middle
+
+- TODO: add borders to table
+- TODO: add GraphQL Logo "./img/"
+
+
+![alt text](img/graphql-logo-white.png)
+
+| Constraint      | Liberty           |
+| :-------------- | :---------------- |
+| Schema          | Type System       |
+| Query           | Efficiency        |
+| Single Endpoint | Discovery         |
+| DSL             | Language Agnostic |
+
+
+---
+
