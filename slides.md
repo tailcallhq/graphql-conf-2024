@@ -315,27 +315,36 @@ class:middle
 
 ---
 
-# .tc-highlight[2021] 1 Year Later
+# 2021 .tc-highlight[Launch]
+
+--
+
+- Before `40,000` cores
+- After `6,400` cores
 
 --
 
 .stat[
 
-.stat-item[💪 3 .title[Team]]
-
 .stat-item[🚀 7x .title[Performance]]
 
 .stat-item[💵 85% .title[Cost]]
+
+.stat-item[💪 3 .title[Team]]
 
 ]
 
 ---
 
-# .tc-highlight[2022] Open Source
+# 2022 .tc-highlight[Open Source]
 
 --
 
-Before open sourcing:
+- Battle tested it
+
+--
+
+- Before open sourcing:
 
 --
 
@@ -347,13 +356,15 @@ Before open sourcing:
 
 ---
 
-class: center flex-col
+class: center flex-col flex-top
 
 # Tailcall
 
 <!-- TODO add Logo -->
 
-A high-performance, general-purpose GraphQL runtime
+--
+
+A high-performance, general-purpose GraphQL runtime written in Rust.
 
 ---
 
@@ -404,5 +415,87 @@ type Post {
 ```bash
 tailcall start ./config.graphql
 ```
+
+---
+
+```js
+const { graphqlHTTP } = require("express-graphql");
+const { buildSchema } = require("graphql");
+const express = require("express");
+const fetch = require("node-fetch");
+
+const schema = buildSchema(`
+  type Query {
+    posts: [Post]
+  }
+
+  type Post {
+    id: ID
+    title: String
+    body: String
+  }
+`);
+
+const root = {
+  posts: async () => {
+    try {
+      const response = await fetch("https://api.d11.local/posts");
+      return await response.json();
+    } catch (error) {
+      console.error("Error fetching posts:", error);
+      return [];
+    }
+  },
+};
+
+const app = express();
+app.use(
+  "/graphql",
+  graphqlHTTP({
+    schema: schema,
+    rootValue: root,
+  })
+);
+
+app.listen(4000, () => {
+  console.log("Running a GraphQL API server at http://localhost:4000/graphql");
+});
+```
+
+---
+
+class: middle
+
+# How does it works?
+
+---
+
+# Initialization
+
+<!-- TODO: add an excalidraw visual  -->
+
+- Read the configuration
+
+- Attach Resolvers
+
+- Initialize HTTP Server
+
+---
+
+# Execution
+
+<!-- TODO: add an excalidraw visual  -->
+
+- Parse the incoming request
+
+- Create Execution Plan
+
+- Optimize the Plan
+
+- Execute the Plan
+
+- Create Response Body
+
+- Send Response
 
 ---

@@ -112,6 +112,10 @@ body {
   flex-direction: column;
 }
 
+.flex-top {
+  justify-content: flex-start;
+}
+
 .stat {
   display: flex;
   justify-content: space-around;
