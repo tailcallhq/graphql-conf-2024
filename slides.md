@@ -118,7 +118,7 @@ class: middle
 ]
 ]
 
-.font-grey[🛠️ Benchmarking Infrastructure]
+.font-size-3[🛠️] .font-grey[ Benchmarking Infrastructure]
 
 ---
 
@@ -130,7 +130,7 @@ class: middle
 ]
 ]
 
-.font-grey[🛠️ Declarative Design]
+.font-size-3[🛠️] .font-grey[ Declarative Design]
 
 ---
 
@@ -142,7 +142,19 @@ class: middle
 ]
 ]
 
-.font-grey[🛠️ Generalize Runtime]
+.font-size-3[🛠️] .font-grey[ Generalize Runtime]
+
+---
+
+class: middle
+
+.font-size-3[
+.custom-underline[
+❌ .weight-700[Caching]
+]
+]
+
+.font-size-3[🛠️] .font-grey[ On Services]
 
 ---
 
@@ -154,7 +166,7 @@ class: middle
 ]
 ]
 
-.font-grey[🛠️ Follow Traditions]
+.font-size-3[🛠️] .font-grey[ Follow Traditions]
 
 ---
 
@@ -166,7 +178,7 @@ class: middle
 ]
 ]
 
-.block[.center[.font-size-5[🤷]]]
+.block[.center[.font-size-3[🤷]]]
 
 ---
 
@@ -186,17 +198,17 @@ class:middle center
 class:middle custom-background-image
 background-image: url(./img/rush-hour.png)
 
-🚦 Traffic Signal
+.font-size-3.weight-500[🚦 Traffic Signal]
 
-👮 Fine
+.font-size-3.weight-500[👮 Fine]
 
-🛣 Marking
+.font-size-3.weight-500[🛣 Marking]
 
 ---
 
 class: middle custom-table
 
-![GraphQL Logo](img/graphql-logo-white.png)
+.block.half[![GraphQL Logo](img/graphql-logo-white.png)]
 
 | 🚧 Constraint   | 🕊️ Liberty        |
 | :-------------- | :---------------- |
@@ -217,9 +229,14 @@ class: two-columns
 ]
 
 - Schema
+
 - Query
+
 - Resolver
-  ]
+
+]
+
+--
 
 .column[
 .font-size-3[
@@ -229,9 +246,66 @@ class: two-columns
 ]
 
 - Performance
+
 - Reliability
+
 - Security
   ]
 
-<!-- TODO: Convert to Two Columns -->
 <!-- TODO: Add Yellow Border on column headers -->
+
+---
+
+class: middle
+
+.font-size-3[
+.custom-underline[
+📌 .weight-700[Two Pass Executor]
+]
+]
+
+---
+
+class: middle
+
+.font-size-3[
+.custom-underline[
+🙅‍♂️ .weight-700[Handwritten GraphQL]
+]
+]
+
+---
+
+class: middle
+
+.font-size-3[
+.custom-underline[
+🤔 .weight-700[Learn from SQL]
+]
+]
+
+---
+
+class: middle
+
+.font-size-3[
+.custom-underline[
+✋ .weight-700[Avoid Business Logic]
+]
+]
+
+---
+
+class: middle
+
+<!-- TODO: Put schema and Query in one line  -->
+
+.font-size-3.weight-500[🕊️ Schema]
+
+.font-size-3.weight-500[🕊️ Query]
+
+--
+
+.font-size-3.weight-500[🚧 Resolver]
+
+---

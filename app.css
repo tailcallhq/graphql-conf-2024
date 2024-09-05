@@ -35,11 +35,6 @@ body {
   height: 100%;
   color: #fff;
 
-  img {
-    max-height: 100%;
-    max-width: 100%;
-  }
-
   td,
   th {
     padding: 0.5rem 2rem;
@@ -182,7 +177,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -196,7 +191,18 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
 .column {
   flex: 1; /* Each column takes equal space */
   flex-direction: row;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.half img {
+  max-width: 50%;
+  max-height: 50%;
 }
