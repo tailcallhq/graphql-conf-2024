@@ -221,6 +221,11 @@ img {
   max-height: 75%;
 }
 
+.size-25 img {
+  max-width: 25%;
+  max-height: 25%;
+}
+
 .size-30 img {
   max-width: 30%;
   max-height: 30%;
@@ -283,6 +288,8 @@ img {
 
 .col-grow {
   flex: 1 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 * {
@@ -293,6 +300,7 @@ img {
   position: absolute;
   right: 0;
   top: 0;
+  height: 100%;
   z-index: 1;
 }
 

@@ -80,7 +80,7 @@ class: middle
 
 ## .font-grey[Part 2]
 
-# Challenges & Workarounds
+# Challenges
 
 ---
 
@@ -167,17 +167,25 @@ class:middle center
 
 ---
 
+class: middle
+
+# .custom-underline[Without Constraints]
+
+.img-fixed-right[![Busy Road](https://media.tenor.com/jOqY21jgeuYAAAAM/traffic-jam-unlined-vehicles.gif)]
+
+---
+
 # GraphQL
 
+## 1. Schema
+
+## 2. Query
+
+## 3. Resolver
+
 --
 
-### 🔒 .custom-underline[Schema]
-
-### 🔒 .custom-underline[Query]
-
---
-
-### 🕊️ .custom-underline[Resolver]
+## .block.center[.font-size-5[🕊️ .weight-700.custom-underline[Resolver] 🕊️]]
 
 ---
 
@@ -197,7 +205,7 @@ class: middle
 
 ## 🙅‍♂️ .weight-700.custom-underline[Handwritten Resolver]
 
-## 🤔 .weight-700.custom-underline[Configuration Driven]
+## 🤔 .weight-700.custom-underline[Declarative Approach]
 
 ---
 
@@ -207,7 +215,7 @@ class: middle
 
 .font-size-3[🤔 .weight-700.custom-underline[Learn from SQL]]
 
-TODO: Add image for Apache Calcite
+.size-25[![Apache Calcite](https://calcite.apache.org/img/logo.svg)]
 
 ---
 
@@ -338,8 +346,6 @@ class: middle
 
 # Initialization
 
-<!-- TODO: add an excalidraw visual  -->
-
 - Read the configuration
 
 - Dynamically Generate Resolvers
@@ -379,13 +385,17 @@ class: middle center
 
 .invert[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
 
-## Built with 💗 using
+.font-size-3.weight-500[Built with 💗 using]
+
+.font-size-3.weight-500[Apache 2.0 License]
 
 ---
 
 ## .custom-underline[Awesome Community 🙌]
 
 ## ![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
+
+.block.center[Checkout our repository]
 
 ---
 
