@@ -1,20 +1,23 @@
 class: center middle
 
-.font-size-5[.tc-highlight[Scaling] GraphQL for 500,000,000 req/min]
-
+.font-size-6[
+Scaling GraphQL <br/> for .custom-underline[500,000,000] req/min
+]
 GraphQL Conf 2024
 
 ---
 
 # Who am I?
 
-TODO: GraphQL Fanboy
+- GraphQL Enthusiast
 
 - Open Source Contributor
-- Functional Programming Enthusiast
-- Care about DevEx
+
+- Functional Programmer
+
+- Passionate about DevEx
+
 - Based out of Bangalore (India)
-- 2 Year Old at Home
 
 ---
 
@@ -66,7 +69,7 @@ class: middle
 
 --
 
-.block.center[Microservices + Apps]
+.block.center[{ Microservices + Apps }]
 
 ---
 
@@ -75,6 +78,8 @@ class: middle
 .stat[
 
 .stat-item[500 .title[Engineers]]
+
+.stat-item[100 .title[Microservices]]
 
 .stat-item[10,000,000 .title[Concurrency]]
 
@@ -85,6 +90,10 @@ class: middle
 --
 
 ## .block.center[.font-size-5[🙌 .weight-700.custom-underline[GraphQL]]]
+
+---
+
+.block.center[![Not so fast](https://media1.tenor.com/m/UB_adCAGhUQAAAAd/baby-cute.gif)]
 
 ---
 
@@ -112,7 +121,7 @@ class: middle
 
 --
 
-.font-size-3[🛠️] .font-grey[Dedicated Team]
+.font-size-3[🎯] .font-grey[Dedicated Team]
 
 ---
 
@@ -122,7 +131,7 @@ class: middle
 
 .font-size-3[🌀] .font-grey[Processes]
 
-.font-size-3[🏭] .font-grey[Testing Infrastructure]
+.font-size-3[🧪] .font-grey[Testing Infrastructure]
 
 ---
 
@@ -462,149 +471,3 @@ class: flex-col center
 .font-size-5[❤️]
 
 ---
-
-class:middle custom-background-image
-background-image: url(./img/rush-hour.png)
-
---
-
-.font-size-3.weight-500[🚦 Traffic Signal]
-
-.font-size-3.weight-500[👮 Fine]
-
-.font-size-3.weight-500[🛣 Marking]
-
----
-
-class: middle
-.block.half[![GraphQL Logo](img/graphql-logo-white.png)]
-.two-columns[
-.column[
-.font-size-3[
-.custom-underline[
-🚧 .weight-500[Constraint]
-]
-]
-
-- # Schema
-
-- # Query
-
-- # Single Endpoint
-
-- DSL
-  ]
-  .column[
-  .font-size-3[
-  .custom-underline[
-  🕊️ .weight-500[Liberties]
-  ]
-  ]
-
-- Type System
-
-- Efficiency
-
-- Unification
-
-- Specialization
-  ]
-  ]
-
----
-
-class: two-columns
-
-.column[
-.font-size-3[
-.custom-underline[
-🕊️ .weight-500[Liberties]
-]
-]
-
-- Type System
-
-- Efficiency
-
-- Unification
-
-- Specialization
-
-]
-
-.column[
-.font-size-3[
-.custom-underline[
-🚧 .weight-500[Constraint]
-]
-]
-
-- Learning Curve
-
-- Complexity
-
-- Reliability 🙅
-
-- Interoperability 🙅
-
-]
-
-# 2020 .tc-highlight[Rewrite] GraphQL
-
-1. High performance & reliability
-
-2. Declarative, extendable & modular Design
-
-3. Connect to any data-source
-
----
-
-# 2021 .tc-highlight[Launch]
-
---
-
-- Before `40,000` cores
-
---
-
-- After `6,400` cores
-
---
-
-.stat[
-
-.stat-item[🚀 7x .title[Performance]]
-
-.stat-item[💵 85% .title[Cost]]
-
-.stat-item[💪 3 .title[Team]]
-
-]
-
----
-
-# 2022 .tc-highlight[Open Source]
-
-Before open sourcing:
-
---
-
-- ~~JS~~ to Rust
-
---
-
-- ~~Declarative~~ to Configuration
-
----
-
-# Agenda
-
-1. GraphQL Journey
-
-2. Challenges & Workarounds
-
-3. Learnings
-
-4. Ideal Solution
-
-5. Key Takeaway
