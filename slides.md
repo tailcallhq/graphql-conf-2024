@@ -1,13 +1,10 @@
 class: center middle
 
-.font-size-6[
-Scaling GraphQL <br/> for .custom-underline[500,000,000] req/min
+.font-size-6.weight-500[
+Scaling GraphQL for .custom-underline[500,000,000] req/min
 ]
+
 GraphQL Conf 2024
-
-???
-
-Hello!
 
 ---
 
@@ -21,9 +18,7 @@ class: middle
 
 - Passionate about DevEx
 
-TODO: Add Picture
-
----
+.img-fixed-right[![Tushar Mathur](./img/profile-picture.jpg)]
 
 ---
 
