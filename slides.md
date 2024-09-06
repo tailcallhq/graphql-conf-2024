@@ -388,6 +388,8 @@ class: middle
 
 ## ![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
 
+---
+
 class: flex-row middle
 .col-50[
 .font-size-3[Built with 💗 using]
@@ -484,5 +486,3 @@ class: flex-col center
 # Thank You!
 
 .font-size-5[❤️]
-
----
