@@ -352,6 +352,12 @@ class: middle
 
 ---
 
+class: middle
+
+.center[![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)]
+
+---
+
 ## .custom-underline[Revisiting the Challenges]
 
 --
@@ -375,6 +381,8 @@ class: middle
 5. Configuration Driven
 
 ---
+
+<!-- TODO: @amitksingh1490 Add Tailcall Logo On the Right -->
 
 ## .custom-underline[Awesome Community 🙌]
 
@@ -417,21 +425,14 @@ class: middle
 3. Library authors should take inspiration from SQL engines.
 
 ---
+class: middle
 
 ## .custom-underline[Official Introduction]
 
 1. Founder of Tailcall
 
---
+2. Ex VP of Engineering at Dream11
 
-2. VP of Engineering at Dream11
-
---
-
-3. Open Source Author and Maintainer
-
---
-.center[
 .icon[![Twitter](./img/x-logo.svg)]
 @tusharmath
 
@@ -440,7 +441,6 @@ class: middle
 
 .icon[![Github](./img/github-logo.svg)]
 @tusharmath
-]
 
 ---
 
