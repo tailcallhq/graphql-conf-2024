@@ -28,7 +28,7 @@ GraphQL Conf 2024
 
 1. GraphQL Journey
 
-2. Challenges & Resolutions
+2. Challenges & Workarounds
 
 3. Learnings of the last 8 years
 
@@ -66,10 +66,8 @@ class: middle
 
 ]
 
----
-
-.block.center[ .font-size-5[💰 .weight-700[Series B]]]
-
+--
+.block.center[ .font-size-5[💰 .weight-700.custom-underline[Series B]]st
 --
 
 - Android
@@ -80,11 +78,7 @@ class: middle
 
 - Microservices
 
---
-
-.block.center[ .font-size-5[🧐 .weight-700[GraphQL?]]]
-
----
+- ## .block.center[ .font-size-5[🧐 .weight-700.custom-underline[GraphQL?]]st
 
 # .tc-highlight[2024] Dream11
 
@@ -102,11 +96,7 @@ class: middle
 
 ![Architecture](./img/architecture.svg)
 
---
-
-.block.center[ .font-size-5[🙌 .weight-700[GraphQL]]]
-
----
+- ## .block.center[ .font-size-5[🙌 .weight-700.custom-underline[GraphQL]]st
 
 class: middle
 
@@ -117,9 +107,7 @@ class: middle
 ---
 
 .font-size-3[
-.custom-underline[
-❌ .weight-700[Speculative Performance]
-]
+👉 .weight-700.custom-underline[Speculative Performance]
 ]
 
 --
@@ -129,9 +117,7 @@ class: middle
 ---
 
 .font-size-3[
-.custom-underline[
-❌ .weight-700[Highly Specialized]
-]
+👉 .weight-700.custom-underline[Highly Specialized]st
 ]
 
 --
@@ -140,21 +126,15 @@ class: middle
 
 ---
 
-.font-size-3[
-.custom-underline[
-❌ .weight-700[Fragile]
-]
-]
+.font-size-3[👉 .weight-700.custom-underline[Fragile]]
 
-.font-size-3[🛠️] .font-grey[Generalize Runtime]
+--
+
+.font-size-3[🛠️] .font-grey[Processes & Testing Infrastructure]
 
 ---
 
-.font-size-3[
-.custom-underline[
-❌ .weight-700[Caching]
-]
-]
+.font-size-3[👉 .weight-700.custom-underline[Caching]]
 
 --
 
@@ -162,11 +142,7 @@ class: middle
 
 ---
 
-.font-size-3[
-.custom-underline[
-❌ .weight-700[Resiliency]
-]
-]
+.font-size-3[👉 .weight-700.custom-underline[Resiliency]]
 
 --
 
@@ -174,11 +150,7 @@ class: middle
 
 ---
 
-.font-size-3[
-.custom-underline[
-❌ .weight-700[Maintenance]
-]
-]
+.font-size-3[👉 .weight-700.custom-underline[Maintenance]]
 
 --
 
@@ -196,8 +168,7 @@ class: middle
 
 class:middle center
 
-.font-size-3.weight-700[
-🕊️ Liberties Constraint and Constraint Liberate 🕊️]
+.font-size-3.weight-700[🕊️ Liberties Constraint and Constraints Liberate🕊️]
 
 ---
 
@@ -281,9 +252,9 @@ class: two-columns
 
 - Complexity
 
-- Reliability
+- Reliability 🙅
 
-- Interoperability
+- Interoperability 🙅
 
 ]
 
@@ -292,9 +263,7 @@ class: two-columns
 class: middle
 
 .font-size-3[
-.custom-underline[
-📌 .weight-700[Two Pass Executor]
-]
+📌 .weight-700.custom-underline[Two Pass Executor]st
 ]
 
 ---
@@ -302,9 +271,7 @@ class: middle
 class: middle
 
 .font-size-3[
-.custom-underline[
-🙅‍♂️ .weight-700[Handwritten GraphQL]
-]
+🙅‍♂️ .weight-700.custom-underline[Handwritten GraphQL]st
 ]
 
 ---
@@ -312,9 +279,7 @@ class: middle
 class: middle
 
 .font-size-3[
-.custom-underline[
-🤔 .weight-700[Learn from SQL]
-]
+🤔 .weight-700.custom-underline[Learn from SQL]st
 ]
 
 ---
@@ -322,9 +287,7 @@ class: middle
 class: middle
 
 .font-size-3[
-.custom-underline[
-✋ .weight-700[Avoid Business Logic]
-]
+✋ .weight-700.custom-underline[Avoid Business Logic]st
 ]
 
 ---
@@ -352,6 +315,9 @@ class:middle
 --
 
 - Before `40,000` cores
+
+--
+
 - After `6,400` cores
 
 --
@@ -396,7 +362,7 @@ class: flex-col flex-top
 
 <!-- TODO: add a more Dream11 Example -->
 
-### Write your schema
+### Your Schema
 
 ```graphql
 schema {

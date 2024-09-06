@@ -152,8 +152,8 @@ body {
 .custom-underline::after {
   content: "";
   position: absolute;
-  left: 4rem;
-  bottom: 2.5rem;
+  left: 0rem;
+  bottom: -1rem;
   width: 18%;
   border-bottom: 6px solid #fdea2e;
 }
