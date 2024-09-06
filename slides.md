@@ -389,11 +389,16 @@ class: middle
 3. Open Source Author and Maintainer
 
 --
-
+.center[
 .icon[![Twitter](./img/x-logo.svg)]
 @tusharmath
+
 .icon[![LinkedIn](./img/In-White-128@2x.png)]
 @tusharmath
+
+.icon[![Github](./img/github-logo.svg)]
+@tusharmath
+]
 
 ---
 
