@@ -5,6 +5,10 @@ Scaling GraphQL <br/> for .custom-underline[500,000,000] req/min
 ]
 GraphQL Conf 2024
 
+???
+
+Hello!
+
 ---
 
 class: middle
@@ -17,21 +21,24 @@ class: middle
 
 - Passionate about DevEx
 
-## TODO: Add Picture
+TODO: Add Picture
+
+---
 
 ---
 
 class: middle
 
-# GraphQL Journey
+## .font-grey[Part 1]
 
-## .font-grey[Section 1]
+# GraphQL Journey
 
 ---
 
 # 2016 Dream11
 
 - Fantasy Gaming Platform
+
 - Monolith to Microservices
 
 --
@@ -76,9 +83,9 @@ class: middle
 
 class: middle
 
-# Challenges & Workarounds
+## .font-grey[Part 2]
 
-## .font-grey[Section 2]
+# Challenges & Workarounds
 
 ---
 
@@ -86,9 +93,11 @@ class: middle
 
 --
 
-.font-size-3[🚀] .font-grey[System]
+.font-size-3[🚀] .font-grey[End-to-End]
 
 .font-size-3[💔] .font-grey[Internal]
+
+--
 
 .font-size-3[🏭] .font-grey[Benchmarking Infrastructure]
 
@@ -102,7 +111,7 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Fragile]]
+.font-size-3[👉 .weight-700.custom-underline[Fragility]]
 
 --
 
@@ -128,11 +137,11 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Maintenance]]
+.font-size-3[👉 .weight-700.custom-underline[Maintainability]]
 
 --
 
-.block[.center[.font-size-5[🤷]]]
+.block[.font-size-3[😱]]
 
 ---
 
@@ -151,9 +160,9 @@ class: middle
 
 class: middle
 
-# Learnings of 8 Years
+## .font-grey[Part 3]
 
-## .font-grey[Section 3]
+# Learnings of 8 Years
 
 ---
 
@@ -171,13 +180,15 @@ class:middle center
 
 ### 🔒 .custom-underline[Query]
 
+--
+
 ### 🕊️ .custom-underline[Resolver]
 
 ---
 
 class: middle
 
-.font-grey[Step 1]
+.font-grey[Constraint 1]
 
 .font-size-3[✋ .weight-700.custom-underline[Avoid Business Logic]]
 
@@ -185,7 +196,7 @@ class: middle
 
 class: middle
 
-.font-grey[Step 2]
+.font-grey[Constraint 2]
 
 .font-size-3[🙅‍♂️ .weight-700.custom-underline[Handwritten Resolver]]
 
@@ -193,7 +204,7 @@ class: middle
 
 class: middle
 
-.font-grey[Step 3]
+.font-grey[Constraint 3]
 
 .font-size-3[🤔 .weight-700.custom-underline[Learn from SQL]]
 
@@ -201,9 +212,9 @@ class: middle
 
 class:middle
 
-# .custom-underline[Default Runtime for GraphQL]
+## .font-grey[Part 4]
 
-## .font-grey[Section 4]
+# .custom-underline[Default Runtime for GraphQL]
 
 ---
 
@@ -398,9 +409,9 @@ class: flex-row middle
 
 class: middle
 
-# Takeaway
+## .font-grey[Part 5]
 
-## .font-grey[Section 5]
+# Takeaway
 
 ---
 
