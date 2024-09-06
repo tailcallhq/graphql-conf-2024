@@ -231,7 +231,7 @@ img {
   max-height: 50%;
 }
 
-.logo {
+.invert img {
   filter: brightness(0) invert(1); /* Make the logo white */
 }
 
@@ -243,8 +243,9 @@ img {
 }
 
 .icon img {
-  max-width: 2rem;
-  max-height: 2rem;
+  max-width: 1em;
+  max-height: 1em;
+  margin-bottom: -0.2em;
 }
 
 .flex-row {
@@ -278,6 +279,10 @@ img {
 
 .col-50 {
   flex: 0 0 50%;
+}
+
+.col-grow {
+  flex: 1 0 0;
 }
 
 * {

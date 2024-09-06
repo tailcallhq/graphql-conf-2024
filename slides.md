@@ -188,25 +188,31 @@ class:middle center
 
 class: middle
 
-.font-grey[Constraint 1]
+.font-grey[Step 1]
 
-.font-size-3[✋ .weight-700.custom-underline[Avoid Business Logic]]
+## ✋ .weight-700.custom-underline[Avoid Business Logic]
 
----
-
-class: middle
-
-.font-grey[Constraint 2]
-
-.font-size-3[🙅‍♂️ .weight-700.custom-underline[Handwritten Resolver]]
+## 👍 .weight-700.custom-underline[Allow only Orchestration Logic]
 
 ---
 
 class: middle
 
-.font-grey[Constraint 3]
+.font-grey[Step 2]
+
+## 🙅‍♂️ .weight-700.custom-underline[Handwritten Resolver]
+
+## 🤔 .weight-700.custom-underline[Configuration Driven]
+
+---
+
+class: middle
+
+.font-grey[Step 3]
 
 .font-size-3[🤔 .weight-700.custom-underline[Learn from SQL]]
+
+TODO: Add image for Apache Calcite
 
 ---
 
@@ -214,22 +220,22 @@ class:middle
 
 ## .font-grey[Part 4]
 
-# .custom-underline[Default Runtime for GraphQL]
+# .custom-underline[Generalized Runtime for GraphQL]
 
 ---
 
 class: middle center flex-col
 
-.logo[![Tailcall Logo](./img/taicall.svg)]
+.invert[![Tailcall Logo](./img/taicall.svg)]
 
 ---
 
 class: middle flex-row
 
-.col-40[
-.custom-underline[GraphQL Schema 👉]
-]
 .col-60[
+.custom-underline[## GraphQL Schema 👉]
+]
+.col-40[
 
 ```graphql
 schema {
@@ -262,7 +268,7 @@ type User {
 class: middle flex-row
 
 .col-40[
-.custom-underline[Annotations 👉]
+.custom-underline[## Annotate 👉]
 ]
 .col-60[
 
@@ -300,6 +306,20 @@ type User {
 
 ---
 
+# Upstream
+
+- REST
+
+- gRPC
+
+- GraphQL
+
+--
+
+.block.center[.font-size-4[🎨 .weight-700.custom-underline[Router]]]
+
+---
+
 class: middle flex-row
 
 .col-50[
@@ -327,29 +347,17 @@ class: middle
 
 - Read the configuration
 
-- Attach Resolvers
+- Dynamically Generate Resolvers
 
 - Initialize HTTP Server
+
+.block.center.size-75[![Tailcall Start](./img/tailcall-start.png)]
 
 ---
 
 # Query Execution
 
 ![Query Engine](./img/query-engine.svg)
-
----
-
-# Upstream
-
-- REST
-
-- gRPC
-
-- GraphQL
-
---
-
-.block.center[.font-size-4[🎨 .weight-700.custom-underline[Router]]]
 
 ---
 
@@ -361,49 +369,28 @@ class: middle
 
 ## .custom-underline[Revisiting the Challenges]
 
-|                            | Before | .logo.size-50[![tailcall logo](./img/taicall.svg)] |
-| -------------------------- | :----: | :------------------------------------------------: |
-| 1. Speculative Performance | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
-| 2. Highly Specialized      |  ✩✩✩   |                     ⭐️⭐️⭐️                      |
-| 3. Fragile                 | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
-| 4. Caching                 | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
-| 5. Resiliency              | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
-| 6. Maintenance             |  ✩✩✩   |                     ⭐️⭐️⭐️                      |
+|                            | Before | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
+| -------------------------- | :----: | :--------------------------------------------------: |
+| 1. Speculative Performance | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
+| 2. Highly Specialized      |  ✩✩✩   |                      ⭐️⭐️⭐️                       |
+| 3. Fragile                 | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
+| 4. Caching                 | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
+| 5. Resiliency              | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
+| 6. Maintenance             |  ✩✩✩   |                      ⭐️⭐️⭐️                       |
 
 ---
 
-<!-- TODO: @amitksingh1490 Add Tailcall Logo On the Right  DOne-->
+class: middle center
+
+.invert[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
+
+## Built with 💗 using
+
+---
 
 ## .custom-underline[Awesome Community 🙌]
 
 ## ![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
-
----
-
-class: flex-row middle
-.col-50[
-.font-size-3[Built with 💗 using]
-]
---
-.col-50[
-.logo[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
-]
-
----
-
-- Repo: https://github.com/tailcallhq/tailcall
-
-- RUST > Performance
-- Try it Out | Feedback
-- Github
-- Binary Size
-- Contributors
-- Releases
-- Commits
-
-<!-- Github Repo -->
-<!-- Contributors + Releases + Commits -->
-<!-- Looking for Contributors and Feedback! -->
 
 ---
 
@@ -437,15 +424,15 @@ class: middle
 
 .flex-row[
 
-.col-33[
+.col-grow[
 .icon[![Twitter](./img/x-logo.svg)]
 @tusharmath
 ]
-.col-33[
+.col-grow[
 .icon[![LinkedIn](./img/In-White-128@2x.png)]
 @tusharmath
 ]
-.col-33[
+.col-grow[
 .icon[![Github](./img/github-logo.svg)]
 @tusharmath
 ]
