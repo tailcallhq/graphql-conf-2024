@@ -19,6 +19,8 @@ class: middle
 
 ## TODO: Add Picture
 
+---
+
 class: middle
 
 # GraphQL Journey
@@ -348,18 +350,18 @@ class: middle
 
 ## .custom-underline[Revisiting the Challenges]
 
-|                            | Before | Tailcall  |
-| -------------------------- | :----: | :-------: |
-| 1. Speculative Performance | ⭐️✩✩  | ⭐️⭐️⭐️ |
-| 2. Highly Specialized      |  ✩✩✩   | ⭐️⭐️⭐️ |
-| 3. Fragile                 | ⭐️✩✩  | ⭐️⭐️⭐️ |
-| 4. Caching                 | ⭐️✩✩  | ⭐️⭐️⭐️ |
-| 5. Resiliency              | ⭐️✩✩  | ⭐️⭐️⭐️ |
-| 6. Maintenance             |  ✩✩✩   | ⭐️⭐️⭐️ |
+|                            | Before | .logo.size-50[![tailcall logo](./img/taicall.svg)] |
+| -------------------------- | :----: | :------------------------------------------------: |
+| 1. Speculative Performance | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
+| 2. Highly Specialized      |  ✩✩✩   |                     ⭐️⭐️⭐️                      |
+| 3. Fragile                 | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
+| 4. Caching                 | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
+| 5. Resiliency              | ⭐️✩✩  |                     ⭐️⭐️⭐️                      |
+| 6. Maintenance             |  ✩✩✩   |                     ⭐️⭐️⭐️                      |
 
 ---
 
-<!-- TODO: @amitksingh1490 Add Tailcall Logo On the Right -->
+<!-- TODO: @amitksingh1490 Add Tailcall Logo On the Right  DOne-->
 
 ## .custom-underline[Awesome Community 🙌]
 
