@@ -325,16 +325,9 @@ type User {
 
 class: middle flex-row
 
-.col-50[
+## .custom-underline[Equivalent Javascript Code]
 
-## Comparison
-
-.size-75[![Tailcall Version](./img/tailcall-graphql-server.png)]
-
-]
-.col-50[
-.size-75[![JS Version](./img/js-graphql-server.png)]
-]
+.img-fixed-right[![JS Version](./img/js-graphql-server.png)]
 
 ---
 
