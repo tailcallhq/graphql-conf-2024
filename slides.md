@@ -386,13 +386,20 @@ class: middle
 
 ## .custom-underline[Awesome Community 🙌]
 
-![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
+## ![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
+
+class: flex-row middle
+.col-50[
+.font-size-3[Built with 💗 using]
+]
+--
+.col-50[
 .logo[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
+]
 
 ---
 
-![Tailcall Repo](./img/tailcall-repo-qr.png)
-https://github.com/tailcallhq/tailcall
+- Repo: https://github.com/tailcallhq/tailcall
 
 - RUST > Performance
 - Try it Out | Feedback
@@ -425,6 +432,7 @@ class: middle
 3. Library authors should take inspiration from SQL engines.
 
 ---
+
 class: middle
 
 ## .custom-underline[Official Introduction]
@@ -433,18 +441,25 @@ class: middle
 
 2. Ex VP of Engineering at Dream11
 
+.flex-row[
+
+.col-33[
 .icon[![Twitter](./img/x-logo.svg)]
 @tusharmath
-
+]
+.col-33[
 .icon[![LinkedIn](./img/In-White-128@2x.png)]
 @tusharmath
-
+]
+.col-33[
 .icon[![Github](./img/github-logo.svg)]
 @tusharmath
+]
+]
 
 ---
 
-class: flex-row
+class: flex-row middle
 
 .col-60[
 
@@ -458,7 +473,7 @@ class: flex-row
 
 ]
 
-.col-40[
+.col-40.center[
 .middle.size-50[![Tailcall Hack](./img/hackathon-repo-qr.png)]
 ]
 
