@@ -213,8 +213,6 @@ class: middle center flex-col
 
 ---
 
-<!-- TODO: add a more Dream11 Example -->
-
 ## Schema
 
 ```graphql
@@ -338,7 +336,14 @@ class: middle
 
 ## .custom-underline[Awesome Community 🙌]
 
-- TODO: Thanks to the contributors!
+![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
+.logo[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
+
+---
+
+![Tailcall Repo](./img/tailcall-repo-qr.png)
+https://github.com/tailcallhq/tailcall
+
 - RUST > Performance
 - Try it Out | Feedback
 - Github
@@ -385,7 +390,10 @@ class: middle
 
 --
 
- <!-- TODO: add social icons -->
+.icon[![Twitter](./img/x-logo.svg)]
+@tusharmath
+.icon[![LinkedIn](./img/In-White-128@2x.png)]
+@tusharmath
 
 ---
 
@@ -408,7 +416,8 @@ class: flex-col center
 
 Fastest Server Wins!
 
-- TODO: Add QR Code
+.center.half[![Tailcall Hack](./img/hackathon-repo-qr.png)]
+https://github.com/tailcallhq/graphql-conf-2024-hackathon
 
 ---
 
