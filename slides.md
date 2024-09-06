@@ -7,19 +7,17 @@ GraphQL Conf 2024
 
 ---
 
+class: middle
+
 # Who am I?
 
 - GraphQL Enthusiast
 
 - Open Source Contributor
 
-- Functional Programmer
-
 - Passionate about DevEx
 
-- Based out of Bangalore (India)
-
----
+## TODO: Add Picture
 
 class: middle
 
@@ -31,31 +29,8 @@ class: middle
 
 # 2016 Dream11
 
---
-
-.stat[
-
-.stat-item[100,000 .title[Concurrency]]
-
-.stat-item[1,000,000 .title[Users]]
-
-.stat-item[10 .title[Full-Stack Engineers]]
-
-]
-
----
-
-.block.center[.font-size-5[💰 .weight-700.custom-underline[Series B]]]
-
---
-
-- Android
-
-- iOS
-
-- PWA
-
-- Microservices
+- Fantasy Gaming Platform
+- Monolith to Microservices
 
 --
 
@@ -73,13 +48,13 @@ class: middle
 
 ---
 
-# 2024 Dream11
+# 2022 Dream11
 
 .stat[
 
 .stat-item[500 .title[Engineers]]
 
-.stat-item[100 .title[Microservices]]
+.stat-item[150 .title[Microservices]]
 
 .stat-item[10,000,000 .title[Concurrency]]
 
@@ -159,6 +134,19 @@ class: middle
 
 ---
 
+## .custom-underline[Challenges]
+
+|                            | Workarounds |
+| -------------------------- | :---------: |
+| 1. Speculative Performance |    ⭐️✩✩    |
+| 2. Highly Specialized      |     ✩✩✩     |
+| 3. Fragile                 |    ⭐️✩✩    |
+| 4. Caching                 |    ⭐️✩✩    |
+| 5. Resiliency              |    ⭐️✩✩    |
+| 6. Maintenance             |     ✩✩✩     |
+
+---
+
 class: middle
 
 # Learnings of 8 Years
@@ -185,27 +173,27 @@ class:middle center
 
 ---
 
-class: middle center
-
-![Dreaming](https://i.giphy.com/o5ht0KxTJDAS90MNWI.webp)
-
----
-
 class: middle
 
-.font-size-3[🙅‍♂️ .weight-700.custom-underline[Handwritten GraphQL]]
-
----
-
-class: middle
-
-.font-size-3[🤔 .weight-700.custom-underline[Learn from SQL]]
-
----
-
-class: middle
+.font-grey[Step 1]
 
 .font-size-3[✋ .weight-700.custom-underline[Avoid Business Logic]]
+
+---
+
+class: middle
+
+.font-grey[Step 2]
+
+.font-size-3[🙅‍♂️ .weight-700.custom-underline[Handwritten Resolver]]
+
+---
+
+class: middle
+
+.font-grey[Step 3]
+
+.font-size-3[🤔 .weight-700.custom-underline[Learn from SQL]]
 
 ---
 
@@ -360,25 +348,14 @@ class: middle
 
 ## .custom-underline[Revisiting the Challenges]
 
---
-
-1. Predictable Performance
-
---
-
-2. Generalized GraphQL Runtime
-
---
-
-3. Robust Foundations
-
---
-
-4. Resilient to Errors
-
---
-
-5. Configuration Driven
+|                            | Before | Tailcall  |
+| -------------------------- | :----: | :-------: |
+| 1. Speculative Performance | ⭐️✩✩  | ⭐️⭐️⭐️ |
+| 2. Highly Specialized      |  ✩✩✩   | ⭐️⭐️⭐️ |
+| 3. Fragile                 | ⭐️✩✩  | ⭐️⭐️⭐️ |
+| 4. Caching                 | ⭐️✩✩  | ⭐️⭐️⭐️ |
+| 5. Resiliency              | ⭐️✩✩  | ⭐️⭐️⭐️ |
+| 6. Maintenance             |  ✩✩✩   | ⭐️⭐️⭐️ |
 
 ---
 
@@ -424,6 +401,8 @@ class: middle
 ## .font-grey[Section 5]
 
 ---
+
+class: middle
 
 ## .custom-underline[Takeaway]
 
