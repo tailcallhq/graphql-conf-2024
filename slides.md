@@ -32,11 +32,11 @@ class: middle
 
 .stat[
 
-.stat-item[10 .title[Full-Stack Engineers]]
-
 .stat-item[100,000 .title[Concurrency]]
 
 .stat-item[1,000,000 .title[Users]]
+
+.stat-item[10 .title[Full-Stack Engineers]]
 
 ]
 
@@ -60,9 +60,13 @@ class: middle
 
 ---
 
-class:middle
+## .custom-underline[Architecture]
 
-![Architecture](./img/architecture.svg)
+.block.center[.size-75[![Architecture](./img/architecture.svg)]]
+
+--
+
+.block.center[Microservices + Apps]
 
 ---
 
@@ -92,26 +96,19 @@ class: middle
 
 ---
 
-.font-size-3[
-👉 .weight-700.custom-underline[Speculative Performance]
-]
+.font-size-3[👉 .weight-700.custom-underline[Speculative Performance]]
 
 --
 
-- External
+.font-size-3[🚀] .font-grey[System]
 
---
+.font-size-3[💔] .font-grey[Internal]
 
-- Internal
-
---
-
-.font-size-3[🛠️] .font-grey[Benchmarking Infrastructure]
+.font-size-3[🏭] .font-grey[Benchmarking Infrastructure]
 
 ---
 
-.font-size-3[
-👉 .weight-700.custom-underline[Highly Specialized]]
+.font-size-3[👉 .weight-700.custom-underline[Highly Specialized]]
 
 --
 
@@ -123,9 +120,9 @@ class: middle
 
 --
 
-.font-size-3[🛠️] .font-grey[Processes]
+.font-size-3[🌀] .font-grey[Processes]
 
-.font-size-3[🛠️] .font-grey[Testing Infrastructure]
+.font-size-3[🏭] .font-grey[Testing Infrastructure]
 
 ---
 
@@ -133,7 +130,7 @@ class: middle
 
 --
 
-.font-size-3[🛠️] .font-grey[On Services]
+.font-size-3[⚡] .font-grey[On Services]
 
 ---
 
@@ -141,7 +138,7 @@ class: middle
 
 --
 
-.font-size-3[🛠️] .font-grey[API Gateway]
+.font-size-3[🛡️] .font-grey[API Gateway]
 
 ---
 
@@ -149,7 +146,7 @@ class: middle
 
 --
 
-.block[.center[.font-size-6[🤷]]]
+.block[.center[.font-size-5[🤷]]]
 
 ---
 
@@ -169,15 +166,19 @@ class:middle center
 
 # GraphQL
 
-- Schema
+--
 
-- Query
+### 🔒 .custom-underline[Schema]
 
-- Resolver
+### 🔒 .custom-underline[Query]
+
+### 🕊️ .custom-underline[Resolver]
 
 ---
 
-# TODO: Dreamy Image
+class: middle center
+
+![Dreaming](https://i.giphy.com/o5ht0KxTJDAS90MNWI.webp)
 
 ---
 
@@ -213,7 +214,12 @@ class: middle center flex-col
 
 ---
 
-## Schema
+class: middle flex-row
+
+.col-40[
+.custom-underline[GraphQL Schema 👉]
+]
+.col-60[
 
 ```graphql
 schema {
@@ -225,15 +231,30 @@ type Query {
 }
 
 type Post {
-  id: ID
-  title: String
+  id: ID!
+  title: String!
   body: String
+  userId: ID!
+  user: User
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
 }
 ```
 
+]
+
 ---
 
-## Annotate your Schema
+class: middle flex-row
+
+.col-40[
+.custom-underline[Annotations 👉]
+]
+.col-60[
 
 ```graphql
 schema @upstream(baseURL: "https://api.d11.local") {
@@ -245,30 +266,42 @@ type Query {
 }
 
 type Post {
-  id: ID
-  title: String
+  id: ID!
+  title: String!
   body: String
+  userId: ID!
+  user: User @http(path: "/users/{{value.userId}}")
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
 }
 ```
 
----
+]
 
-class: middle
+---
 
 # Start the server
 
-```bash
-tailcall start ./config.graphql
-```
+![Tailcall Start](./img/tailcall-start.png)
 
 ---
 
-# Javascript
+class: middle flex-row
 
-- TODO
-- TODO
+.col-50[
 
-.js-code-screenshot[![JS Version](./img/js-graphql-server.png)]
+## Comparison
+
+.size-75[![Tailcall Version](./img/tailcall-graphql-server.png)]
+
+]
+.col-50[
+.size-75[![JS Version](./img/js-graphql-server.png)]
+]
 
 ---
 
@@ -402,25 +435,31 @@ class: middle
 
 ---
 
+class: flex-row
+
+.col-60[
+
+# .custom-underline[\#TailcallHack]
+
+- Build the GraphQL Server
+
+- 2,000 USD Prize
+
+- Checkout - tailcallhq/hackathon
+
+]
+
+.col-40[
+.middle.size-50[![Tailcall Hack](./img/hackathon-repo-qr.png)]
+]
+
+---
+
 class: flex-col center
 
 # Thank You!
 
 .font-size-5[❤️]
-
----
-
-<!-- Links to Runar's Talk  -->
-<!-- Links to SQL Engine  -->
-
----
-
-# .font-size-5.tc-highlight[\#TailcallHack]
-
-Fastest Server Wins!
-
-.center.half[![Tailcall Hack](./img/hackathon-repo-qr.png)]
-https://github.com/tailcallhq/graphql-conf-2024-hackathon
 
 ---
 
@@ -447,11 +486,11 @@ class: middle
 ]
 ]
 
-- Schema
+- # Schema
 
-- Query
+- # Query
 
-- Single Endpoint
+- # Single Endpoint
 
 - DSL
   ]

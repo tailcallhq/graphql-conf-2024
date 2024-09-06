@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Title</title>
@@ -17,7 +17,12 @@
       var slideshow = remark.create({
         sourceUrl: "./slides.md",
         highlightStyle: "tomorrow-night",
-        ratio: "4:3",
+        ratio: "16:9",
+        navigation: {
+          scroll: false,
+          click: true,
+        },
+        countIncrementalSlides: false,
       });
     </script>
   </body>
