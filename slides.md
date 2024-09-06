@@ -72,7 +72,15 @@ class: middle
 
 ---
 
-.block.center[![Not so fast](https://media1.tenor.com/m/UB_adCAGhUQAAAAd/baby-cute.gif)]
+class: middle center
+
+![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)
+
+---
+
+class: middle center
+
+![Not so fast](https://media1.tenor.com/m/UB_adCAGhUQAAAAd/baby-cute.gif)
 
 ---
 
@@ -183,9 +191,13 @@ class: middle
 
 ## 3. Resolver
 
---
+---
+
+class: center middle
 
 ## .block.center[.font-size-5[🕊️ .weight-700.custom-underline[Resolver] 🕊️]]
+
+"Conformance requirements expressed as algorithms can be fulfilled by an implementation of this specification .tc-highlight[in any way] as long as the perceived result is equivalent."
 
 ---
 
@@ -337,15 +349,19 @@ class: middle
 
 ---
 
-# Initialization
+# .custom-underline[Initialization]
 
 - Read the configuration
 
-- Dynamically Generate Resolvers
+- Validate configuration
+
+- Generate Resolvers
 
 - Initialize HTTP Server
 
-.block.center.size-75[![Tailcall Start](./img/tailcall-start.png)]
+--
+
+.right-50[![Tailcall Start](./img/tailcall-error.png)]
 
 ---
 
@@ -355,32 +371,27 @@ class: middle
 
 ---
 
-class: middle
-
-.center[![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)]
-
----
-
 ## .custom-underline[Revisiting the Challenges]
 
-|                            | Before | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
-| -------------------------- | :----: | :--------------------------------------------------: |
-| 1. Speculative Performance | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
-| 2. Highly Specialized      |  ✩✩✩   |                      ⭐️⭐️⭐️                       |
-| 3. Fragile                 | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
-| 4. Caching                 | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
-| 5. Resiliency              | ⭐️✩✩  |                      ⭐️⭐️⭐️                       |
-| 6. Maintenance             |  ✩✩✩   |                      ⭐️⭐️⭐️                       |
+|                       |  Before   | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
+| --------------------- | :-------: | :--------------------------------------------------: |
+| 1. Flexibility        | ⭐️⭐️⭐️ |                       ⭐️ ✩ ✩                        |
+| 2. Performance        |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
+| 3. Highly Specialized |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
+| 4. Fragile            |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
+| 5. Caching            |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
+| 6. Resiliency         |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
+| 7. Maintenance        |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
 
 ---
 
-class: middle center
+class: middle
 
-.invert[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
+.invert.img-fixed-right[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
 
 .font-size-3.weight-500[Built with 💗 using]
 
-.font-size-3.weight-500[Apache 2.0 License]
+.font-size-3.weight-500.custom-underline[Apache 2.0 License]
 
 ---
 
@@ -388,7 +399,7 @@ class: middle center
 
 ## ![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
 
-.block.center[Checkout our repository]
+.block.center.weight-500[Please Share Feedback!]
 
 ---
 

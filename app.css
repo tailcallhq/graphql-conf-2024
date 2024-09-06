@@ -240,13 +240,6 @@ img {
   filter: brightness(0) invert(1); /* Make the logo white */
 }
 
-.js-code-screenshot img {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  bottom: 0;
-}
-
 .icon img {
   max-width: 1em;
   max-height: 1em;
@@ -288,8 +281,6 @@ img {
 
 .col-grow {
   flex: 1 0 0;
-  display: flex;
-  justify-content: center;
 }
 
 * {
@@ -302,6 +293,18 @@ img {
   top: 0;
   height: 100%;
   z-index: 1;
+}
+
+.right-50 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @page {
