@@ -401,8 +401,6 @@ class: flex-col center
 
 # Thank You!
 
---
-
 .font-size-5[❤️]
 
 ---
