@@ -323,13 +323,15 @@ type User {
 
 ---
 
-# Start the server
+## Start the server
 
 ![Tailcall Start](./img/tailcall-start.png)
 
 ---
 
 # .tc-underline[First Class Support]
+
+&nbsp;
 
 - REST
 
@@ -343,9 +345,31 @@ type User {
 
 ---
 
-class: middle flex-row
+class: middle
 
-## .tc-underline[Javascript 👉]
+# .tc-underline[2 Key Capabilities]
+
+---
+
+# .tc-underline[AOT Analyzer]
+
+&nbsp;
+
+![Tailcall Start](./img/tailcall-error.png)
+
+---
+
+# .tc-underline[JIT Optimizer]
+
+&nbsp;
+
+![Query Engine](./img/query-engine.svg)
+
+---
+
+class: middle
+
+## .tc-underline[100 lines Javascript 👉]
 
 --
 
@@ -354,26 +378,6 @@ class: middle flex-row
 ---
 
 class: middle
-
-# How it works
-
----
-
-class: middle
-
-# .tc-underline[Static Analysis]
-
-![Tailcall Start](./img/tailcall-error.png)
-
----
-
-# Query Execution
-
-![Query Engine](./img/query-engine.svg)
-
----
-
-## .tc-underline[Revisiting the Challenges]
 
 |                       |  Before   | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
 | --------------------- | :-------: | :--------------------------------------------------: |
@@ -385,11 +389,13 @@ class: middle
 | 6. Resiliency         |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
 | 7. Maintenance        |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
 
+.center[Revisiting the Challenges]
+
 ---
 
 class: middle
 
-.invert.img-fixed-right[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
+.invert.right-50.rust-logo[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
 
 .font-size-3.weight-500[Built with 💗 using]
 

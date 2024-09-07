@@ -237,6 +237,11 @@ img {
   max-height: 50%;
 }
 
+.rust-logo img {
+  min-width: 60%;
+  min-height: 60%;
+}
+
 .invert img {
   filter: brightness(0) invert(1); /* Make the logo white */
 }
@@ -300,6 +305,18 @@ img {
 .right-50 {
   position: absolute;
   right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-50 {
+  position: absolute;
+  left: 0;
   top: 0;
   height: 100%;
   z-index: 1;
