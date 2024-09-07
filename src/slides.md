@@ -144,11 +144,13 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.tc-underline[Maintainability]]
+class:middle
+
+# 👉 .weight-700.tc-underline[Maintainability]
 
 --
 
-.block[.font-size-3[😱]]
+.img-fixed-right[![Maintenance](https://media1.tenor.com/m/aIVC4JjqorYAAAAC/frustrating-frustrated.gif)]
 
 ---
 
@@ -183,6 +185,8 @@ class: middle
 
 # .tc-underline[Without Constraints]
 
+--
+
 .img-fixed-right[![Busy Road](https://media.tenor.com/jOqY21jgeuYAAAAM/traffic-jam-unlined-vehicles.gif)]
 
 ---
@@ -201,7 +205,7 @@ class: center middle
 
 ## .block.center[.font-size-5[🕊️ .weight-700.tc-underline[Resolver] 🕊️]]
 
-"Conformance requirements expressed as algorithms can be fulfilled by an implementation of this specification .tc-highlight[in any way] as long as the perceived result is equivalent."
+![GraphQL Spec Screenshot](./img/spec-screenshot.png)
 
 ---
 
@@ -325,7 +329,7 @@ type User {
 
 ---
 
-# Upstream
+# First Class Support
 
 - REST
 
@@ -353,19 +357,11 @@ class: middle
 
 ---
 
-# .tc-underline[Initialization]
+class: middle
 
-- Read the configuration
+# .tc-underline[Static Analysis]
 
-- Validate configuration
-
-- Generate Resolvers
-
-- Initialize HTTP Server
-
---
-
-.right-50[![Tailcall Start](./img/tailcall-error.png)]
+![Tailcall Start](./img/tailcall-error.png)
 
 ---
 
@@ -427,9 +423,31 @@ class: middle
 
 ---
 
+class: flex-row middle
+
+.col-60[
+
+# .tc-underline[\#TailcallHack]
+
+- Build the GraphQL Server
+
+- 2,000 USD Prize
+
+- Checkout - tailcallhq/hackathon
+
+]
+
+.col-40.center[
+.middle.size-50[![Tailcall Hack](./img/hackathon-repo-qr.png)]
+]
+
+---
+
 class: middle
 
-## .tc-underline[Official Introduction]
+## .tc-underline[Thank You! ❤️]
+
+&nbsp;
 
 1. Founder of Tailcall
 
@@ -449,26 +467,6 @@ class: middle
 .icon[![Github](./img/github-logo.svg)]
 @tusharmath
 ]
-]
-
----
-
-class: flex-row middle
-
-.col-60[
-
-# .tc-underline[\#TailcallHack]
-
-- Build the GraphQL Server
-
-- 2,000 USD Prize
-
-- Checkout - tailcallhq/hackathon
-
-]
-
-.col-40.center[
-.middle.size-50[![Tailcall Hack](./img/hackathon-repo-qr.png)]
 ]
 
 ---

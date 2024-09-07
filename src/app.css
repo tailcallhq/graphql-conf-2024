@@ -49,6 +49,7 @@ body {
   border-radius: 8px;
   color: #000;
   font-weight: 700;
+  text-wrap: nowrap;
 }
 
 .weight-700 {
@@ -293,6 +294,7 @@ img {
   top: 0;
   height: 100%;
   z-index: 1;
+  max-width: 50%;
 }
 
 .right-50 {
