@@ -1,7 +1,7 @@
 class: center middle
 
 .font-size-6.weight-500[
-Scaling GraphQL for .custom-underline[500,000,000] req/min
+Scaling GraphQL for .tc-underline[500,000,000] req/min
 ]
 
 GraphQL Conf 2024
@@ -38,11 +38,11 @@ class: middle
 
 --
 
-## .block.center[.font-size-5[🧐 .weight-700.custom-underline[GraphQL?]]]
+## .block.center[.font-size-5[🧐 .weight-700.tc-underline[GraphQL?]]]
 
 ---
 
-## .custom-underline[Architecture]
+## .tc-underline[Architecture]
 
 .block.center[.size-75[![Architecture](./img/architecture.svg)]]
 
@@ -68,19 +68,23 @@ class: middle
 
 --
 
-## .block.center[.font-size-5[🙌 .weight-700.custom-underline[GraphQL]]]
+## .block.center[.font-size-5[🙌 .weight-700.tc-underline[GraphQL]]]
 
 ---
 
-class: middle center
+class: middle
 
-![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)
+# Thank you!
+
+.img-fixed-right[![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)]
 
 ---
 
-class: middle center
+class: middle
 
-![Not so fast](https://media1.tenor.com/m/UB_adCAGhUQAAAAd/baby-cute.gif)
+# .tc-underline[Not so fast!]
+
+.img-fixed-right[![Not so fast](https://media1.tenor.com/m/UB_adCAGhUQAAAAd/baby-cute.gif)]
 
 ---
 
@@ -92,7 +96,7 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Speculative Performance]]
+.font-size-3[👉 .weight-700.tc-underline[Speculative Performance]]
 
 --
 
@@ -106,7 +110,7 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Highly Specialized]]
+.font-size-3[👉 .weight-700.tc-underline[Highly Specialized]]
 
 --
 
@@ -114,7 +118,7 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Fragility]]
+.font-size-3[👉 .weight-700.tc-underline[Fragility]]
 
 --
 
@@ -124,7 +128,7 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Caching]]
+.font-size-3[👉 .weight-700.tc-underline[Caching]]
 
 --
 
@@ -132,7 +136,7 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Resiliency]]
+.font-size-3[👉 .weight-700.tc-underline[Resiliency]]
 
 --
 
@@ -140,7 +144,7 @@ class: middle
 
 ---
 
-.font-size-3[👉 .weight-700.custom-underline[Maintainability]]
+.font-size-3[👉 .weight-700.tc-underline[Maintainability]]
 
 --
 
@@ -148,7 +152,7 @@ class: middle
 
 ---
 
-## .custom-underline[Challenges]
+## .tc-underline[Challenges]
 
 |                            | Workarounds |
 | -------------------------- | :---------: |
@@ -177,7 +181,7 @@ class:middle center
 
 class: middle
 
-# .custom-underline[Without Constraints]
+# .tc-underline[Without Constraints]
 
 .img-fixed-right[![Busy Road](https://media.tenor.com/jOqY21jgeuYAAAAM/traffic-jam-unlined-vehicles.gif)]
 
@@ -195,7 +199,7 @@ class: middle
 
 class: center middle
 
-## .block.center[.font-size-5[🕊️ .weight-700.custom-underline[Resolver] 🕊️]]
+## .block.center[.font-size-5[🕊️ .weight-700.tc-underline[Resolver] 🕊️]]
 
 "Conformance requirements expressed as algorithms can be fulfilled by an implementation of this specification .tc-highlight[in any way] as long as the perceived result is equivalent."
 
@@ -205,9 +209,9 @@ class: middle
 
 .font-grey[Step 1]
 
-## ✋ .weight-700.custom-underline[Avoid Business Logic]
+## ✋ .weight-700.tc-underline[Avoid Business Logic]
 
-## 👍 .weight-700.custom-underline[Allow only Orchestration Logic]
+## 👍 .weight-700.tc-underline[Allow only Orchestration Logic]
 
 ---
 
@@ -215,9 +219,9 @@ class: middle
 
 .font-grey[Step 2]
 
-## 🙅‍♂️ .weight-700.custom-underline[Handwritten Resolver]
+## 🙅‍♂️ .weight-700.tc-underline[Handwritten Resolver]
 
-## 🤔 .weight-700.custom-underline[Declarative Approach]
+## 🤔 .weight-700.tc-underline[Declarative Approach]
 
 ---
 
@@ -225,7 +229,7 @@ class: middle
 
 .font-grey[Step 3]
 
-.font-size-3[🤔 .weight-700.custom-underline[Learn from SQL]]
+.font-size-3[🤔 .weight-700.tc-underline[Learn from SQL]]
 
 .size-25[![Apache Calcite](https://calcite.apache.org/img/logo.svg)]
 
@@ -235,7 +239,7 @@ class:middle
 
 ## .font-grey[Part 4]
 
-# .custom-underline[Generalized Runtime for GraphQL]
+# .tc-underline[Generalized Runtime for GraphQL]
 
 ---
 
@@ -248,7 +252,7 @@ class: middle center flex-col
 class: middle flex-row
 
 .col-60[
-.custom-underline[## GraphQL Schema 👉]
+.tc-underline[## GraphQL Schema 👉]
 ]
 .col-40[
 
@@ -283,7 +287,7 @@ type User {
 class: middle flex-row
 
 .col-40[
-.custom-underline[## Annotate 👉]
+.tc-underline[## Annotate 👉]
 ]
 .col-60[
 
@@ -331,13 +335,13 @@ type User {
 
 --
 
-.block.center[.font-size-4[🎨 .weight-700.custom-underline[Router]]]
+.block.center[.font-size-4[🎨 .weight-700.tc-underline[Router]]]
 
 ---
 
 class: middle flex-row
 
-## .custom-underline[Equivalent Javascript Code]
+## .tc-underline[Equivalent Javascript Code]
 
 .img-fixed-right[![JS Version](./img/js-graphql-server.png)]
 
@@ -349,7 +353,7 @@ class: middle
 
 ---
 
-# .custom-underline[Initialization]
+# .tc-underline[Initialization]
 
 - Read the configuration
 
@@ -371,7 +375,7 @@ class: middle
 
 ---
 
-## .custom-underline[Revisiting the Challenges]
+## .tc-underline[Revisiting the Challenges]
 
 |                       |  Before   | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
 | --------------------- | :-------: | :--------------------------------------------------: |
@@ -391,11 +395,11 @@ class: middle
 
 .font-size-3.weight-500[Built with 💗 using]
 
-.font-size-3.weight-500.custom-underline[Apache 2.0 License]
+.font-size-3.weight-500.tc-underline[Apache 2.0 License]
 
 ---
 
-## .custom-underline[Awesome Community 🙌]
+## .tc-underline[Awesome Community 🙌]
 
 ## ![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
 
@@ -413,7 +417,7 @@ class: middle
 
 class: middle
 
-## .custom-underline[Takeaway]
+## .tc-underline[Takeaway]
 
 1. Innovation on GraphQL performance is necessary.
 
@@ -425,7 +429,7 @@ class: middle
 
 class: middle
 
-## .custom-underline[Official Introduction]
+## .tc-underline[Official Introduction]
 
 1. Founder of Tailcall
 
@@ -453,7 +457,7 @@ class: flex-row middle
 
 .col-60[
 
-# .custom-underline[\#TailcallHack]
+# .tc-underline[\#TailcallHack]
 
 - Build the GraphQL Server
 

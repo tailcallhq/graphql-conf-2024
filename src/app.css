@@ -149,12 +149,12 @@ body {
   }
 }
 
-.custom-underline {
+.tc-underline {
   position: relative;
   display: inline-block;
 }
 
-.custom-underline::after {
+.tc-underline::after {
   content: "";
   position: absolute;
   left: 0rem;
