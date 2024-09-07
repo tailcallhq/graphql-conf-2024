@@ -119,6 +119,12 @@ body {
   flex-direction: column;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-top {
   justify-content: flex-start;
 }
@@ -161,6 +167,10 @@ body {
   left: 0rem;
   bottom: -1rem;
   width: 18%;
+  border-bottom: 6px solid #fdea2e;
+}
+
+.underline {
   border-bottom: 6px solid #fdea2e;
 }
 
@@ -340,3 +350,18 @@ img {
     left: 0 !important;
   }
 }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0.6em 0;
+}
+
+.remark-slide-content {
+  table, pre {
+    width: 95%;
+  }
+}
+
+

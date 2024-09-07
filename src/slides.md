@@ -10,7 +10,9 @@ GraphQL Conf 2024
 
 class: middle
 
-# Who am I?
+# whoami
+
+## Tushar Mathur
 
 - GraphQL Enthusiast
 
@@ -48,7 +50,7 @@ class: middle
 
 --
 
-.block.center[GraphQL as Client Abstraction]
+.block.center[GraphQL as .tc-underline[Client-side abstraction] ]
 
 ---
 
@@ -92,61 +94,47 @@ class: middle
 
 ## .font-grey[Part 2]
 
-# Challenges
+# .tc-underline[Challenges]
 
 ---
 
-.font-size-3[👉 .weight-700.tc-underline[Speculative Performance]]
+# 1. .tc-underline[Performance]
 
 --
 
-.font-size-3[🚀] .font-grey[End-to-End]
+## 🚀 .font-grey[End-to-End]
 
-.font-size-3[💔] .font-grey[Internal]
+## 💔 .font-grey[Internal]
 
---
+## 👍 .font-grey[Benchmarking Infrastructure]
 
-.font-size-3[🏭] .font-grey[Benchmarking Infrastructure]
+## 👍 .font-grey[Caching on Upstream]
 
 ---
 
-.font-size-3[👉 .weight-700.tc-underline[Highly Specialized]]
+# 2. .tc-underline[Reliability]
 
 --
 
-.font-size-3[🎯] .font-grey[Dedicated Team]
+## 🌀 .font-grey[Processes]
+
+## 🧪 .font-grey[Testing Infrastructure]
+
+## 🛡️ .font-grey[API Gateway]
 
 ---
 
-.font-size-3[👉 .weight-700.tc-underline[Fragility]]
+# 3. .tc-underline[Maintainability]
 
---
+❓ Library Upgrades
 
-.font-size-3[🌀] .font-grey[Processes]
+❓ Unused Nodes
 
-.font-size-3[🧪] .font-grey[Testing Infrastructure]
+❓ Data Loaders
 
----
+❓ Breaking Changes
 
-.font-size-3[👉 .weight-700.tc-underline[Caching]]
-
---
-
-.font-size-3[⚡] .font-grey[On Services]
-
----
-
-.font-size-3[👉 .weight-700.tc-underline[Resiliency]]
-
---
-
-.font-size-3[🛡️] .font-grey[API Gateway]
-
----
-
-class:middle
-
-# 👉 .weight-700.tc-underline[Maintainability]
+❓ ...
 
 --
 
@@ -154,16 +142,15 @@ class:middle
 
 ---
 
-## .tc-underline[Challenges]
+class: middle
 
-|                            | Workarounds |
-| -------------------------- | :---------: |
-| 1. Speculative Performance |    ⭐️✩✩    |
-| 2. Highly Specialized      |     ✩✩✩     |
-| 3. Fragile                 |    ⭐️✩✩    |
-| 4. Caching                 |    ⭐️✩✩    |
-| 5. Resiliency              |    ⭐️✩✩    |
-| 6. Maintenance             |     ✩✩✩     |
+## .tc-underline[Challenges & Workarounds]
+
+|             |       |
+| :---------- | :---: |
+| Performance | ⭐️✩✩ |
+| Reliability | ⭐️✩✩ |
+| Maintenance |  ✩✩✩  |
 
 ---
 
@@ -183,15 +170,21 @@ class:middle center
 
 class: middle
 
-# .tc-underline[Without Constraints]
-
---
+# .tc-underline[Liberties]
 
 .img-fixed-right[![Busy Road](https://media.tenor.com/jOqY21jgeuYAAAAM/traffic-jam-unlined-vehicles.gif)]
 
 ---
 
-# GraphQL
+class: middle
+
+# .tc-underline[Constraints]
+
+.center[![High Speed Highway](https://media1.tenor.com/m/14tctLeQlj8AAAAC/highway-chrissy-metz.gif)]
+
+---
+
+# .tc-underline[GraphQL]
 
 ## 1. Schema
 
@@ -225,7 +218,7 @@ class: middle
 
 ## 🙅‍♂️ .weight-700.tc-underline[Handwritten Resolver]
 
-## 🤔 .weight-700.tc-underline[Declarative Approach]
+## 🤔 .weight-700.tc-underline[Configuration Based]
 
 ---
 
@@ -235,7 +228,7 @@ class: middle
 
 .font-size-3[🤔 .weight-700.tc-underline[Learn from SQL]]
 
-.size-25[![Apache Calcite](https://calcite.apache.org/img/logo.svg)]
+.size-30[![Apache Calcite](https://calcite.apache.org/img/logo.svg)]
 
 ---
 
@@ -255,10 +248,9 @@ class: middle center flex-col
 
 class: middle flex-row
 
-.col-60[
-.tc-underline[## GraphQL Schema 👉]
-]
-.col-40[
+## .tc-underline[GraphQL Schema 👉]
+
+.right-50[
 
 ```graphql
 schema {
@@ -288,12 +280,11 @@ type User {
 
 ---
 
-class: middle flex-row
+class: middle
 
-.col-40[
-.tc-underline[## Annotate 👉]
-]
-.col-60[
+## .tc-underline[Annotate 👉]
+
+.right-50[
 
 ```graphql
 schema @upstream(baseURL: "https://api.d11.local") {
@@ -371,25 +362,22 @@ class: middle
 
 ## .tc-underline[100 lines Javascript 👉]
 
---
-
 .img-fixed-right[![JS Version](./img/js-graphql-server.png)]
 
 ---
 
 class: middle
 
-|                       |  Before   | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
-| --------------------- | :-------: | :--------------------------------------------------: |
-| 1. Flexibility        | ⭐️⭐️⭐️ |                       ⭐️ ✩ ✩                        |
-| 2. Performance        |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
-| 3. Highly Specialized |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
-| 4. Fragile            |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
-| 5. Caching            |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
-| 6. Resiliency         |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
-| 7. Maintenance        |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
+# Revisiting the Challenges
 
-.center[Revisiting the Challenges]
+|                               |  Before   | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
+| ----------------------------- | :-------: | :--------------------------------------------------: |
+| 1. Performance                |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
+| 2. Reliability                |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
+| 3. Maintenance                |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
+| 4. .tc-underline[Flexibility] | ⭐️⭐️⭐️ |                       ⭐️ ✩ ✩                        |
+
+
 
 ---
 
@@ -405,7 +393,7 @@ class: middle
 
 ## .tc-underline[Awesome Community 🙌]
 
-## ![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
+![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
 
 .block.center.weight-500[Please Share Feedback!]
 
@@ -456,6 +444,8 @@ class: middle
 ## .tc-underline[Thank You! ❤️]
 
 &nbsp;
+
+## Tushar Mathur
 
 1. Founder of Tailcall
 
