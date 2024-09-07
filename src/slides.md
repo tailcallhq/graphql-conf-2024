@@ -76,7 +76,6 @@ class: middle
 
 class: middle
 
-
 # .block[Saved the day.]
 
 .img-fixed-right[![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)]
@@ -117,11 +116,13 @@ class: middle
 
 --
 
-## 🌀 .font-grey[Processes]
+## 🌀 .font-grey[Monolithic]
 
-## 🧪 .font-grey[Testing Infrastructure]
+## 🤷 .font-grey[Lack of Ownership]
 
-## 🛡️ .font-grey[API Gateway]
+##  ❌ .font-grey[Query Cost]
+
+## 🛡️ .font-grey[Rate Limiting & Circuit Breaking]
 
 ---
 
@@ -231,7 +232,9 @@ class: middle
 
 .font-size-3[🤔 .weight-700.tc-underline[Learn from SQL]]
 
-.size-30[![Apache Calcite](https://calcite.apache.org/img/logo.svg)]
+&nbsp;
+
+.size-50[![Apache Calcite](https://calcite.apache.org/img/logo.svg)]
 
 ---
 
@@ -379,8 +382,6 @@ class: middle
 | 2. Reliability                |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
 | 3. Maintenance                |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
 | 4. .tc-underline[Flexibility] | ⭐️⭐️⭐️ |                       ⭐️ ✩ ✩                        |
-
-
 
 ---
 
