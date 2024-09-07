@@ -48,7 +48,7 @@ class: middle
 
 --
 
-.block.center[{ Microservices + Apps }]
+.block.center[GraphQL as Client Abstraction]
 
 ---
 
