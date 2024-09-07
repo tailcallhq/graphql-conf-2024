@@ -76,7 +76,8 @@ class: middle
 
 class: middle
 
-# Thank you!
+
+# .block[Saved the day.]
 
 .img-fixed-right[![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)]
 
