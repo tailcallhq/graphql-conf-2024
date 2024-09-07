@@ -3,7 +3,6 @@ class: center middle
 .font-size-6.weight-700[
 Scaling GraphQL for .tc-underline[500,000,000] req/min
 ]
-
 GraphQL Conf 2024
 
 ---
@@ -50,7 +49,7 @@ class: middle
 
 --
 
-.block.center[GraphQL as .tc-underline[Client-side abstraction] ]
+.block.center[GraphQL as .tc-underline[client-side abstraction] ]
 
 ---
 
@@ -76,7 +75,7 @@ class: middle
 
 class: middle
 
-# .block[Saved the day.]
+# Saved the day...
 
 .img-fixed-right[![Relaxed Baby](https://media1.tenor.com/m/57Cq5qVvgTUAAAAC/lil-kid-chilling-chilling-on-couch.gif)]
 
@@ -104,9 +103,23 @@ class: middle
 
 ## 🚀 .font-grey[End-to-End]
 
+--
+
 ## 💔 .font-grey[Internal]
 
+--
+
+.right-50[
+.stat[
+.stat-item[\>50,000 .title[CORES]]
+]  
+]
+
+--
+
 ## 👍 .font-grey[Benchmarking Infrastructure]
+
+--
 
 ## 👍 .font-grey[Caching on Upstream]
 
@@ -118,9 +131,15 @@ class: middle
 
 ## 🌀 .font-grey[Monolithic]
 
+--
+
 ## 🤷 .font-grey[Lack of Ownership]
 
-##  ❌ .font-grey[Query Cost]
+--
+
+## ❌ .font-grey[Query Cost]
+
+--
 
 ## 🛡️ .font-grey[Rate Limiting & Circuit Breaking]
 
@@ -338,6 +357,25 @@ type User {
 
 --
 
+.right-50.operators[
+`@addField`
+`@cache`
+`@call`
+`@expr`
+`@graphQL`
+`@grpc`
+`@http`
+`@link`
+`@modify`
+`@omit`
+`@rest`
+`@server`
+`@telemetry`
+`@upstream`
+]
+
+--
+
 .block.center[.font-size-4[🎨 .weight-700.tc-underline[Router]]]
 
 ---
@@ -361,14 +399,6 @@ class: middle
 &nbsp;
 
 ![Query Engine](./img/query-engine.svg)
-
----
-
-class: middle
-
-## .tc-underline[100 lines Javascript 👉]
-
-.img-fixed-right[![JS Version](./img/js-graphql-server.png)]
 
 ---
 

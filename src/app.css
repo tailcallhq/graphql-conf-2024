@@ -151,7 +151,10 @@ body {
     font-family: "Space Mono";
     .title {
       color: rgb(253 234 46);
-      font-size: 1rem;
+      font-size: 0.3em;
+      text-transform: uppercase;
+      font-family: "Space Mono";
+      letter-spacing: 2px;
     }
   }
 }
@@ -359,9 +362,22 @@ h3 {
 }
 
 .remark-slide-content {
-  table, pre {
+  table,
+  pre {
     width: 95%;
   }
 }
 
-
+.operators p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  code {
+    padding: 2px;
+    color: #fdea2e;
+    width: 50%;
+    text-align: right;
+  }
+}
