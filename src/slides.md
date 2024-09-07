@@ -451,7 +451,7 @@ class: middle
 
 1. Founder of Tailcall
 
-2. Ex VP of Engineering at Dream11
+2. Ex VP of Engineering at Dream11 (2016-2022)
 
 .flex-row[
 
