@@ -329,7 +329,7 @@ type User {
 
 ---
 
-# First Class Support
+# .tc-underline[First Class Support]
 
 - REST
 
@@ -345,7 +345,9 @@ type User {
 
 class: middle flex-row
 
-## .tc-underline[Equivalent Javascript Code]
+## .tc-underline[Javascript 👉]
+
+--
 
 .img-fixed-right[![JS Version](./img/js-graphql-server.png)]
 
