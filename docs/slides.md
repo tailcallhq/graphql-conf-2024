@@ -399,7 +399,7 @@ class: middle
 
 ## Start the server
 
-<pre style="👉color: #FFFFFF;font-size:0.8em;">
+<pre style="color: #FFFFFF;font-size:0.8em;line-height:1.2em;">
 ❯ <span style="color: #00FF00;">tailcall</span> start config.graphql
   <span style="color: #00FF00;">INFO</span> File read: jsonplaceholder.graphql ... ok
   <span style="color: #00FF00;">INFO</span> N + 1 detected: 1
@@ -456,7 +456,7 @@ class: middle
 
 # .tc-underline[AOT Analyzer]
 
-<pre style="color: #FFFFFF;margin-left:-8%;">
+<pre style="color: #FFFFFF;margin-left:-8%;line-height:1.2em;">
   ❯ <span style="color: #00FF00;">tailcall</span> start config.graphql
     <span style="color: #00FF00;">INFO</span> File read: config.graphql ... ok
     <span style="color: #00FF00;">INFO</span> N + 1 detected: 1

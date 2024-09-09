@@ -1,5 +1,5 @@
 # Get Started
 
 ```
-npx live-server src
+npx live-server docs
 ```
