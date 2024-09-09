@@ -11,7 +11,7 @@ class: middle
 
 # whoami
 
-## Tushar Mathur
+## .tc-underline[Tushar Mathur]
 
 - GraphQL Enthusiast
 
@@ -33,9 +33,11 @@ class: middle
 
 # 2016 Dream11
 
-- Fantasy Gaming Platform
+- .tc-underline[Fantasy Gaming Platform]
 
-- Monolith to Microservices
+- .tc-underline[Early Stage]
+
+- .tc-underline[Monolith to Microservices Considerable Scale]
 
 --
 
@@ -43,7 +45,7 @@ class: middle
 
 ---
 
-## .tc-underline[Architecture]
+## Architecture
 
 .block.center[.size-75[![Architecture](./img/architecture.svg)]]
 
@@ -68,6 +70,8 @@ class: middle
 ]
 
 --
+
+<!-- Key Point -->
 
 ## .block.center[.font-size-5[🙌 .weight-700.tc-underline[GraphQL]]]
 
@@ -101,27 +105,45 @@ class: middle
 
 --
 
-## 🚀 .font-grey[End-to-End]
+## 👍 .font-grey[Latency & Throughput]
 
 --
 
-## 💔 .font-grey[Internal]
+## 👎 .font-grey[Infrastructure]
 
 --
 
-.right-50[
-.stat[
-.stat-item[\>50,000 .title[CORES]]
-]  
+<!-- ## .block.center[.font-size-5[🙌 .weight-700.tc-underline[50,000]]] -->
+
+.stat.font-size-3[
+.stat-item[\>50,000 .title[CORES]]  
 ]
 
+---
+
+## Things that .tc-underline[worked] for us
+
 --
 
-## 👍 .font-grey[Benchmarking Infrastructure]
+👉 .font-grey[Micro Optimizations]
 
 --
 
-## 👍 .font-grey[Caching on Upstream]
+👉 .font-grey[Error Thresholds]
+
+--
+
+👉 .font-grey[Benchmarking]
+
+--
+
+👉 .font-grey[Caching on Upstream]
+
+--
+
+<!-- Key Point -->
+
+.block.center[.font-size-5[🚨 .weight-700.tc-underline[High Priority]]]
 
 ---
 
@@ -129,19 +151,35 @@ class: middle
 
 --
 
-## 🌀 .font-grey[Monolithic]
+## 👎 .font-grey[Fragile]
 
 --
 
-## 🤷 .font-grey[Lack of Ownership]
+## 👎 .font-grey[Lack of Ownership]
 
 --
 
-## ❌ .font-grey[Query Cost]
+## 👎 .font-grey[Resiliency]
+
+---
+
+## Things that .tc-underline[worked] for us
 
 --
 
-## 🛡️ .font-grey[Rate Limiting & Circuit Breaking]
+👉 .font-grey[Micro-optimizing Cold Paths]
+
+--
+
+👉 .font-grey[Rate Limiting & Circuit Breaking]
+
+--
+
+&nbsp;
+
+<!-- Key Point -->
+
+.block.center[.font-size-5[❌ .weight-700.tc-underline[Query Cost]]]
 
 ---
 
@@ -149,15 +187,17 @@ class: middle
 
 --
 
-❓ Library Upgrades
+## 👎 .font-grey[Monolith]
 
-❓ Unused Nodes
+❓ .font-grey[Library Upgrades]
 
-❓ Data Loaders
+❓ .font-grey[Unused Nodes]
 
-❓ Breaking Changes
+❓ .font-grey[Data Loaders]
 
-❓ ...
+❓ .font-grey[Breaking Changes]
+
+❓ .font-grey[...]
 
 --
 
@@ -167,13 +207,13 @@ class: middle
 
 class: middle
 
-## .tc-underline[Challenges & Workarounds]
+# .tc-underline[Challenges & Workarounds]
 
-|             |       |
-| :---------- | :---: |
-| Performance | ⭐️✩✩ |
-| Reliability | ⭐️✩✩ |
-| Maintenance |  ✩✩✩  |
+|                |       |
+| :------------- | :---: |
+| 1. Performance | ⭐️✩✩ |
+| 2. Reliability | ⭐️✩✩ |
+| 3. Maintenance |  ✩✩✩  |
 
 ---
 
@@ -261,13 +301,23 @@ class:middle
 
 ## .font-grey[Part 4]
 
-# .tc-underline[Generalized Runtime for GraphQL]
+# .tc-underline[Generalized] Runtime for GraphQL
 
 ---
 
 class: middle center flex-col
 
 .invert[![Tailcall Logo](./img/taicall.svg)]
+
+---
+
+class: middle
+
+.invert.right-50.rust-logo[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
+
+.font-size-3.weight-500[Built with 💗 using]
+
+.font-size-3.weight-500.tc-underline[Apache 2.0 License]
 
 ---
 
@@ -357,7 +407,7 @@ type User {
 
 --
 
-.right-50.operators[
+.operators[
 `@addField`
 `@cache`
 `@call`
@@ -376,27 +426,29 @@ type User {
 
 --
 
-.block.center[.font-size-4[🎨 .weight-700.tc-underline[Router]]]
+.block.center[.font-size-4[💪 .weight-700.tc-underline[Router]]]
 
 ---
 
 class: middle
 
+.font-grey[Constraints that Liberate]
+
 # .tc-underline[2 Key Capabilities]
 
 ---
 
-# .tc-underline[AOT Analyzer]
+class: middle
 
-&nbsp;
+# .tc-underline[AOT Analyzer]
 
 ![Tailcall Start](./img/tailcall-error.png)
 
 ---
 
-# .tc-underline[JIT Optimizer]
+class:middle
 
-&nbsp;
+# .tc-underline[JIT Optimizer]
 
 ![Query Engine](./img/query-engine.svg)
 
@@ -412,16 +464,6 @@ class: middle
 | 2. Reliability                |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
 | 3. Maintenance                |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
 | 4. .tc-underline[Flexibility] | ⭐️⭐️⭐️ |                       ⭐️ ✩ ✩                        |
-
----
-
-class: middle
-
-.invert.right-50.rust-logo[![Rust Logo](https://www.rust-lang.org/logos/rust-logo-blk.svg)]
-
-.font-size-3.weight-500[Built with 💗 using]
-
-.font-size-3.weight-500.tc-underline[Apache 2.0 License]
 
 ---
 
@@ -475,9 +517,7 @@ class: flex-row middle
 
 class: middle
 
-## .tc-underline[Thank You! ❤️]
-
-&nbsp;
+# .center[.tc-underline[Thank You! ❤️]]
 
 ## Tushar Mathur
 

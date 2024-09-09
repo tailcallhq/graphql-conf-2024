@@ -172,7 +172,7 @@ body {
   top: 1.2em;
   height: 8px;
   width: 18%;
-  background-color:  #fdea2e;
+  background-color: #fdea2e;
 }
 
 .underline {
@@ -376,10 +376,17 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  padding: 1em;
+  max-width: 50%;
   code {
     padding: 2px;
     color: #fdea2e;
     width: 50%;
     text-align: right;
+    font-size: 0.8em;
   }
 }
