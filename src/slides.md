@@ -277,7 +277,7 @@ class: middle
 
 .font-grey[Step 2]
 
-## 🙅‍♂️ .weight-700.tc-underline[Handwritten Resolver]
+## 🙅‍♂️ .weight-700.tc-underline[No Handwritten Resolver]
 
 ## 🤔 .weight-700.tc-underline[Configuration Based]
 
