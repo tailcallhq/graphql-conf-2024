@@ -397,7 +397,7 @@ type User {
 
 class: middle
 
-## Start the server
+## .tc-underline[Start the server]
 
 <pre style="color: #FFFFFF;font-size:0.8em;line-height:1.2em;">
 ❯ <span style="color: #00FF00;">tailcall</span> start config.graphql
@@ -405,7 +405,6 @@ class: middle
   <span style="color: #00FF00;">INFO</span> N + 1 detected: 1
   <span style="color: #00FF00;">INFO</span> 🚀 Tailcall launched at [127.0.0.1:8000] over HTTP/1.1
 </pre>
-
 
 ---
 
