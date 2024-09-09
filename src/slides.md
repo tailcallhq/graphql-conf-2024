@@ -448,7 +448,14 @@ class: middle
 
 # .tc-underline[AOT Analyzer]
 
-![Tailcall Start](./img/tailcall-error.png)
+<pre style="color: #FFFFFF;margin-left:-8%;">
+  ❯ <span style="color: #00FF00;">tailcall</span> start config.graphql
+    <span style="color: #00FF00;">INFO</span> File read: config.graphql ... ok
+    <span style="color: #00FF00;">INFO</span> N + 1 detected: 1
+    <span style="color: #FF0000;">ERROR</span> <span style="color: #FFFF00;">Invalid Configuration</span>
+    <span style="color: #AAAAAA;">Caused by:</span>
+      • <span style="color: #BFBFBF;">argument 'id' is a nullable type</span><span style="color: #00FFFF;"> [at Post.user]</span>  
+</pre>
 
 ---
 
