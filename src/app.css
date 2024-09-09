@@ -162,15 +162,17 @@ body {
 .tc-underline {
   position: relative;
   display: inline-block;
+  line-height: 1em;
 }
 
 .tc-underline::after {
   content: "";
   position: absolute;
   left: 0rem;
-  bottom: -1rem;
+  top: 1.2em;
+  height: 8px;
   width: 18%;
-  border-bottom: 6px solid #fdea2e;
+  background-color:  #fdea2e;
 }
 
 .underline {
