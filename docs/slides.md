@@ -129,7 +129,7 @@ class: middle
 
 --
 
-👉 .font-grey[Error Thresholds]
+👉 .font-grey[Infrastructure Tuning]
 
 --
 
