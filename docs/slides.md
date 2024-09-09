@@ -113,11 +113,7 @@ class: middle
 
 --
 
-<!-- ## .block.center[.font-size-5[🙌 .weight-700.tc-underline[50,000]]] -->
-
-.stat.font-size-3[
-.stat-item[\>50,000 .title[CORES]]  
-]
+.right-50[.flex.flex-center[.stat-item[50,000 .title[CORES]]]]
 
 ---
 
@@ -141,6 +137,10 @@ class: middle
 
 --
 
+.right-50[.flex.flex-center[.stat-item[6,400 .title[CORES]]]]
+
+--
+
 <!-- Key Point -->
 
 .block.center[.font-size-5[🚨 .weight-700.tc-underline[High Priority]]]
@@ -151,11 +151,9 @@ class: middle
 
 --
 
-## 👎 .font-grey[Fragile]
+## 👎 .font-grey[Fragility]
 
 --
-
-## 👎 .font-grey[Lack of Ownership]
 
 --
 
@@ -164,6 +162,10 @@ class: middle
 ---
 
 ## Things that .tc-underline[worked] for us
+
+--
+
+👉 .font-grey[Redefining Processes]
 
 --
 
@@ -195,6 +197,8 @@ class: middle
 
 ❓ .font-grey[Breaking Changes]
 
+❓ .font-grey[No Reusability]
+
 ❓ .font-grey[...]
 
 --
@@ -207,11 +211,11 @@ class: middle
 
 # .tc-underline[Summary]
 
-|                |       |
-| :------------- | :---: |
-| 1. Performance | ⭐️✩✩ |
-| 2. Reliability | ⭐️✩✩ |
-| 3. Maintenance |  ✩✩✩  |
+|                |         |
+| :------------- | :-----: |
+| 1. Performance | ⭐️⭐️✩ |
+| 2. Reliability | ⭐️⭐️✩ |
+| 3. Maintenance |   ✩✩✩   |
 
 ---
 

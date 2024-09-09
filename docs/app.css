@@ -140,22 +140,23 @@ body {
     margin: 0;
     box-sizing: border-box;
   }
-  .stat-item {
-    background-color: #1c1d1f;
-    padding: 0.2em 0.5em;
-    border-radius: 12px;
-    font-size: 1.5em;
-    display: flex;
-    box-sizing: content-box;
-    flex-direction: column;
+}
+
+.stat-item {
+  background-color: #1c1d1f;
+  padding: 0.2em 0.5em;
+  border-radius: 12px;
+  font-size: 1.5em;
+  display: flex;
+  box-sizing: content-box;
+  flex-direction: column;
+  font-family: "Space Mono";
+  .title {
+    color: rgb(253 234 46);
+    font-size: 0.3em;
+    text-transform: uppercase;
     font-family: "Space Mono";
-    .title {
-      color: rgb(253 234 46);
-      font-size: 0.3em;
-      text-transform: uppercase;
-      font-family: "Space Mono";
-      letter-spacing: 2px;
-    }
+    letter-spacing: 2px;
   }
 }
 
