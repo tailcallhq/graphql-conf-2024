@@ -187,8 +187,6 @@ class: middle
 
 --
 
-## 👎 .font-grey[Monolith]
-
 ❓ .font-grey[Library Upgrades]
 
 ❓ .font-grey[Unused Nodes]
@@ -207,7 +205,7 @@ class: middle
 
 class: middle
 
-# .tc-underline[Challenges & Workarounds]
+# .tc-underline[Summary]
 
 |                |       |
 | :------------- | :---: |
@@ -319,6 +317,14 @@ class: middle
 
 .font-size-3.weight-500.tc-underline[Apache 2.0 License]
 
+.font-size-3.weight-500[High Performance]
+
+---
+
+class: middle
+
+# How does it work?
+
 ---
 
 class: middle flex-row
@@ -407,7 +413,7 @@ type User {
 
 --
 
-.operators[
+.operators.right-50[
 `@addField`
 `@cache`
 `@call`
@@ -467,11 +473,9 @@ class: middle
 
 ---
 
-## .tc-underline[Awesome Community 🙌]
+## .tc-underline[Awesome] Community 🙌
 
-![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)
-
-.block.center.weight-500[Please Share Feedback!]
+.center[![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)]
 
 ---
 
@@ -485,13 +489,13 @@ class: middle
 
 class: middle
 
-## .tc-underline[Takeaway]
+## Takeaway
 
-1. Innovation on GraphQL performance is necessary.
+1. Innovation on GraphQL .tc-underline[performance] is necessary.
 
-2. Handwritten GraphQL is difficult to maintain.
+2. .tc-underline[Handwritten] GraphQL is difficult to maintain.
 
-3. Library authors should take inspiration from SQL engines.
+3. Library authors should take inspiration from .tc-underline[SQL engines].
 
 ---
 
