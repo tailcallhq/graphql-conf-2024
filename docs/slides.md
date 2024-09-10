@@ -27,7 +27,7 @@ class: middle
 
 ## .font-grey[Part 1]
 
-# GraphQL Journey
+# .tc-underline[GraphQL Journey]
 
 ---
 
@@ -223,7 +223,7 @@ class: middle
 
 ## .font-grey[Part 3]
 
-# Learnings of 8 Years
+# .tc-underline[Learnings of 8 Years]
 
 ---
 
@@ -465,7 +465,7 @@ class: middle
     <span style="color: #00FF00;">INFO</span> N + 1 detected: 1
     <span style="color: #FF0000;">ERROR</span> <span style="color: #FFFF00;">Invalid Configuration</span>
     <span style="color: #AAAAAA;">Caused by:</span>
-      • <span style="color: #BFBFBF;">argument 'id' is a nullable type</span><span style="color: #00FFFF;"> [at Post.user]</span>  
+    • <span style="color: #BFBFBF;">argument 'id' is a nullable type</span><span style="color: #00FFFF;"> [at Query.args.id]</span>  
 </pre>
 
 ---
