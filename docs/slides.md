@@ -405,8 +405,7 @@ class: middle
 
 <pre style="color: #FFFFFF;font-size:0.8em;line-height:1.2em;">
 ❯ <span style="color: #00FF00;">tailcall</span> start config.graphql
-  <span style="color: #00FF00;">INFO</span> File read: jsonplaceholder.graphql ... ok
-  <span style="color: #00FF00;">INFO</span> N + 1 detected: 1
+  <span style="color: #00FF00;">INFO</span> File read: config.graphql ... ok  
   <span style="color: #00FF00;">INFO</span> 🚀 Tailcall launched at [127.0.0.1:8000] over HTTP/1.1
 </pre>
 
@@ -484,8 +483,8 @@ class: middle
 
 |                               |  Before   | .invert.size-50[![tailcall logo](./img/taicall.svg)] |
 | ----------------------------- | :-------: | :--------------------------------------------------: |
-| 1. Performance                |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
-| 2. Reliability                |   ⭐️✩✩   |                      ⭐️⭐️⭐️                       |
+| 1. Performance                |  ⭐️⭐️✩  |                      ⭐️⭐️⭐️                       |
+| 2. Reliability                |  ⭐️⭐️✩  |                      ⭐️⭐️⭐️                       |
 | 3. Maintenance                |    ✩✩✩    |                      ⭐️⭐️⭐️                       |
 | 4. .tc-underline[Flexibility] | ⭐️⭐️⭐️ |                       ⭐️ ✩ ✩                        |
 
@@ -517,23 +516,23 @@ class: middle
 
 ---
 
-class: flex-row middle
-
 .col-60[
 
 # .tc-underline[\#TailcallHack]
 
 - Build the GraphQL Server
 
-- 2,000 USD Prize
-
 - Checkout - tailcallhq/hackathon
 
 ]
 
-.col-40.center[
-.middle.size-50[![Tailcall Hack](./img/hackathon-repo-qr.png)]
+.right-50[
+.size-50.flex-row.flex-center[![Tailcall Hack](./img/hackathon-repo-qr.png)]
 ]
+
+&nbsp;
+
+## .block[.font-size-5[$ .weight-700.tc-underline[5,000]]]
 
 ---
 
