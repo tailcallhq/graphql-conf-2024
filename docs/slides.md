@@ -195,9 +195,9 @@ class: middle
 
 ❓ .font-grey[Data Loaders]
 
-❓ .font-grey[Breaking Changes]
+❓ .font-grey[Unimplemented Resolver]
 
-❓ .font-grey[No Reusability]
+❓ .font-grey[Code Duplication]
 
 ❓ .font-grey[...]
 
