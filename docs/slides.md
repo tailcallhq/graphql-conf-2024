@@ -112,7 +112,7 @@ class: middle
 
 --
 
-.right-50[.flex.flex-center[.stat-item[50,000 .title[CORES]]]]
+.flex.flex-center[.stat-item[50,000 .title[CORES]]]
 
 ---
 
