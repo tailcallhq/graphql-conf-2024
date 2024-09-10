@@ -518,9 +518,9 @@ class: middle
 
 .col-60[
 
-# .tc-underline[\#TailcallHack]
+# \#TailcallHack
 
-- Build the GraphQL Server
+- Build the .tc-underline[fastest] GraphQL Server
 
 - Checkout - tailcallhq/hackathon
 
