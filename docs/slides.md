@@ -3,7 +3,6 @@ class: center middle
 .font-size-6.weight-700[
 Scaling GraphQL for .tc-underline[500,000,000] req/min
 ]
-GraphQL Conf 2024
 
 ---
 
