@@ -1,47 +1,69 @@
-name: Convert MD to PDF
+name: CI
 
 on:
   push:
     branches:
       - main
-
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  convert-webpage:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
       - name: Install dependencies
         run: |
           npm install puppeteer
-          npm install live-server
 
-      - name: Start live-server to serve the webpage
+      - name: Set up Rust
+        uses: actions/setup-rust@v1
+        with:
+          rust-version: stable
+
+      - name: Install dependencies
         run: |
-          npx live-server docs &
-          sleep 5
+          # Install hxn using Cargo
+          cargo install hxn
 
-      - name: Convert webpage to PDF using puppeteer
+      - name: Start the docs server
+        run: |
+          npx live-server docs
+          sleep 2
+
+      - name: Generate URLs
         run: |
           node -e "
-            const puppeteer = require('puppeteer');
-            (async () => {
-              const browser = await puppeteer.launch();
-              const page = await browser.newPage();
-              await page.goto('http://localhost:8080/#', { waitUntil: 'networkidle2' });
-              await page.pdf({ path: 'docs/slides.pdf', format: 'A4' });
-              await browser.close();
-            })();
-          "
+          const puppeteer = require('puppeteer');
+          (async () => {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+            await page.goto('http://localhost:8080');
+            const numberOfPages = await page.evaluate(() => {
+              return document.querySelectorAll('.remark-slide').length;
+            });
+            const urls = Array.from({ length: numberOfPages }, (_, i) => \`http://localhost:8080/#\${i + 1}\`).join('\\n');
+            require('fs').writeFileSync('urls.txt', urls);
+            await browser.close();
+          })();"
 
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: slides-pdf
-          path: docs/slides.pdf
-      - name: Artifact download link
+      - name: Run hxn on URLs
         run: |
-          echo "Download the PDF artifact from: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}#artifact"
+          while IFS= read -r url; do
+            hxn -b "/usr/bin/google-chrome" -u "$url"
+          done < urls.txt
+
+      - name: List hxnshots directory
+        run: |
+          # Print filenames in hxnshots directory
+          echo "Files in hxnshots directory:"
+          ls -l hxnshots      
