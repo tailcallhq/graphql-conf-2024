@@ -37,7 +37,7 @@ jobs:
       - name: Start the docs server
         run: |
           npx live-server docs &
-          sleep 2
+          sleep 15
 
       - name: Generate URLs
         run: |
