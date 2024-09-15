@@ -1,4 +1,4 @@
-name: Convert Markdown to PDF
+name: Convert MD to PDF
 
 on:
   push:
@@ -9,20 +9,35 @@ on:
       - main
 
 jobs:
-  convert-markdown:
+  convert-webpage:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install marp-cli
+      - name: Install dependencies
         run: |
-          npm install -g @marp-team/marp-cli
+          npm install puppeteer
+          npm install live-server
 
-      - name: Convert Markdown to PDF
+      - name: Start live-server to serve the webpage
         run: |
-          marp docs/slides.md --pdf --output docs/slides.pdf
+          npx live-server docs &
+          sleep 5
+
+      - name: Convert webpage to PDF using puppeteer
+        run: |
+          node -e "
+            const puppeteer = require('puppeteer');
+            (async () => {
+              const browser = await puppeteer.launch();
+              const page = await browser.newPage();
+              await page.goto('http://localhost:8080/#', { waitUntil: 'networkidle2' });
+              await page.pdf({ path: 'docs/slides.pdf', format: 'A4' });
+              await browser.close();
+            })();
+          "
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v3
