@@ -1,0 +1,31 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  convert-markdown:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install marp-cli
+        run: |
+          npm install -g @marp-team/marp-cli
+
+      - name: Convert Markdown to PDF
+        run: |
+          marp docs/slides.md --pdf --output docs/slides.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: slides-pdf
+          path: docs/slides.pdf
