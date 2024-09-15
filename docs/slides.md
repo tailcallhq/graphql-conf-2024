@@ -18,8 +18,6 @@ class: middle
 
 - Passionate about DevEx
 
-.img-fixed-right[![Tushar Mathur](./img/profile-picture.jpg)]
-
 ---
 
 class: middle
