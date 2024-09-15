@@ -22,8 +22,8 @@ jobs:
           echo "Started live-server, waiting for it to initialize..."
           sleep 15
 
-      - name: Set up Docker
-        uses: docker/setup-buildx-action@v2
+      # - name: Set up Docker
+      #   uses: docker/setup-buildx-action@v2
 
       - name: Check if live-server is up
         run: |
@@ -33,9 +33,15 @@ jobs:
           done
           echo "live-server is up and running."
 
-      - name: Generate PDF with DeckTape
-        run: |
-          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark http://localhost:8080/ slides.pdf
+      # - name: Generate PDF with DeckTape
+      #   run: |
+      #     docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark http://localhost:8080/ slides.pdf
+
+      - name: Install
+        run: npm i -g decktape
+
+      - name: Generate PDF
+        run: decktape remark http://127.0.0.1:8080/ slides.pdf
 
       - name: Upload PDF as an artifact
         uses: actions/upload-artifact@v3
