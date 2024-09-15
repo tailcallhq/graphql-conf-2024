@@ -62,7 +62,21 @@ jobs:
         run: |
           ./gowitness file -f urls.txt
 
-      - name: List hxnshots directory
+      - name: Install imagemagick
         run: |
-          echo "SS:"
-          ls -l screenshots      
+          sudo apt-get install -y imagemagick
+
+      - name: Convert images to PDF
+        run: |
+          convert screenshots/*.png screenshots/output.pdf
+          echo "PDF created: screenshots/output.pdf"
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: slides-pdf
+          path: screenshots/output.pdf
+      - name: Print Actions run URL
+        run: |
+          echo "Download the artifact from: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
