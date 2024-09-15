@@ -39,21 +39,21 @@ jobs:
           chmod +x gowitness
           ./gowitness
 
-      - name: Generate URLs
-        run: |
-          node -e "
-          const puppeteer = require('puppeteer');
-          (async () => {
-            const browser = await puppeteer.launch();
-            const page = await browser.newPage();
-            await page.goto('http://localhost:8080');
-            const numberOfPages = await page.evaluate(() => {
-              return document.querySelectorAll('.remark-slide').length;
-            });
-            const urls = Array.from({ length: numberOfPages }, (_, i) => \`http://localhost:8080/#\${i + 1}\`).join('\\n');
-            require('fs').writeFileSync('urls.txt', urls);
-            await browser.close();
-          })();"
+#      - name: Generate URLs
+#        run: |
+#          node -e "
+#          const puppeteer = require('puppeteer');
+#          (async () => {
+#            const browser = await puppeteer.launch();
+#            const page = await browser.newPage();
+#            await page.goto('http://localhost:8080');
+#            const numberOfPages = await page.evaluate(() => {
+#              return document.querySelectorAll('.remark-slide').length;
+#            });
+#            const urls = Array.from({ length: numberOfPages }, (_, i) => \`http://localhost:8080/#\${i + 1}\`).join('\\n');
+#            require('fs').writeFileSync('urls.txt', urls);
+#            await browser.close();
+#          })();"
 
       - name: Print Urls
         run: |
