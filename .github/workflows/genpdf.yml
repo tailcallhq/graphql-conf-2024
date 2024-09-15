@@ -57,9 +57,7 @@ jobs:
 
       - name: Run hxn on URLs
         run: |
-          while IFS= read -r url; do
-            hxn -b "/usr/bin/google-chrome" -u "$url"
-          done < urls.txt
+          hxn -b "/usr/bin/google-chrome" -f urls.txt
 
       - name: List hxnshots directory
         run: |
