@@ -66,6 +66,11 @@ jobs:
         run: |
           sudo apt-get install -y imagemagick
 
+      - name: Adjust ImageMagick Policy
+        run: |
+          sudo sed -i '/<policy domain="coder" rights="none" pattern="PDF" \/>/d' /etc/ImageMagick-6/policy.xml
+
+
       - name: Convert images to PDF
         run: |
           convert screenshots/*.png screenshots/output.pdf
