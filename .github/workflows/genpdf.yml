@@ -32,12 +32,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # Install hxn using Cargo
           cargo install hxn
 
       - name: Start the docs server
         run: |
-          npx live-server docs
+          npx live-server docs &
           sleep 2
 
       - name: Generate URLs
