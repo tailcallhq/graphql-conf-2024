@@ -1,0 +1,28 @@
+name: Generate PDF Slides
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pdf-generation:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '21'
+      - name: Setup and generate PDF
+        run: |
+          npm i
+          npx -y live-server docs --port=8080 --quiet --no-browser &
+          while ! curl -s http://localhost:8080 > /dev/null; do sleep 1; done
+          node gen-pdf.js
+      - uses: actions/upload-artifact@v3
+        with:
+          name: presentation-slides
+          path: slides.pdf

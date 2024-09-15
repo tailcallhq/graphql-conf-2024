@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^23.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5"
+  }
+}
