@@ -25,19 +25,18 @@ jobs:
         run: |
           npm install puppeteer
 
-      - name: Set up Rust
-        uses: actions-rust-lang/setup-rust-toolchain@v1
-        with:
-          rust-version: stable
-
-      - name: Install dependencies
-        run: |
-          cargo install hxn
-
       - name: Start the docs server
         run: |
           npx live-server docs &
           sleep 15
+
+      - name: Install gowitness
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3-tools wget
+          wget https://github.com/sensepost/gowitness/releases/download/2.5.1/gowitness-2.5.1-linux-amd64
+          mv gowitness-2.5.1-linux-amd64 gowitness
+          chmod +x gowitness
 
       - name: Generate URLs
         run: |
@@ -60,10 +59,9 @@ jobs:
           cat urls.txt
       - name: Run hxn on URLs
         run: |
-          hxn -b "/usr/bin/google-chrome" -f urls.txt
+          ./gowitness file -f urls.txt
 
       - name: List hxnshots directory
         run: |
-          # Print filenames in hxnshots directory
-          echo "Files in hxnshots directory:"
-          ls -l hxnshots      
+          echo "SS:"
+          ls -l screenshots      
