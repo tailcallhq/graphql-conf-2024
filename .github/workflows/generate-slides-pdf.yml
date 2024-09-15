@@ -1,0 +1,36 @@
+name: Generate PDF Slides
+
+on:
+  push:
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start live-server
+        run: npx live-server docs
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v2
+
+      - name: Generate PDF with DeckTape
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark http://127.0.0.1:8080/ slides.pdf
+
+      - name: Upload PDF as an artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: slides-pdf
+          path: slides.pdf
