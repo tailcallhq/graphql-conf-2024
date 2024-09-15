@@ -17,14 +17,14 @@ jobs:
           node-version: "16"
 
       - name: Start live-server
-        run: npx live-server docs & sleep 20
+        run: npx live-server docs & sleep 10
 
       - name: Set up Docker
         uses: docker/setup-buildx-action@v2
 
       - name: Generate PDF with DeckTape
         run: |
-          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark http://127.0.0.1:8080/ slides.pdf
+          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark http://127.0.0.1:8080 slides.pdf
 
       - name: Upload PDF as an artifact
         uses: actions/upload-artifact@v3
