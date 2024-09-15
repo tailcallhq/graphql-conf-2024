@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+
 
 jobs:
   convert-webpage:
@@ -44,3 +42,6 @@ jobs:
         with:
           name: slides-pdf
           path: docs/slides.pdf
+      - name: Artifact download link
+        run: |
+          echo "Download the PDF artifact from: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}#artifact"
