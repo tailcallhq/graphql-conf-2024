@@ -57,7 +57,7 @@ jobs:
       - name: Print Urls
         run: |
           cat urls.txt
-      - name: Run hxn on URLs
+      - name: Run gowitness on URLs
         run: |
           ./gowitness file -f urls.txt
 
