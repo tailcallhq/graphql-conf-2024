@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate PDF with DeckTape
         run: |
-          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark http://127.0.0.1:8080/ slides.pdf
+          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark https://8080-mehulmathur-graphqlconf-kj3v57xe34c.ws-us116.gitpod.io/ slides.pdf
 
       - name: Upload PDF as an artifact
         uses: actions/upload-artifact@v3
