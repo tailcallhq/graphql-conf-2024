@@ -55,6 +55,9 @@ jobs:
             await browser.close();
           })();"
 
+      - name: Print Urls
+        run: |
+          cat urls.txt
       - name: Run hxn on URLs
         run: |
           hxn -b "/usr/bin/google-chrome" -f urls.txt
