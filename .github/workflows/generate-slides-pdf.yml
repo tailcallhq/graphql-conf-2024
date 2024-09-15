@@ -25,9 +25,17 @@ jobs:
       - name: Set up Docker
         uses: docker/setup-buildx-action@v2
 
+      - name: Check if live-server is up
+        run: |
+          echo "Waiting for live-server to start..."
+          until curl -s http://127.0.0.1:8080/ > /dev/null; do
+            sleep 1
+          done
+          echo "live-server is up and running."
+
       - name: Generate PDF with DeckTape
         run: |
-          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark https://8080-mehulmathur-graphqlconf-kj3v57xe34c.ws-us116.gitpod.io/ slides.pdf
+          docker run --rm -v ${{ github.workspace }}:/slides astefanutti/decktape remark http://localhost:8080/ slides.pdf
 
       - name: Upload PDF as an artifact
         uses: actions/upload-artifact@v3
