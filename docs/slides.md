@@ -10,7 +10,7 @@ class: middle
 
 # whoami
 
-.font-size-3.tc-underline[Tushar Mathur]
+## .tc-underline[Tushar Mathur]
 
 - GraphQL Enthusiast
 
@@ -22,7 +22,7 @@ class: middle
 
 class: middle
 
-.font-size-3.font-grey[Part 1]
+## .font-grey[Part 1]
 
 # .tc-underline[GraphQL Journey]
 
@@ -38,11 +38,11 @@ class: middle
 
 --
 
-.block.center[.font-size-5[🧐 .weight-700.tc-underline[GraphQL?]]]
+## .block.center[.font-size-5[🧐 .weight-700.tc-underline[GraphQL?]]]
 
 ---
 
-.font-size-3[Architecture]
+## Architecture
 
 .block.center[.size-75[![Architecture](./img/architecture.svg)]]
 
@@ -70,7 +70,7 @@ class: middle
 
 <!-- Key Point -->
 
-.block.center[.font-size-5[🙌 .weight-700.tc-underline[GraphQL]]]
+## .block.center[.font-size-5[🙌 .weight-700.tc-underline[GraphQL]]]
 
 ---
 
@@ -92,7 +92,7 @@ class: middle
 
 class: middle
 
-.font-size-3.font-grey[Part 2]
+## .font-grey[Part 2]
 
 # .tc-underline[Challenges]
 
@@ -102,11 +102,11 @@ class: middle
 
 --
 
- .font-grey.font-size-3[👍 Latency & Throughput]
+## 👍 .font-grey[Latency & Throughput]
 
 --
 
- .font-grey.font-size-3[👎 Infrastructure]
+## 👎 .font-grey[Infrastructure]
 
 --
 
@@ -114,7 +114,7 @@ class: middle
 
 ---
 
-.font-size-3[Things that .tc-underline[worked] for us]
+## Things that .tc-underline[worked] for us
 
 --
 
@@ -148,17 +148,17 @@ class: middle
 
 --
 
-.font-size-3[👎 .font-grey[Fragility]]
+## 👎 .font-grey[Fragility]
 
 --
 
 --
 
-.font-size-3[👎 .font-grey[Resiliency]]
+## 👎 .font-grey[Resiliency]
 
 ---
 
-.font-size-3[Things that .tc-underline[worked] for us]
+## Things that .tc-underline[worked] for us
 
 --
 
@@ -218,7 +218,7 @@ class: middle
 
 class: middle
 
-.font-size-3.font-grey[Part 3]
+## .font-grey[Part 3]
 
 # .tc-underline[Learnings of 8 Years]
 
@@ -226,7 +226,7 @@ class: middle
 
 class:middle center
 
-.block.center[.font-size-3[🕊️ .weight-700.tc-underline[Liberties Constraint and Constraints ] 🕊️]]
+.font-size-3.weight-700[🕊️ Liberties Constraint and Constraints Liberate🕊️]
 
 ---
 
@@ -248,17 +248,17 @@ class: middle
 
 # .tc-underline[GraphQL]
 
-.font-size-3[1. Schema]
+## 1. Schema
 
-.font-size-3[2. Query]
+## 2. Query
 
-.font-size-3[3. Resolver]
+## 3. Resolver
 
 ---
 
 class: center middle
 
-.block.center[.font-size-5[🕊️ .weight-700.tc-underline[Resolver] 🕊️]]
+## .block.center[.font-size-5[🕊️ .weight-700.tc-underline[Resolver] 🕊️]]
 
 ![GraphQL Spec Screenshot](./img/spec-screenshot.png)
 
@@ -268,9 +268,9 @@ class: middle
 
 .font-grey[Step 1]
 
-.font-size-3.weight-700[✋ .tc-underline[Avoid Business Logic]]
+## ✋ .weight-700.tc-underline[Avoid Business Logic]
 
-.font-size-3.weight-700[👍 .tc-underline[Allow only Orchestration Logic]]
+## 👍 .weight-700.tc-underline[Allow only Orchestration Logic]
 
 ---
 
@@ -278,9 +278,9 @@ class: middle
 
 .font-grey[Step 2]
 
-.font-size-3.weight-700[🙅‍♂️ .tc-underline[No Handwritten Resolver]]
+## 🙅‍♂️ .weight-700.tc-underline[No Handwritten Resolver]
 
-.font-size-3.weight-700[🤔 .tc-underline[Configuration Based]]
+## 🤔 .weight-700.tc-underline[Configuration Based]
 
 ---
 
@@ -298,7 +298,7 @@ class: middle
 
 class:middle
 
-.font-size-3.font-grey[Part 4]
+## .font-grey[Part 4]
 
 # .tc-underline[Generalized] Runtime for GraphQL
 
@@ -330,7 +330,7 @@ class: middle
 
 class: middle flex-row
 
-.font-size-3.tc-underline[GraphQL Schema 👉]
+## .tc-underline[GraphQL Schema 👉]
 
 .right-50[
 
@@ -364,7 +364,7 @@ type User {
 
 class: middle
 
-.font-size-3.tc-underline[Annotate 👉]
+## .tc-underline[Annotate 👉]
 
 .right-50[
 
@@ -398,7 +398,7 @@ type User {
 
 class: middle
 
-.font-size-3.tc-underline[Start the server]
+## .tc-underline[Start the server]
 
 <pre style="color: #FFFFFF;font-size:0.8em;line-height:1.2em;">
 ❯ <span style="color: #00FF00;">tailcall</span> start config.graphql
@@ -487,7 +487,7 @@ class: middle
 
 ---
 
-.font-size-3.tc-underline[Awesome] Community 🙌
+## .tc-underline[Awesome] Community 🙌
 
 .center[![Contributors](https://contrib.rocks/image?repo=tailcallhq/tailcall)]
 
@@ -495,7 +495,7 @@ class: middle
 
 class: middle
 
-.font-size-3.font-grey[Part 5]
+## .font-grey[Part 5]
 
 # Takeaway
 
@@ -503,7 +503,7 @@ class: middle
 
 class: middle
 
-.font-size-3[Takeaway]
+## Takeaway
 
 1. Innovation on GraphQL .tc-underline[performance] is necessary.
 
@@ -529,15 +529,15 @@ class: middle
 
 &nbsp;
 
-.block[.font-size-5[$ .weight-700.tc-underline[5,000]]]
+## .block[.font-size-5[$ .weight-700.tc-underline[5,000]]]
 
 ---
 
 class: middle
 
-.block.center[.font-size-5[.weight-700.tc-underline[Thank You!] ❤️]]
+# .center[.tc-underline[Thank You! ❤️]]
 
-.font-size-3[Tushar Mathur]
+## Tushar Mathur
 
 1. Founder of Tailcall
 
