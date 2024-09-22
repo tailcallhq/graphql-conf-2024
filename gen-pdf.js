@@ -1,6 +1,11 @@
 import puppeteer from "puppeteer";
+import util from "util";
+import { exec } from "child_process";
+
+const execPromise = util.promisify(exec);
 
 async function generatePDF() {
+  await execPromise("node preprocess-markdown.js");
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
