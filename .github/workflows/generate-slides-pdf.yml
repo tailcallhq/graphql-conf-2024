@@ -1,0 +1,48 @@
+name: Generate PDF Slides
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Start live-server
+        run: |
+          nohup npx live-server docs --port=8080 --quiet --no-browser > live-server.log 2>&1 &
+          echo "Started live-server, waiting for it to initialize..."
+          sleep 15
+
+      - name: Check if live-server is up
+        run: |
+          echo "Waiting for live-server to start..."
+          until curl -s http://127.0.0.1:8080/ > /dev/null; do
+            sleep 1
+          done
+          echo "live-server is up and running."
+
+      - name: Install Decktape
+        run: npm i -g decktape
+
+      - name: Generate PDF
+        run: decktape remark http://127.0.0.1:8080/ slides.pdf
+
+      - name: Upload PDF as an artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: slides-pdf
+          path: slides.pdf
