@@ -1,0 +1,65 @@
+name: Generate Slides PDF
+
+on:
+  push:
+    branches:
+      - main
+      - codex/**
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Start static slide server
+        run: |
+          npx -y live-server docs --host=127.0.0.1 --port=8080 --no-browser >/tmp/live-server.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8080 >/dev/null; then
+              exit 0
+            fi
+            sleep 2
+          done
+          cat /tmp/live-server.log
+          exit 1
+
+      - name: Render PDF with DeckTape
+        run: |
+          npx -y decktape --chrome-path "${CHROME_PATH}" automatic \
+            http://127.0.0.1:8080 \
+            graphql-conf-2024-slides.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphql-conf-2024-slides-pdf
+          path: graphql-conf-2024-slides.pdf
+          if-no-files-found: error
+
+      - name: Add workflow summary
+        run: |
+          {
+            echo "## Slides PDF"
+            echo
+            echo "Artifact: \`graphql-conf-2024-slides-pdf\`"
+            echo
+            echo "Download it from this workflow run's artifacts panel."
+          } >> "$GITHUB_STEP_SUMMARY"
