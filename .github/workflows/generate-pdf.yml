@@ -43,7 +43,10 @@ jobs:
 
       - name: Render PDF with DeckTape
         run: |
-          npx -y decktape --chrome-path "${CHROME_PATH}" automatic \
+          npx -y decktape \
+            --chrome-path "${CHROME_PATH}" \
+            --chrome-arg=--no-sandbox \
+            --chrome-arg=--disable-setuid-sandbox \
             http://127.0.0.1:8080 \
             graphql-conf-2024-slides.pdf
 
