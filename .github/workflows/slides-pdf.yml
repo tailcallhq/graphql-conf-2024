@@ -32,6 +32,9 @@ jobs:
       - name: Generate PDF
         run: npm run build:pdf
 
+      - name: Check PDF
+        run: npm run check:pdf
+
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:

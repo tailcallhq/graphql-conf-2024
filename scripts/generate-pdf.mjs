@@ -7,6 +7,7 @@ import { chromium } from "playwright";
 const rootDir = resolve(import.meta.dirname, "..");
 const docsDir = join(rootDir, "docs");
 const outputDir = join(rootDir, "dist");
+const outputName = "dist/graphql-conf-2024-slides.pdf";
 const outputFile = join(outputDir, "graphql-conf-2024-slides.pdf");
 const requestedPort = Number.parseInt(process.env.PDF_SERVER_PORT ?? "0", 10);
 let serverPort = requestedPort;
@@ -102,7 +103,7 @@ try {
     },
   });
 
-  console.log(`Generated ${outputFile}`);
+  console.log(`Generated ${outputName}`);
 } finally {
   await browser.close();
   await new Promise((resolveClose) => server.close(resolveClose));
