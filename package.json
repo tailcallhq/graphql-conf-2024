@@ -1,0 +1,13 @@
+{
+  "name": "graphql-conf-2024-slides",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:pdf": "node scripts/generate-pdf.mjs",
+    "check:pdf": "node scripts/check-pdf.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.59.1"
+  }
+}
