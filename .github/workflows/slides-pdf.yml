@@ -1,0 +1,39 @@
+name: Build slides PDF
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  export-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install tooling
+        run: npm install -g decktape http-server
+
+      - name: Export slides to PDF
+        run: |
+          mkdir -p artifacts
+          npx http-server docs -p 4188 -s >/tmp/http-server.log 2>&1 &
+          SERVER_PID=$!
+          trap "kill $SERVER_PID" EXIT
+          npx decktape --chrome-arg=--no-sandbox --chrome-arg=--disable-dev-shm-usage remark http://127.0.0.1:4188/index.html artifacts/slides.pdf
+          ls -lh artifacts/slides.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphql-conf-2024-slides-pdf
+          path: artifacts/slides.pdf
+          if-no-files-found: error
