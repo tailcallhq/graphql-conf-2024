@@ -1,0 +1,12 @@
+{
+  "name": "graphql-conf-2024",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pdf": "node ./scripts/generate-pdf.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.46.1"
+  }
+}
+
