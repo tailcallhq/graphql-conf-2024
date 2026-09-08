@@ -1,0 +1,36 @@
+name: Generate slides PDF
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        working-directory: scripts
+        run: npx playwright install --with-deps chromium
+
+      - name: Render slides to PDF
+        working-directory: scripts
+        run: node generate-pdf.mjs slides.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slides-pdf-${{ github.sha }}
+          path: scripts/slides.pdf
+          if-no-files-found: error
