@@ -1,6 +1,6 @@
 class: center middle
 
-.font-size-4.weight-700[
+.font-size-6.weight-700[
 Software Engineering of the .tc-underline[Future]
 ]
 
