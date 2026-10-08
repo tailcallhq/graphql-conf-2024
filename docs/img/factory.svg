@@ -1,27 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -30 1150 480" font-family="Space Mono, ui-monospace, Menlo, monospace">
-  <!-- Factory: users and alerts feed triage, a fleet of 30-40 harnesses pulls work peer to peer and autoscales, work ships, work passes a deployment pipeline before production; a self-improvement outer loop gathers signals from every system and tunes them. SMIL only, 12s master cycle -->
-  <defs><path id="u1" d="M120 95 H195"/><path id="u2" d="M120 155 H195"/><path id="u3" d="M120 215 H195"/><path id="u4" d="M120 275 H195"/><path id="bf" d="M400 162 H467"/><path id="fb" d="M467 192 H390"/><path id="fs" d="M677 162 H745"/><path id="pp" d="M870 165 H920"/><path id="so" d="M980 190 V330"/><path id="ob" d="M980 365 V385 Q980 400 965 400 H225 Q210 400 210 385 V280"/><path id="fm" d="M497 222 V325"/></defs>
+  <!-- Factory: users and alerts feed triage, a fleet of 30-40 harnesses pulls work peer to peer and autoscales, work ships, the fleet hands work to review, test, security, deploy and monitor; deploy ships to production; a self-improvement outer loop gathers signals from every system and tunes them. SMIL only, 12s master cycle -->
+  <defs><path id="w0" d="M677 162 H700 Q710 162 710 152 V70 Q710 60 720 60 H750"/><path id="w1" d="M677 162 H700 Q710 162 710 152 V122 Q710 112 720 112 H750"/><path id="w2" d="M677 162 H710 V164 H750"/><path id="w3" d="M677 162 H700 Q710 162 710 172 V206 Q710 216 720 216 H750"/><path id="w4" d="M677 162 H700 Q710 162 710 172 V258 Q710 268 720 268 H750"/><path id="dp" d="M860 216 H885 Q895 216 895 206 V175 Q895 165 905 165 H925"/><path id="u1" d="M120 95 H195"/><path id="u2" d="M120 155 H195"/><path id="u3" d="M120 215 H195"/><path id="u4" d="M120 275 H195"/><path id="bf" d="M400 162 H467"/><path id="fb" d="M467 192 H390"/><path id="so" d="M980 190 V330"/><path id="ob" d="M980 365 V385 Q980 400 965 400 H225 Q210 400 210 385 V280"/><path id="fm" d="M497 222 V325"/></defs>
   <g fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-dasharray="5 6" stroke-linecap="round">
     <use href="#u1"/>
     <use href="#u2"/>
     <use href="#u3"/>
     <use href="#u4"/>
     <use href="#bf"/>
+    <use href="#w0"/>
+    <use href="#w1"/>
+    <use href="#w2"/>
+    <use href="#w3"/>
+    <use href="#w4"/>
+    <use href="#dp"/>
     <use href="#fb"/>
-    <use href="#fs"/>
-    <use href="#pp"/>
     <use href="#so"/>
     <use href="#ob"/>
     <use href="#fm"/>
     <animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1s" repeatCount="indefinite"/>
   </g>
+  <circle r="5" fill="#f97316"><animateMotion dur="5s" begin="0.0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"><mpath href="#w0"/></animateMotion></circle>
+  <circle r="5" fill="#fff"><animateMotion dur="5s" begin="-1.0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"><mpath href="#w1"/></animateMotion></circle>
+  <circle r="5" fill="#f97316"><animateMotion dur="5s" begin="-2.0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"><mpath href="#w2"/></animateMotion></circle>
+  <circle r="5" fill="#fff"><animateMotion dur="5s" begin="-3.0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"><mpath href="#w3"/></animateMotion></circle>
+  <circle r="5" fill="#f97316"><animateMotion dur="5s" begin="-4.0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"><mpath href="#w4"/></animateMotion></circle>
+  <circle r="5" fill="#fff"><animateMotion dur="3s" begin="-1s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#dp"/></animateMotion></circle>
   <circle r="5" fill="#f97316"><animateMotion dur="4s" begin="-0.5s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#u1"/></animateMotion></circle>
   <circle r="5" fill="#f97316"><animateMotion dur="5s" begin="-2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#u2"/></animateMotion></circle>
   <circle r="5" fill="#f97316"><animateMotion dur="4.5s" begin="-3.5s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#u3"/></animateMotion></circle>
   <circle r="5" fill="#f97316"><animateMotion dur="5.5s" begin="-1.2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#u4"/></animateMotion></circle>
   <circle r="5" fill="#f97316"><animateMotion dur="2s" begin="-0.3s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#bf"/></animateMotion></circle>
   <circle r="5" fill="#fff"><animateMotion dur="2.4s" begin="-1.2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#fb"/></animateMotion></circle>
-  <circle r="5" fill="#fff"><animateMotion dur="3s" begin="-1s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#fs"/></animateMotion></circle>
   <circle r="5" fill="#fff"><animateMotion dur="4s" begin="-2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#so"/></animateMotion></circle>
   <circle r="5" fill="#ef4444"><animateMotion dur="12s" begin="-1s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#ob"/></animateMotion></circle>
   <circle r="5" fill="#fff"><animateMotion dur="3s" begin="-0.7s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#fm"/></animateMotion></circle>
@@ -165,11 +174,21 @@
   <rect x="915" y="320" width="130" height="50" rx="0" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1.5" opacity="0"><animate attributeName="opacity" values="0.8;0;0;0.8" keyTimes="0;0.1;0.97;1" dur="12s" begin="-1s" repeatCount="indefinite"/></rect>
   <g transform="translate(943.8 328) scale(0.667)" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9" /> <path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5" /> <circle cx="162" cy="9" r="2" /> <path d="M16.2 4.8c2 2 2.26 5.11.8 7.47" /> <path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1" /> <path d="M9.5 18h5" /> <path d="m8 22 4-11 4 11" /></g><text x="965.8" y="341" font-size="14" font-weight="700" fill="#ef4444">Alerts</text>
   <text x="980" y="361" text-anchor="middle" font-size="11" fill="#c8c8c8">Watch · Page</text>
-  <circle r="5" fill="#fff"><animateMotion dur="3s" begin="-2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#pp"/></animateMotion></circle>
-  <rect x="740" y="140" width="130" height="50" rx="0" fill="#141414" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.8"/>
-  <rect x="740" y="140" width="130" height="50" rx="0" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0"><animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.5;0.52;0.75;1" dur="3s" begin="-1s" repeatCount="indefinite"/></rect>
-  <g transform="translate(760.2 148) scale(0.667)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2" /> <path d="M7 11v4a2 2 0 0 0 2 2h4" /> <rect width="8" height="8" x="13" y="13" rx="2" /></g><text x="782.6" y="161" font-size="14" font-weight="700" fill="#f97316">Pipeline</text>
-  <text x="805" y="181" text-anchor="middle" font-size="11" fill="#c8c8c8">CI · Staging</text>
+  <rect x="740" y="40" width="130" height="40" rx="0" fill="#141414" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.8"/>
+  <rect x="740" y="40" width="130" height="40" rx="0" fill="rgba(249,115,22,0.12)" stroke="#f97316" stroke-width="1.5" opacity="0"><animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4;0.42;0.6;1" dur="5s" begin="0.0s" repeatCount="indefinite"/></rect>
+  <g transform="translate(768.6 52.0) scale(0.667)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /> <circle cx="12" cy="12" r="3" /></g><text x="791.0" y="65.0" font-size="14" font-weight="700" fill="#f97316">Review</text>
+  <rect x="740" y="92" width="130" height="40" rx="0" fill="#141414" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.8"/>
+  <rect x="740" y="92" width="130" height="40" rx="0" fill="rgba(249,115,22,0.12)" stroke="#f97316" stroke-width="1.5" opacity="0"><animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4;0.42;0.6;1" dur="5s" begin="-1.0s" repeatCount="indefinite"/></rect>
+  <g transform="translate(777.0 104.0) scale(0.667)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" /> <path d="M6.453 15h11.094" /> <path d="M8.5 2h7" /></g><text x="799.4" y="117.0" font-size="14" font-weight="700" fill="#f97316">Test</text>
+  <rect x="740" y="144" width="130" height="40" rx="0" fill="#141414" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.8"/>
+  <rect x="740" y="144" width="130" height="40" rx="0" fill="rgba(249,115,22,0.12)" stroke="#f97316" stroke-width="1.5" opacity="0"><animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4;0.42;0.6;1" dur="5s" begin="-2.0s" repeatCount="indefinite"/></rect>
+  <g transform="translate(760.2 156.0) scale(0.667)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></g><text x="782.6" y="169.0" font-size="14" font-weight="700" fill="#f97316">Security</text>
+  <rect x="740" y="196" width="130" height="40" rx="0" fill="#141414" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.8"/>
+  <rect x="740" y="196" width="130" height="40" rx="0" fill="rgba(249,115,22,0.12)" stroke="#f97316" stroke-width="1.5" opacity="0"><animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4;0.42;0.6;1" dur="5s" begin="-3.0s" repeatCount="indefinite"/></rect>
+  <g transform="translate(768.6 208.0) scale(0.667)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /> <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" /> <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" /> <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" /></g><text x="791.0" y="221.0" font-size="14" font-weight="700" fill="#f97316">Deploy</text>
+  <rect x="740" y="248" width="130" height="40" rx="0" fill="#141414" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.8"/>
+  <rect x="740" y="248" width="130" height="40" rx="0" fill="rgba(249,115,22,0.12)" stroke="#f97316" stroke-width="1.5" opacity="0"><animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4;0.42;0.6;1" dur="5s" begin="-4.0s" repeatCount="indefinite"/></rect>
+  <g transform="translate(764.4 260.0) scale(0.667)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></g><text x="786.8" y="273.0" font-size="14" font-weight="700" fill="#f97316">Monitor</text>
   <!-- Self-improvement: an outer loop around the whole factory; signals flow out from every system, tuning flows back in -->
   <path id="ring" d="M-30 0 H1070 V430 H-30 Z" fill="none" stroke="#22d3ee" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="8 6"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.5s" repeatCount="indefinite"/></path>
   <g><g transform="translate(-7 -7) scale(0.58)" fill="#22d3ee" stroke="#22d3ee" stroke-width="2" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /></g><animateMotion dur="12s" begin="0s" repeatCount="indefinite"><mpath href="#ring"/></animateMotion></g>
@@ -184,8 +203,8 @@
   <path id="sf" d="M572 50 V0" fill="none" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 5"/>
   <circle r="4" fill="#fff" opacity="0"><animateMotion path="M572 50 V0" dur="6s" begin="-1.70s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.25;1" calcMode="linear"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.24;0.25;1" dur="6s" begin="-1.70s" repeatCount="indefinite"/></circle>
   <g opacity="0"><g transform="translate(-7 -7) scale(0.58)" fill="#22d3ee" stroke="#22d3ee" stroke-width="2" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /></g><animateMotion path="M572 0 V50" dur="6s" begin="-1.70s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.5;0.75;1" calcMode="linear"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.51;0.74;0.75;1" dur="6s" begin="-1.70s" repeatCount="indefinite"/></g>
-  <path id="sp" d="M805 140 V0" fill="none" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 5"/>
-  <circle r="4" fill="#fff" opacity="0"><animateMotion path="M805 140 V0" dur="6s" begin="-2.55s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.25;1" calcMode="linear"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.24;0.25;1" dur="6s" begin="-2.55s" repeatCount="indefinite"/></circle>
+  <path id="sp" d="M805 40 V0" fill="none" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 5"/>
+  <circle r="4" fill="#fff" opacity="0"><animateMotion path="M805 40 V0" dur="6s" begin="-2.55s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.25;1" calcMode="linear"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.24;0.25;1" dur="6s" begin="-2.55s" repeatCount="indefinite"/></circle>
   <g opacity="0"><g transform="translate(-7 -7) scale(0.58)" fill="#22d3ee" stroke="#22d3ee" stroke-width="2" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /></g><animateMotion path="M805 0 V140" dur="6s" begin="-2.55s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.5;0.75;1" calcMode="linear"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.51;0.74;0.75;1" dur="6s" begin="-2.55s" repeatCount="indefinite"/></g>
   <path id="sd" d="M1045 165 H1070" fill="none" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 5"/>
   <circle r="4" fill="#fff" opacity="0"><animateMotion path="M1045 165 H1070" dur="6s" begin="-3.40s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.25;1" calcMode="linear"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.24;0.25;1" dur="6s" begin="-3.40s" repeatCount="indefinite"/></circle>
