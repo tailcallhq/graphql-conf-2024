@@ -18,6 +18,12 @@ body {
   font-family: "Space Mono";
   font-size: 1rem;
 }
+/* Code blocks: no fill, so the slide's grid shows through. !important beats
+   remark's highlight theme, which paints #1d1f21 on .hljs. */
+.remark-slide-content pre code.remark-code {
+  background: transparent !important;
+  padding: 1em 1.25em;
+}
 .remark-container {
   background-color: var(--tc-accent);
 }
@@ -393,5 +399,82 @@ h3 {
       text-align: right;
       font-size: 0.8em;
     }
+  }
+}
+
+/* Two-column bullet list: items fill the left column first, then the right. */
+.two-col {
+  display: block;
+  column-count: 2;
+  column-gap: 3em;
+  h3 {
+    break-inside: avoid;
+  }
+}
+
+/* Bullets on the left, a figure on the right. */
+.split {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.split-left {
+  display: block;
+  flex: 0 0 auto;
+  h3 {
+    margin: 0;
+    padding: 0.25em 0;
+  }
+}
+.split-right {
+  display: block;
+  flex: 1 1 auto;
+  img {
+    width: 100%;
+    max-height: 560px;
+  }
+}
+
+/* A single full-width figure under the slide title. */
+.figure img {
+  height: 420px;
+  max-width: 100%;
+}
+
+/* Code beside a figure: never show a scrollbar, let the line run wide. */
+.split-left pre code.remark-code {
+  overflow: visible !important;
+  padding-left: 0;
+}
+
+/* Agent diagram: cap height so it stays inside the slide. */
+.agent-fig img {
+  max-height: 440px;
+}
+
+/* Inline Lucide icon that sits on the text baseline and scales with font size. */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  height: 1em;
+  vertical-align: -0.12em;
+}
+.icon img {
+  display: block;
+  height: 0.85em;
+  width: auto;
+}
+
+/* Image slides: pin the figure to a fixed top offset, so it stays put when a
+   caption is revealed below it (--) and when moving between image slides. */
+.remark-slide-content.fig {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 80px;
+  padding-bottom: 0;
+  > p,
+  > .split {
+    margin: 0;
   }
 }

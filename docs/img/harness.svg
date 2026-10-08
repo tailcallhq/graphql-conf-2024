@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 30 800 440" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Harness: one coordinator, a tree of child agents, and the harness
+       services (sandbox, tools, memory, skills) the agents call into.
+       SMIL animation, so it plays inside a plain <img>. Negative begin
+       times start every loop mid-cycle so the slide opens already busy. -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Tree edges: coordinator -> each child (elbow through a shared bus) -->
+    <path id="t1" d="M360 88 V150 H170 V212"/>
+    <path id="t2" d="M360 88 V212"/>
+    <path id="t3" d="M360 88 V150 H550 V212"/>
+    <!-- and back up -->
+    <path id="u1" d="M170 212 V150 H360 V88"/>
+    <path id="u2" d="M360 212 V88"/>
+    <path id="u3" d="M550 212 V150 H360 V88"/>
+
+    <!-- Agent -> service calls (curves down into the service rail) -->
+    <path id="a1s" d="M170 248 C170 320 120 340 120 418"/>
+    <path id="a1m" d="M170 248 C170 330 440 330 440 418"/>
+    <path id="a2t" d="M360 248 C360 320 280 340 280 418"/>
+    <path id="a2k" d="M360 248 C360 320 600 340 600 418"/>
+    <path id="a3s" d="M550 248 C550 330 120 320 120 418"/>
+    <path id="a3m" d="M550 248 C550 320 440 340 440 418"/>
+    <path id="a3k" d="M550 248 C550 320 600 340 600 418"/>
+    <path id="a1t" d="M170 248 C170 320 280 340 280 418"/>
+
+    <!-- A packet travelling out and back on a path -->
+    <g id="pktOut"><circle r="5" fill="#f97316"/></g>
+    <g id="pktBack"><circle r="4" fill="#fff"/></g>
+  </defs>
+
+  <!-- Tree edges -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linejoin="round">
+    <use href="#t1"/><use href="#t2"/><use href="#t3"/>
+  </g>
+
+  <!-- Service call wires, flowing -->
+  <g stroke="rgba(249,115,22,0.3)" stroke-width="1.5" stroke-dasharray="3 7" fill="none">
+    <use href="#a1s"/><use href="#a1t"/><use href="#a1m"/>
+    <use href="#a2t"/><use href="#a2k"/>
+    <use href="#a3s"/><use href="#a3m"/><use href="#a3k"/>
+    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Tasks down the tree (orange) and results back up (white) -->
+  <g>
+    <use href="#pktOut"><animateMotion dur="3.6s" begin="-0.2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.3;1" calcMode="linear"><mpath href="#t1"/></animateMotion></use>
+    <use href="#pktOut"><animateMotion dur="3.6s" begin="-1.4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.3;1" calcMode="linear"><mpath href="#t2"/></animateMotion></use>
+    <use href="#pktOut"><animateMotion dur="3.6s" begin="-2.6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.3;1" calcMode="linear"><mpath href="#t3"/></animateMotion></use>
+    <use href="#pktBack"><animateMotion dur="3.6s" begin="-2.0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.3;1" calcMode="linear"><mpath href="#u1"/></animateMotion></use>
+    <use href="#pktBack"><animateMotion dur="3.6s" begin="-3.2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.3;1" calcMode="linear"><mpath href="#u2"/></animateMotion></use>
+    <use href="#pktBack"><animateMotion dur="3.6s" begin="-0.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.3;1" calcMode="linear"><mpath href="#u3"/></animateMotion></use>
+  </g>
+
+  <!-- Agents calling harness services: out (orange) then reply (white) -->
+  <g>
+    <use href="#pktOut"><animateMotion dur="3s" begin="-0.3s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a1s"/></animateMotion></use>
+    <use href="#pktBack"><animateMotion dur="3s" begin="-1.3s" repeatCount="indefinite" keyPoints="1;0;0" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a1s"/></animateMotion></use>
+    <use href="#pktOut"><animateMotion dur="4s" begin="-2.1s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a1m"/></animateMotion></use>
+    <use href="#pktOut"><animateMotion dur="3.4s" begin="-1.0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a1t"/></animateMotion></use>
+
+    <use href="#pktOut"><animateMotion dur="3.2s" begin="-0.9s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a2t"/></animateMotion></use>
+    <use href="#pktBack"><animateMotion dur="3.2s" begin="-2.0s" repeatCount="indefinite" keyPoints="1;0;0" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a2t"/></animateMotion></use>
+    <use href="#pktOut"><animateMotion dur="3.8s" begin="-2.7s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a2k"/></animateMotion></use>
+
+    <use href="#pktOut"><animateMotion dur="3.6s" begin="-1.7s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a3m"/></animateMotion></use>
+    <use href="#pktBack"><animateMotion dur="3.6s" begin="-2.9s" repeatCount="indefinite" keyPoints="1;0;0" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a3m"/></animateMotion></use>
+    <use href="#pktOut"><animateMotion dur="3s" begin="-0.5s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a3k"/></animateMotion></use>
+    <use href="#pktOut"><animateMotion dur="4.2s" begin="-3.4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath href="#a3s"/></animateMotion></use>
+  </g>
+
+  <!-- User: hands the goal to the coordinator, gets the result back -->
+  <g fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-dasharray="4 8">
+    <path d="M40 62 H270 M270 78 H40"/>
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1s" repeatCount="indefinite"/>
+  </g>
+  <circle r="5" fill="#f97316">
+    <animateMotion path="M30 62 H290" dur="4s" begin="-0.5s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"/>
+  </circle>
+  <circle r="5" fill="#fff">
+    <animateMotion path="M290 78 H30" dur="4s" begin="-2.5s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"/>
+  </circle>
+  <g transform="translate(-10 70)">
+    <rect x="-56" y="-28" width="112" height="56" rx="14" fill="#141414" stroke="#fff" stroke-width="1.5" stroke-opacity="0.35"/>
+    <rect x="-56" y="-28" width="112" height="56" rx="14" fill="rgba(255,255,255,0.1)" stroke="#fff" stroke-width="1.5" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4;0.41;0.6;1" dur="4s" begin="-2.5s" repeatCount="indefinite"/>
+    </rect>
+    <g transform="translate(-27.2 -7.6) scale(0.767)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></g><text y="6" font-size="16" font-weight="700" fill="#fff" x="-1.6">dev</text>
+  </g>
+
+  <!-- Coordinator -->
+  <g transform="translate(360 70)">
+    <circle r="56" fill="url(#glow)">
+      <animate attributeName="r" values="46;62;46" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="-90" y="-32" width="180" height="64" rx="16" fill="#f97316"/>
+    <text y="6" text-anchor="middle" font-size="16" font-weight="700" fill="#000">COORDINATOR</text>
+  </g>
+
+  <!-- Child agents -->
+  <g font-size="12" text-anchor="middle">
+    <g transform="translate(170 229)">
+      <rect x="-70" y="-33" width="140" height="66" rx="14" fill="#141414" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+      <circle cx="-48" cy="-13" r="5" fill="#f97316"><animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/></circle>
+      <text y="-8" fill="#fff" font-weight="700">AGENT</text>
+      <text y="10" fill="#aaa">code</text>
+      <rect x="-50" y="20" width="100" height="5" rx="2.5" fill="rgba(255,255,255,0.12)"/>
+      <rect x="-50" y="20" width="0" height="5" rx="2.5" fill="#f97316">
+        <animate attributeName="width" values="0;100;100;0" keyTimes="0;0.8;0.95;1" dur="3.6s" begin="-0.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g transform="translate(360 229)">
+      <rect x="-70" y="-33" width="140" height="66" rx="14" fill="#141414" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+      <circle cx="-48" cy="-13" r="5" fill="#f97316"><animate attributeName="opacity" values="1;0.2;1" dur="1.2s" begin="-0.4s" repeatCount="indefinite"/></circle>
+      <text y="-8" fill="#fff" font-weight="700">AGENT</text>
+      <text y="10" fill="#aaa">test</text>
+      <rect x="-50" y="20" width="100" height="5" rx="2.5" fill="rgba(255,255,255,0.12)"/>
+      <rect x="-50" y="20" width="0" height="5" rx="2.5" fill="#f97316">
+        <animate attributeName="width" values="0;100;100;0" keyTimes="0;0.8;0.95;1" dur="3.6s" begin="-1.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g transform="translate(550 229)">
+      <rect x="-70" y="-33" width="140" height="66" rx="14" fill="#141414" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+      <circle cx="-48" cy="-13" r="5" fill="#f97316"><animate attributeName="opacity" values="1;0.2;1" dur="1.2s" begin="-0.8s" repeatCount="indefinite"/></circle>
+      <text y="-8" fill="#fff" font-weight="700">AGENT</text>
+      <text y="10" fill="#aaa">review</text>
+      <rect x="-50" y="20" width="100" height="5" rx="2.5" fill="rgba(255,255,255,0.12)"/>
+      <rect x="-50" y="20" width="0" height="5" rx="2.5" fill="#f97316">
+        <animate attributeName="width" values="0;100;100;0" keyTimes="0;0.8;0.95;1" dur="3.6s" begin="-3s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  <!-- Harness services -->
+  <g font-size="14" font-weight="700" text-anchor="middle" letter-spacing="0.5">
+    <g transform="translate(120 430)">
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="#111" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.45"/>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="3s" begin="-0.3s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="4.2s" begin="-3.4s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(-53.0 -16) scale(0.671)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8" /> <path d="M9 19.8V15m0 0H4.2M9 15l-6 6" /> <path d="M15 4.2V9m0 0h4.8M15 9l6-6" /> <path d="M9 4.2V9m0 0H4.2M9 9 3 3" /></g><text y="-4" fill="#f97316" x="-31.0" text-anchor="start">compaction</text>
+      <text y="15" font-size="10" font-weight="400" fill="#888">summarise · trim</text>
+    </g>
+    <g transform="translate(280 430)">
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="#111" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.45"/>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="3.4s" begin="-1.0s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="3.2s" begin="-0.9s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(-23.6 -16) scale(0.671)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5" /> <path d="M15 8V2" /> <path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z" /> <path d="M9 8V2" /></g><text y="-4" fill="#f97316" x="-1.6" text-anchor="start">MCP</text>
+      <text y="15" font-size="10" font-weight="400" fill="#888">servers · apps</text>
+    </g>
+    <g transform="translate(440 430)">
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="#111" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.45"/>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="4s" begin="-2.1s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="3.6s" begin="-1.7s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(-36.2 -16) scale(0.671)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18V5" /> <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" /> <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" /> <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" /> <path d="M18 18a4 4 0 0 0 2-7.464" /> <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" /> <path d="M6 18a4 4 0 0 1-2-7.464" /> <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" /></g><text y="-4" fill="#f97316" x="-14.2" text-anchor="start">memory</text>
+      <text y="15" font-size="10" font-weight="400" fill="#888">recall · store</text>
+    </g>
+    <g transform="translate(600 430)">
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="#111" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.45"/>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="3.8s" begin="-2.7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-68" y="-32" width="136" height="64" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.349;0.350;0.570;1" dur="3s" begin="-0.5s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(-36.2 -16) scale(0.671)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <circle cx="12" cy="12" r="6" /> <circle cx="12" cy="12" r="2" /></g><text y="-4" fill="#f97316" x="-14.2" text-anchor="start">skills</text>
+      <text y="15" font-size="10" font-weight="400" fill="#888">how-to · playbooks</text>
+    </g>
+  </g>
+</svg>
