@@ -56,3 +56,9 @@ class: middle fig
 ### .icon[![](./img/icons/target.svg)] .tc-underline[Organizational] Velocity
 
 ]
+
+---
+
+class: middle, center
+
+# .tc-underline[Thank You]
