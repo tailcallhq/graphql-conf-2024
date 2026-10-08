@@ -58,7 +58,7 @@ body {
 .tc-highlight {
   background-color: var(--tc-accent);
   padding: 0rem 0.5rem;
-  border-radius: 8px;
+  border-radius: 0;
   color: #000;
   font-weight: 700;
   text-wrap: nowrap;
@@ -157,7 +157,7 @@ body {
 .stat-item {
   background-color: #1c1d1f;
   padding: 0.2em 0.5em;
-  border-radius: 12px;
+  border-radius: 0;
   font-size: 1.5em;
   display: flex;
   box-sizing: content-box;

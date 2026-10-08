@@ -63,6 +63,14 @@ class: middle fig
 
 .block.center.figure[![Harness stack](./img/stack.svg)]
 
+--
+
+.block.center[
+
+### .icon[![](./img/icons/target.svg)] .tc-underline[Anatomy] of a Software Factory
+
+]
+
 ---
 
 class: middle fig
