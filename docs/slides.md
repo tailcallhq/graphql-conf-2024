@@ -56,31 +56,3 @@ class: middle fig
 ### .icon[![](./img/icons/target.svg)] .tc-underline[Organizational] Velocity
 
 ]
-
----
-
-class: middle fig
-
-.block.center.figure[![Harness stack](./img/stack.svg)]
-
---
-
-.block.center[
-
-### .icon[![](./img/icons/target.svg)] .tc-underline[Anatomy] of a Software Factory
-
-]
-
----
-
-class: middle fig
-
-.block.center.figure[![Software factory workflow](./img/workflow.svg)]
-
---
-
-.block.center[
-
-### .icon[![](./img/icons/target.svg)] Not .tc-underline[Issue] to PR, the Whole Loop
-
-]
