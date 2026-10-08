@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "export:pdf": "node scripts/export-pdf.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "http-server": "^14.1.1"
+  }
+}
