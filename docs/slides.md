@@ -84,9 +84,3 @@ class: middle fig
 ### .icon[![](./img/icons/target.svg)] Not .tc-underline[Issue] to PR, the Whole Loop
 
 ]
-
----
-
-class: middle, center
-
-# .tc-underline[Thank You]
