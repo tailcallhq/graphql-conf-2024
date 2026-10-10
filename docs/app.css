@@ -478,3 +478,23 @@ h3 {
     margin: 0;
   }
 }
+
+/* Deck list (index.md): white links with the accent underline, like .tc-underline. */
+.remark-slide-content a {
+  color: inherit;
+  text-decoration: none;
+}
+.deck-list li {
+  margin: 0.5rem 0;
+}
+.deck-list li::marker {
+  color: var(--tc-accent);
+}
+.deck-list a {
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.deck-list a:hover {
+  color: var(--tc-accent);
+  border-bottom-color: var(--tc-accent);
+}

@@ -40,8 +40,11 @@
 
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
+      // Pick the deck from ?deck=<name> → ./<name>.md (defaults to index.md, the deck list).
+      var deck = new URLSearchParams(location.search).get("deck") || "index";
+      if (!/^[\w-]+$/.test(deck)) deck = "index";
       var slideshow = remark.create({
-        sourceUrl: "./slides.md",
+        sourceUrl: "./" + deck + ".md",
         highlightStyle: "tomorrow-night",
         ratio: "16:9",
         navigation: {
