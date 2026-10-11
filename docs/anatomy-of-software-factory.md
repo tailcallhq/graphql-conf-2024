@@ -95,8 +95,6 @@ class: middle
 
 ![Adding teams of specialists one column at a time, then struck out](./img/bridge/d-more-humans.svg)
 
---
-
 .flex-row.spread[
 
 #### .icon[triangle-alert] Bottlenecks
@@ -113,9 +111,7 @@ class: middle
 
 ### .tc-underline[More] Tokens .font-grey[(Option 2)]
 
-![The same line degrades the work at every station and piles up slop at the end](./img/sdlc-line-slop.svg)
-
---
+![The chaotic agent line piling up slop, then struck out](./img/bridge/d-more-agents.svg)
 
 .flex-row.spread[
 
@@ -129,9 +125,11 @@ class: middle
 
 ---
 
-class: middle center
+class: middle
 
-# Who .tc-underline[Runs] The Line .icon[message-circle-question-mark]
+### .font-grey[Part 3]
+
+# .tc-underline[Who] Runs The Line .icon[message-circle-question-mark]
 
 ---
 
@@ -153,7 +151,7 @@ class: middle
 
 class: middle
 
-### .font-grey[Part 3]
+### .font-grey[Part 4]
 
 # .tc-underline[ForgeCode] Tenets
 
