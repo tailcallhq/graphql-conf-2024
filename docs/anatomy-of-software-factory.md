@@ -95,15 +95,21 @@ class: middle
 
 ![Adding teams of specialists one column at a time, then struck out](./img/bridge/d-more-humans.svg)
 
+--
+
 ---
 
 class: middle
 
 ### .tc-underline[More] Tokens .font-grey[(Option 2)]
 
---
-
 ![The same line degrades the work at every station and piles up slop at the end](./img/sdlc-line-slop.svg)
+
+.flex-row.spread[
+#### .icon[circle-alert] Signal
+#### .icon[circle-alert] Feedback
+#### .icon[circle-alert] Control
+]
 
 ---
 

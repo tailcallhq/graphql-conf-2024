@@ -421,6 +421,17 @@ li > .icon:first-child :is(img, svg) {
   align-items: center;
 }
 
+/* `.flex-row.spread[...]`: items share the row evenly, e.g. a row of headings
+   under a figure. */
+.flex-row.spread {
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+.flex-row.spread > * {
+  margin: 0;
+}
+
 .col-20 {
   flex: 0 0 20%;
 }
