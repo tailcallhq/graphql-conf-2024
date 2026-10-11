@@ -51,39 +51,29 @@ class: grid-2 center
 
 class: middle
 
-# Individual Productivity .icon[badge-question-mark]
-
---
-
-### .icon[arrow-up] Massive Improvements
-
----
-
-class: diagram center
+## .icon[arrow-up] Individual Productivity
 
 ![Each engineer's output climbs to 10x after AI agents are adopted](./img/prod-graph-individual.svg)
 
 ---
 
-class: diagram center
+class: middle
+
+## .icon[arrow-right] Organizational Velocity
 
 ![Org velocity only reaches 1.5x while individual output is at 10x](./img/prod-graph-org.svg)
 
---
+---
 
-### Individual Productivity .icon[equal-not] Organizational Velocity
+class: middle center
+
+## Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
 
 ---
 
 class: middle
 
-# Scaling Engineering .icon[badge-question-mark]
-
----
-
-class: diagram middle
-
-# .icon[arrow-up] Increasing Headcount
+## .icon[arrow-up] Organizational Velocity
 
 ![Engineers each paired with Claude and Codex](./img/org-a-before.svg)
 
@@ -221,7 +211,7 @@ class: diagram middle
 
 class: middle center
 
-# Thank You .icon[heart] 
+# Thank You .icon[heart]
 
 ### Tushar Mathur (CEO ForgeCode)
 
