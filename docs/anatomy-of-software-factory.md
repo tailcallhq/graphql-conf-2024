@@ -69,7 +69,6 @@ class: middle
 
 ![Rows of humans, each paired with Claude or Codex, joining one by one](./img/org-headcount.svg)
 
-
 ### .icon[arrow-up] Increasing Headcount
 
 ---
@@ -96,9 +95,17 @@ class: middle
 
 class: middle
 
-## .tc-underline[Automate] Software Creation
+## .tc-underline[Automate] Software Creation .font-grey[Expectation]
 
 ![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)
+
+---
+
+class: middle
+
+## .tc-underline[Automate] Software Creation .font-grey[Reality]
+
+![The same line degrades the work at every station and piles up slop at the end](./img/sdlc-line-slop.svg)
 
 ---
 
@@ -120,7 +127,7 @@ class: middle
 
 class: middle
 
-# .tc-underline[ForgeCode] Tenets
+# .tc-underline[ForgeCode] Anatomy
 
 ---
 
@@ -145,7 +152,7 @@ class: middle
 
 class: middle
 
-## .icon[chart-line] Measures Outcomes .font-grey[3/6]
+## .icon[chart-line] Insights .font-grey[3/6]
 
 ![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
 
@@ -155,7 +162,7 @@ class: middle
 
 ## .icon[expand] Highly Scalable .font-grey[4/6]
 
-![Hiring takes months, scaling agents takes seconds](./img/tenets/scalable-4.svg)
+![A surge of work lands and the agent fleet grows to drain it, then shrinks back](./img/tenets/scalable-1.svg)
 
 ---
 
@@ -171,7 +178,7 @@ class: middle
 
 ## .icon[piggy-bank] Cost Effective .font-grey[6/6]
 
-![Same budget shifts from people to compute and ships more](./img/tenets/cost-4.svg)
+![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
 
 ---
 
@@ -179,7 +186,7 @@ class: grid-2 top
 
 .cell.span-all[
 
-#### Tenet Recap .icon[arrow-right]
+#### Anatomy Recap .icon[arrow-right]
 
 ]
 
@@ -189,7 +196,7 @@ class: grid-2 top
 
 ### .icon[refresh-cw] Continuously Improves
 
-### .icon[chart-line] Measures Outcomes
+### .icon[chart-line] Insights
 
 ]
 
@@ -248,3 +255,4 @@ class: grid-2
 .font-grey[forgecode.dev]
 
 ]
+
