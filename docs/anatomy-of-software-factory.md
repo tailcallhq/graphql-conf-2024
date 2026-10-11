@@ -26,7 +26,7 @@ class: grid-2
 ## Tushar Mathur
 
 - .icon[![ForgeCode](./img/forge-mark.svg)] Founder .font-grey[ForgeCode]
-- .icon[![Dream11](./img/dream11-mark.svg)] Ex VP Engineering .font-grey[Dream11]
+- .icon[![Dream11](./img/dream11-mark.svg)] VP Engineering .font-grey[Dream11]
 - .icon[heart] Loves .font-grey[DevTools]
 
 ]
@@ -53,13 +53,15 @@ class: middle
 
 ### Individual Productivity
 
+--
+
 # .icon[arrow-right] Massive Increase
 
 ---
 
-class: middle center fig
+class: diagram
 
-.bottleneck-fig[![Individual output climbs to 10x while org velocity reaches 1.5x](./img/prod-graph-a.svg)]
+![Individual output climbs to 10x while org velocity reaches 1.5x](./img/prod-graph-a.svg)
 
 --
 
@@ -75,87 +77,85 @@ class: middle
 
 ---
 
-class: middle
+class: diagram
 
 ### .tc-underline[Bottlenecks] have moved .icon[arrow-right]
 
-.bottleneck-fig[![Work piling up at review](./img/bottleneck.svg)]
+![Work piling up at review](./img/bottleneck.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## Scaling Engineering .icon[message-circle-question-mark]
 
 --
 
-.fill[![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)]
+![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)
 
 ---
 
-class: middle
+class: middle celebrate
 
 ![ForgeCode](./img/forgecode-logo.svg)
 
 ## .tc-underline[State] of the Art Software Factory
 
-.confetti[![](./img/confetti.svg)]
-
 ---
 
-class: middle wide
+class: diagram
 
-## .logo-heading[![ForgeCode](./img/forgecode-logo.svg)] .icon[arrow-right]
+## ![ForgeCode](./img/forgecode-logo.svg) .icon[arrow-right]
 
 ![Software Factory](./img/factory.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[bot] Works Autonomously .font-grey[1/6]
 
-.fill[![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)]
+![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[refresh-cw] Continuously Improves .font-grey[2/6]
 
-.fill[![Failure rate falling from 31% to 3% across versions](./img/tenets/improves-2.svg)]
+![Failure rate falling from 31% to 3% across versions](./img/tenets/improves-2.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[chart-line] Measures Outcomes .font-grey[3/6]
 
-.fill[![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)]
+![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[expand] Highly Scalable .font-grey[4/6]
 
-.fill[![Hiring takes months, scaling agents takes seconds](./img/tenets/scalable-4.svg)]
+![Hiring takes months, scaling agents takes seconds](./img/tenets/scalable-4.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[sliders-horizontal] Business Controlled .font-grey[5/6]
 
-.fill[![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)]
+![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[piggy-bank] Cost Effective .font-grey[6/6]
 
-.fill[![Same budget shifts from people to compute and ships more](./img/tenets/cost-4.svg)]
+![Same budget shifts from people to compute and ships more](./img/tenets/cost-4.svg)
 
 ---
 
@@ -207,9 +207,7 @@ class: middle
 
 ---
 
-class: middle center
-
-.compare[
+class: diagram
 
 #### Individual Productivity
 
@@ -219,11 +217,9 @@ class: middle center
 
 ![A few people steer hundreds of agents](./img/org-a-after.svg)
 
-]
-
 ---
 
-class: grid-2 closing
+class: grid-2
 
 .cell[
 
@@ -235,7 +231,7 @@ class: grid-2 closing
 
 ]
 
-.cell.qr[
+.cell.text-center[
 
 ![Scan to book a demo](./img/forgecode-demo-qr.svg)
 

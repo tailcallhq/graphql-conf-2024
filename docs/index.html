@@ -84,6 +84,18 @@
             fresh.src = img.getAttribute("src").split("?")[0] + "?t=" + Date.now();
             img.replaceWith(fresh);
           });
+        // `class: celebrate` slides get a fresh confetti burst on every show.
+        document.querySelectorAll(".celebrate-overlay").forEach(function (el) {
+          el.remove();
+        });
+        var slide = document.querySelector(".remark-visible .remark-slide-content.celebrate");
+        if (slide) {
+          var burst = document.createElement("img");
+          burst.className = "celebrate-overlay";
+          burst.alt = "";
+          burst.src = "./img/confetti.svg?t=" + Date.now();
+          slide.appendChild(burst);
+        }
       });
     </script>
   </body>

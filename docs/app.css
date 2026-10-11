@@ -385,16 +385,6 @@ img {
   grid-column: 1 / -1;
   justify-self: stretch;
 }
-/* `wide`: trim the slide's side padding so wide images and diagrams get more
-   room, e.g. `class: middle wide`. Works with any layout. */
-.remark-slide-content.wide {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-/* Make images in a cell fill its width, e.g. `.cell.span-all.fill[...]`. */
-.fill img {
-  width: 100%;
-}
 
 /* List items that start with an icon: the icon replaces the bullet. */
 ul:has(> li > .icon:first-child) {
@@ -643,42 +633,42 @@ h3 {
   border-bottom-color: var(--tc-accent);
 }
 
-/* Closing slide: ForgeCode pitch on the left, demo QR code on the right. */
-.closing .qr {
-  justify-self: center;
-  text-align: center;
-}
-.closing .qr img {
-  width: 300px;
-  height: 300px;
-  display: block;
-  margin: 0 auto 0.6em;
+/* ---- Reusable slide layouts and effects (set on the slide's `class:` line) ---- */
+
+/* `diagram`: headings pinned to the top, every image fills the rest of the
+   slide. Images bleed into the side padding for extra room while headings
+   stay aligned with every other slide. Several images share the space
+   equally. Pinned to the top, so revealing a caption (--) never moves the
+   figure. Usage: `class: diagram`, then plain markdown headings and images. */
+.remark-slide-content.diagram {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 80px;
+  padding-bottom: 96px; /* keep clear of the footer logo */
+  > * {
+    flex: none;
+    margin-top: 0;
+  }
+  > p:has(> img) {
+    flex: 1 1 0;
+    min-height: 0;
+    margin: 0 -3em 0.6em;
+  }
+  > p > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top center;
+  }
 }
 
-/* Bottleneck diagram under the Amdahl's Law heading. */
-.bottleneck-fig img {
-  width: 100%;
-  max-height: 360px;
-  margin-top: 1em;
-}
-
-/* Before/after velocity comparison: two compact flow diagrams stacked, each under its caption. */
-.compare h4 {
-  margin: 0 0 0.4em;
-}
-.compare p {
-  margin: 0 0 1.4em;
-}
-.compare img {
-  width: 100%;
-}
-
-/* Confetti burst over the whole slide: `.confetti[![](./img/confetti.svg)]` anywhere on a
-   slide. Plays once each time the slide is shown (index.html restarts slide SVGs). */
-.remark-slide-content:has(.confetti) {
+/* `celebrate`: a one-off confetti burst over the slide each time it is shown.
+   The overlay is added by index.html; nothing to write in the markdown. */
+.remark-slide-content.celebrate {
   position: relative;
 }
-.confetti img {
+.celebrate-overlay {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -688,8 +678,10 @@ h3 {
   pointer-events: none;
   z-index: 10;
 }
-/* Inline logo used in place of a text heading, sized to the heading. */
-.logo-heading img {
-  height: 1.05em;
-  vertical-align: middle;
+
+/* Images inside a heading (e.g. a logo as the title) size to the text. */
+:is(h1, h2, h3, h4) > img {
+  height: 1em;
+  width: auto;
+  vertical-align: -0.12em;
 }
