@@ -51,6 +51,6 @@ Things to know:
 
 ## Conventions
 
-- Commit after each change with a short message describing it. Don't push unless asked.
+- Commit after each change with a short message describing it, then push to `origin main`.
 - Don't use emojis in slides or diagrams. Use Lucide icons: `.icon[name]` in markdown, or inline paths in SVGs.
 - Use title case in headings and diagram labels, and keep acronyms uppercase.
