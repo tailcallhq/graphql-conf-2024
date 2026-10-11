@@ -14,7 +14,7 @@
   <rect x="30" y="198" width="200" height="48" rx="6" fill="#eab308" fill-opacity="0.18" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6667;0.6867;0.9800;1" dur="15s" begin="-3.0s" repeatCount="indefinite"/></rect>
   <rect x="30" y="198" width="6" height="48" fill="#eab308" opacity="0.35"><animate attributeName="opacity" values="0.35;0.35;1.0;1.0;0.35" keyTimes="0;0.6667;0.6867;0.9800;1" dur="15s" begin="-3.0s" repeatCount="indefinite"/></rect>
   <text x="136" y="228" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="1" fill="#eab308">Compliance</text>
-  <path d="M245 150 H300" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-dasharray="3 4" marker-end="url(#arr)"/>
+  <path fill="none" d="M245 150 H300" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-dasharray="5 6" marker-end="url(#arr)"><animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1s" repeatCount="indefinite"/></path>
   <text x="410" y="40" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Backlog</text>
   <rect x="312" y="48" width="196" height="231" rx="6" fill="#1a1a1a" fill-opacity="0.5"/>
   <g><animateTransform attributeName="transform" type="translate" values="0 74;0 0;0 0;0 74;0 74;0 74;0 74" keyTimes="0;0.0600;0.3333;0.3933;0.6667;0.7267;1" dur="15s" begin="-3.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;1;1;0.45;0.45;0.45;0.45" keyTimes="0;0.0400;0.3333;0.3733;0.6667;0.7067;1" dur="15s" begin="-3.0s" repeatCount="indefinite"/>
@@ -53,7 +53,7 @@
     <text x="336" y="76" font-size="14" font-weight="700" fill="#f2f2f2">BUG 51</text>
     <circle cx="482" cy="71.0" r="7" fill="#eab308"/>
   </g>
-  <path d="M514 71.0 H648 Q656 71 656 79 V96" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-dasharray="3 4" marker-end="url(#arr)"/>
+  <path d="M514 71.0 H648 Q656 71 656 79 V96" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-dasharray="5 6" marker-end="url(#arr)"><animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1s" repeatCount="indefinite"/></path>
   <text x="576.0" y="61.0" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="1" fill="#a3a3a3">Next</text>
   <rect x="600" y="200" width="370" height="10" rx="5" fill="#262626"/>
   <!-- Factory: Lucide "factory" icon (ISC), scaled up; window dots pulse while it works -->
