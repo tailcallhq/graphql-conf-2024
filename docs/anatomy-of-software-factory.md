@@ -57,11 +57,13 @@ class: middle
 
 ---
 
-class: middle center
-
-### Individual Productivity .icon[equal-not] Organizational Velocity
+class: middle center fig
 
 .bottleneck-fig[![Individual output climbs to 10x while org velocity reaches 1.5x](./img/prod-graph-a.svg)]
+
+--
+
+### Individual Productivity .icon[equal-not] Organizational Velocity
 
 ---
 
@@ -75,9 +77,7 @@ class: middle
 
 class: middle
 
-### Bottlenecks have moved
-
-# .icon[scale] Amdahl's Law
+### .tc-underline[Bottlenecks] have moved .icon[arrow-right]
 
 .bottleneck-fig[![Work piling up at review](./img/bottleneck.svg)]
 
@@ -87,7 +87,7 @@ class: middle
 
 ## Scaling Engineering .icon[message-circle-question-mark]
 
-# Automate Complete SDLC
+--
 
 .fill[![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)]
 
@@ -97,13 +97,15 @@ class: middle
 
 ![ForgeCode](./img/forgecode-logo.svg)
 
-## State of the Art Software Factory
+## .tc-underline[State] of the Art Software Factory
+
+.confetti[![](./img/confetti.svg)]
 
 ---
 
 class: middle wide
 
-## ForgeCode .icon[arrow-right]
+## .logo-heading[![ForgeCode](./img/forgecode-logo.svg)] .icon[arrow-right]
 
 ![Software Factory](./img/factory.svg)
 
@@ -149,7 +151,7 @@ class: grid-2 top
 
 .cell.span-all[
 
-#### State of the Art .icon[arrow-right]
+#### Six Tenets of the Software Factory .icon[arrow-right]
 
 ]
 
