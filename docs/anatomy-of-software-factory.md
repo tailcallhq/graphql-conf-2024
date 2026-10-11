@@ -89,6 +89,8 @@ class: middle
 
 # Automate Complete SDLC
 
+.fill[![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)]
+
 ---
 
 class: middle

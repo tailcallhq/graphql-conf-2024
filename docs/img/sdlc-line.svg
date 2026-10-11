@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Automated SDLC assembly line: work items ride a conveyor under five stations; each arm taps every item as it passes, in a rolling wave. SMIL only, 8s seamless loop -->
+  <defs>
+    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.07" stop-color="#fff"/>
+      <stop offset="0.93" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="m" maskUnits="userSpaceOnUse" x="20" y="0" width="960" height="260"><rect x="20" y="0" width="960" height="260" fill="url(#fade)"/></mask>
+  </defs>
+  <path d="M60 22 H940" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-linecap="round"/>
+  <rect x="30" y="200" width="940" height="10" rx="5" fill="#262626"/>
+  <path d="M36 205 H964" stroke="rgba(255,255,255,0.28)" stroke-width="10" stroke-dasharray="2 38" mask="url(#m)"><animate attributeName="stroke-dashoffset" values="0;-40" dur="0.8s" repeatCount="indefinite"/></path>
+  <g mask="url(#m)"><g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;400 0" dur="8.0s" repeatCount="indefinite"/>
+    <rect x="-400" y="176" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.85"/>
+    <rect x="-320" y="176" width="22" height="22" rx="4" fill="#22d3ee" fill-opacity="0.85"/>
+    <rect x="-240" y="176" width="22" height="22" rx="4" fill="#ef4444" fill-opacity="0.85"/>
+    <rect x="-160" y="176" width="22" height="22" rx="4" fill="#a3a3a3" fill-opacity="0.85"/>
+    <rect x="-80" y="176" width="22" height="22" rx="4" fill="#eab308" fill-opacity="0.85"/>
+    <rect x="0" y="176" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.85"/>
+    <rect x="80" y="176" width="22" height="22" rx="4" fill="#22d3ee" fill-opacity="0.85"/>
+    <rect x="160" y="176" width="22" height="22" rx="4" fill="#ef4444" fill-opacity="0.85"/>
+    <rect x="240" y="176" width="22" height="22" rx="4" fill="#a3a3a3" fill-opacity="0.85"/>
+    <rect x="320" y="176" width="22" height="22" rx="4" fill="#eab308" fill-opacity="0.85"/>
+    <rect x="400" y="176" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.85"/>
+    <rect x="480" y="176" width="22" height="22" rx="4" fill="#22d3ee" fill-opacity="0.85"/>
+    <rect x="560" y="176" width="22" height="22" rx="4" fill="#ef4444" fill-opacity="0.85"/>
+    <rect x="640" y="176" width="22" height="22" rx="4" fill="#a3a3a3" fill-opacity="0.85"/>
+    <rect x="720" y="176" width="22" height="22" rx="4" fill="#eab308" fill-opacity="0.85"/>
+    <rect x="800" y="176" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.85"/>
+    <rect x="880" y="176" width="22" height="22" rx="4" fill="#22d3ee" fill-opacity="0.85"/>
+    <rect x="960" y="176" width="22" height="22" rx="4" fill="#ef4444" fill-opacity="0.85"/>
+    <rect x="1040" y="176" width="22" height="22" rx="4" fill="#a3a3a3" fill-opacity="0.85"/>
+  </g></g>
+  <g stroke="#6b6b6b" stroke-width="3" stroke-linecap="round" fill="none">
+    <animate attributeName="stroke" values="#6b6b6b;#f97316;#f97316;#6b6b6b;#6b6b6b" keyTimes="0;0.12;0.4;0.6;1" dur="1.6s" begin="-0.860s" repeatCount="indefinite"/>
+    <rect x="136" y="16" width="24" height="12" rx="3" fill="#1a1a1a" stroke-width="2"/>
+    <path d="M148 28 V96"/>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;0 44;0 44;0 0;0 0" keyTimes="0;0.25;0.31;0.55;1" dur="1.6s" begin="-0.860s" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1;0 0 1 1" repeatCount="indefinite"/>
+      <path d="M148 50 V120" stroke-width="2"/>
+      <circle cx="148" cy="96" r="3" fill="#0b0b0b" stroke-width="2"/>
+      <path d="M131 138 V120 H165 V138"/>
+    </g>
+  </g>
+  <circle cx="148" cy="187.0" r="12" fill="none" stroke="#f97316" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="12;12;24;24" keyTimes="0;0.25;0.5;1" dur="1.6s" begin="-0.860s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.24;0.27;0.5;1" dur="1.6s" begin="-0.860s" repeatCount="indefinite"/>
+  </circle>
+  <text x="148" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Plan</text>
+  <g stroke="#6b6b6b" stroke-width="3" stroke-linecap="round" fill="none">
+    <animate attributeName="stroke" values="#6b6b6b;#f97316;#f97316;#6b6b6b;#6b6b6b" keyTimes="0;0.12;0.4;0.6;1" dur="1.6s" begin="-0.540s" repeatCount="indefinite"/>
+    <rect x="312" y="16" width="24" height="12" rx="3" fill="#1a1a1a" stroke-width="2"/>
+    <path d="M324 28 V96"/>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;0 44;0 44;0 0;0 0" keyTimes="0;0.25;0.31;0.55;1" dur="1.6s" begin="-0.540s" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1;0 0 1 1" repeatCount="indefinite"/>
+      <path d="M324 50 V120" stroke-width="2"/>
+      <circle cx="324" cy="96" r="3" fill="#0b0b0b" stroke-width="2"/>
+      <path d="M307 138 V120 H341 V138"/>
+    </g>
+  </g>
+  <circle cx="324" cy="187.0" r="12" fill="none" stroke="#f97316" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="12;12;24;24" keyTimes="0;0.25;0.5;1" dur="1.6s" begin="-0.540s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.24;0.27;0.5;1" dur="1.6s" begin="-0.540s" repeatCount="indefinite"/>
+  </circle>
+  <text x="324" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Code</text>
+  <g stroke="#6b6b6b" stroke-width="3" stroke-linecap="round" fill="none">
+    <animate attributeName="stroke" values="#6b6b6b;#f97316;#f97316;#6b6b6b;#6b6b6b" keyTimes="0;0.12;0.4;0.6;1" dur="1.6s" begin="-0.220s" repeatCount="indefinite"/>
+    <rect x="488" y="16" width="24" height="12" rx="3" fill="#1a1a1a" stroke-width="2"/>
+    <path d="M500 28 V96"/>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;0 44;0 44;0 0;0 0" keyTimes="0;0.25;0.31;0.55;1" dur="1.6s" begin="-0.220s" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1;0 0 1 1" repeatCount="indefinite"/>
+      <path d="M500 50 V120" stroke-width="2"/>
+      <circle cx="500" cy="96" r="3" fill="#0b0b0b" stroke-width="2"/>
+      <path d="M483 138 V120 H517 V138"/>
+    </g>
+  </g>
+  <circle cx="500" cy="187.0" r="12" fill="none" stroke="#f97316" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="12;12;24;24" keyTimes="0;0.25;0.5;1" dur="1.6s" begin="-0.220s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.24;0.27;0.5;1" dur="1.6s" begin="-0.220s" repeatCount="indefinite"/>
+  </circle>
+  <text x="500" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Review</text>
+  <g stroke="#6b6b6b" stroke-width="3" stroke-linecap="round" fill="none">
+    <animate attributeName="stroke" values="#6b6b6b;#f97316;#f97316;#6b6b6b;#6b6b6b" keyTimes="0;0.12;0.4;0.6;1" dur="1.6s" begin="-1.500s" repeatCount="indefinite"/>
+    <rect x="664" y="16" width="24" height="12" rx="3" fill="#1a1a1a" stroke-width="2"/>
+    <path d="M676 28 V96"/>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;0 44;0 44;0 0;0 0" keyTimes="0;0.25;0.31;0.55;1" dur="1.6s" begin="-1.500s" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1;0 0 1 1" repeatCount="indefinite"/>
+      <path d="M676 50 V120" stroke-width="2"/>
+      <circle cx="676" cy="96" r="3" fill="#0b0b0b" stroke-width="2"/>
+      <path d="M659 138 V120 H693 V138"/>
+    </g>
+  </g>
+  <circle cx="676" cy="187.0" r="12" fill="none" stroke="#f97316" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="12;12;24;24" keyTimes="0;0.25;0.5;1" dur="1.6s" begin="-1.500s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.24;0.27;0.5;1" dur="1.6s" begin="-1.500s" repeatCount="indefinite"/>
+  </circle>
+  <text x="676" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Test</text>
+  <g stroke="#6b6b6b" stroke-width="3" stroke-linecap="round" fill="none">
+    <animate attributeName="stroke" values="#6b6b6b;#f97316;#f97316;#6b6b6b;#6b6b6b" keyTimes="0;0.12;0.4;0.6;1" dur="1.6s" begin="-1.180s" repeatCount="indefinite"/>
+    <rect x="840" y="16" width="24" height="12" rx="3" fill="#1a1a1a" stroke-width="2"/>
+    <path d="M852 28 V96"/>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;0 44;0 44;0 0;0 0" keyTimes="0;0.25;0.31;0.55;1" dur="1.6s" begin="-1.180s" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1;0 0 1 1" repeatCount="indefinite"/>
+      <path d="M852 50 V120" stroke-width="2"/>
+      <circle cx="852" cy="96" r="3" fill="#0b0b0b" stroke-width="2"/>
+      <path d="M835 138 V120 H869 V138"/>
+    </g>
+  </g>
+  <circle cx="852" cy="187.0" r="12" fill="none" stroke="#f97316" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="12;12;24;24" keyTimes="0;0.25;0.5;1" dur="1.6s" begin="-1.180s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.24;0.27;0.5;1" dur="1.6s" begin="-1.180s" repeatCount="indefinite"/>
+  </circle>
+  <text x="852" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Deploy</text>
+</svg>
