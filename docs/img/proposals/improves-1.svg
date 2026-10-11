@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Title: Caught, Ruled, Passed | Concept: A work item fails Checks and rides the feedback loop back into the Agent as a new rule, so the identical next item passes and ships. SMIL only, 8s loop -->
+  <path d="M150 120 H950" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M600 150 V222 Q600 232 590 232 H240 Q230 232 230 222 V156" fill="none" stroke="#22d3ee" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1s" repeatCount="indefinite"/></path>
+  <path d="M222 166 L230 154 L238 166" fill="none" stroke="#22d3ee" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.34;0.38;0.62;0.68;1" dur="8s" begin="-1s" repeatCount="indefinite"/>
+    <rect x="355" y="246" width="120" height="30" rx="5" fill="#1a1a1a"/>
+    <text x="415" y="267" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#22d3ee">+1 Rule</text>
+  </g>
+  <rect x="-13" y="-13" width="26" height="26" rx="5" fill="#f97316" opacity="0"><animate attributeName="fill" values="#f97316;#f97316;#ef4444;#ef4444" keyTimes="0;0.22;0.23;1" dur="8s" begin="-1s" calcMode="discrete" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.53;0.54;1" dur="8s" begin="-1s" repeatCount="indefinite"/><animateMotion path="M230 120 H600 V232 H230 V120" keyPoints="0;0.3854;0.3854;1;1" keyTimes="0;0.22;0.30;0.53;1" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1" dur="8s" begin="-1s" repeatCount="indefinite"/></rect>
+  <rect x="-13" y="-13" width="26" height="26" rx="5" fill="#f97316" opacity="0"><animate attributeName="fill" values="#f97316;#f97316;#22d3ee;#22d3ee" keyTimes="0;0.72;0.73;1" dur="8s" begin="-1s" calcMode="discrete" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.56;0.57;0.92;0.97;1" dur="8s" begin="-1s" repeatCount="indefinite"/><animateMotion path="M230 120 H930" keyPoints="0;0;0.5286;0.5286;1;1" keyTimes="0;0.56;0.72;0.76;0.94;1" calcMode="spline" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1" dur="8s" begin="-1s" repeatCount="indefinite"/></rect>
+  <rect x="150" y="84" width="160" height="72" rx="6" fill="#1a1a1a"/>
+  <rect x="150" y="84" width="160" height="72" rx="6" fill="#22d3ee" fill-opacity="0.18" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.52;0.56;0.72;1" dur="8s" begin="-1s" repeatCount="indefinite"/></rect>
+  <g transform="translate(172.0 106.0) scale(1.167)" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></g>
+  <text x="212" y="127" text-anchor="start" font-size="18" font-weight="700" letter-spacing="2" fill="#d8d8d8">Agent</text>
+  <text x="600" y="64" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Checks</text>
+  <rect x="582" y="84" width="36" height="72" rx="5" fill="#1a1a1a"/>
+  <rect x="582" y="84" width="36" height="72" rx="5" fill="#ef4444" opacity="0"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.22;0.23;0.30;0.33;1" dur="8s" begin="-1s" repeatCount="indefinite"/></rect>
+  <rect x="582" y="84" width="36" height="72" rx="5" fill="#22d3ee" opacity="0"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.72;0.73;0.76;0.80;1" dur="8s" begin="-1s" repeatCount="indefinite"/></rect>
+  <g transform="translate(589.0 109.0) scale(0.917)" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22;0.23;0.30;0.33;1" dur="8s" begin="-1s" repeatCount="indefinite"/><path d="M18 6 6 18"/><path d="m6 6 12 12"/></g>
+  <g transform="translate(589.0 109.0) scale(0.917)" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.72;0.73;0.76;0.80;1" dur="8s" begin="-1s" repeatCount="indefinite"/><path d="M20 6 9 17l-5-5"/></g>
+  <text x="930" y="160" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#6b6b6b">Shipped</text>
+  <text x="415" y="214" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="2" fill="#22d3ee">Learn</text>
+</svg>

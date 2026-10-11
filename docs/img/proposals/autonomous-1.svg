@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Title: Agent Loop | Concept: A single agent cycles Pick, Code, Test, Review, Merge, Ship on its own and every lap drops a shipped change onto Main, with nobody pushing it round. SMIL only, 6s loop -->
+  <defs><path id="orbit" d="M260.0 236.6 A100 100 0 0 1 160.0 63.4 A100 100 0 0 1 260.0 236.6"/><linearGradient id="fade" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#fff"/><stop offset="0.7" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="m" maskUnits="userSpaceOnUse" x="340" y="100" width="640" height="100"><rect x="340" y="100" width="640" height="100" fill="url(#fade)"/></mask></defs>
+  <circle cx="210" cy="150" r="100" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="10"/>
+  <circle cx="210" cy="150" r="100" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 8"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1s" repeatCount="indefinite"/></circle>
+  <path d="M324 150 H980" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-linecap="round"/>
+  <text x="333" y="124" text-anchor="start" font-size="16" font-weight="700" letter-spacing="2" fill="#6b6b6b">Main</text>
+  <g transform="translate(174 110) scale(3)" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><g><path d="M15 13v2"/><path d="M9 13v2"/><animateTransform attributeName="transform" type="matrix" values="1 0 0 1 0 0;1 0 0 1 0 0;1 0 0 0.1 0 12.6;1 0 0 1 0 0;1 0 0 1 0 0" keyTimes="0;0.9;0.93;0.96;1" dur="12.0s" begin="-60.0s" repeatCount="indefinite"/></g></g>
+  <circle cx="260.0" cy="236.6" r="9" fill="#262626"><animate attributeName="fill" values="#f97316;#f97316;#262626;#262626" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-60.000s" repeatCount="indefinite"/></circle>
+  <text x="273.0" y="265.1" text-anchor="start" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Pick<animate attributeName="fill" values="#f97316;#f97316;#d8d8d8;#d8d8d8" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-60.000s" repeatCount="indefinite"/></text>
+  <circle cx="160.0" cy="236.6" r="9" fill="#262626"><animate attributeName="fill" values="#f97316;#f97316;#262626;#262626" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-59.000s" repeatCount="indefinite"/></circle>
+  <text x="147.0" y="265.1" text-anchor="end" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Code<animate attributeName="fill" values="#f97316;#f97316;#d8d8d8;#d8d8d8" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-59.000s" repeatCount="indefinite"/></text>
+  <circle cx="110.0" cy="150.0" r="9" fill="#262626"><animate attributeName="fill" values="#f97316;#f97316;#262626;#262626" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-58.000s" repeatCount="indefinite"/></circle>
+  <text x="84.0" y="156.0" text-anchor="end" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Test<animate attributeName="fill" values="#f97316;#f97316;#d8d8d8;#d8d8d8" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-58.000s" repeatCount="indefinite"/></text>
+  <circle cx="160.0" cy="63.4" r="9" fill="#262626"><animate attributeName="fill" values="#f97316;#f97316;#262626;#262626" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-57.000s" repeatCount="indefinite"/></circle>
+  <text x="147.0" y="46.9" text-anchor="end" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Review<animate attributeName="fill" values="#f97316;#f97316;#d8d8d8;#d8d8d8" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-57.000s" repeatCount="indefinite"/></text>
+  <circle cx="260.0" cy="63.4" r="9" fill="#262626"><animate attributeName="fill" values="#f97316;#f97316;#262626;#262626" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-56.000s" repeatCount="indefinite"/></circle>
+  <text x="273.0" y="46.9" text-anchor="start" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Merge<animate attributeName="fill" values="#f97316;#f97316;#d8d8d8;#d8d8d8" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-56.000s" repeatCount="indefinite"/></text>
+  <circle cx="310.0" cy="150.0" r="9" fill="#262626"><animate attributeName="fill" values="#f97316;#f97316;#262626;#262626" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-55.000s" repeatCount="indefinite"/></circle>
+  <text x="310.0" y="192.0" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Ship<animate attributeName="fill" values="#f97316;#f97316;#d8d8d8;#d8d8d8" keyTimes="0;0.06;0.35;1" dur="6.0s" begin="-55.000s" repeatCount="indefinite"/></text>
+  <circle r="7" fill="#f97316"><animateMotion dur="6.0s" begin="-60.0s" repeatCount="indefinite"><mpath href="#orbit"/></animateMotion></circle>
+  <g mask="url(#m)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 0;56 0;56 0" keyTimes="0;0.8533;0.9733;1" dur="6.0s" begin="-60.0s" calcMode="spline" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" repeatCount="indefinite"/>
+    <rect x="333" y="139" width="22" height="22" rx="4" fill="#22d3ee" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.8333;0.8533;1" dur="6.0s" begin="-60.0s" repeatCount="indefinite"/></rect>
+    <rect x="389" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="445" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="501" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="557" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="613" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="669" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="725" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="781" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="837" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="893" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+    <rect x="949" y="139" width="22" height="22" rx="4" fill="#22d3ee"/>
+  </g></g>
+</svg>

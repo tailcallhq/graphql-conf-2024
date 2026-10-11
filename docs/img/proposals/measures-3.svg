@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Title: Cycle Time Gauge | Concept: Every item is timed from Start to Shipped, and that cycle time, not effort, is the needle the factory steers by. -->
+  <!-- Items cross from a Start gate to a Shipped gate; slow items crawl early in the loop and fast ones zip later. Each arrival swings the gauge needle to that item's cycle time and updates the readout. SMIL only, 12s loop -->
+  <path d="M634.0 196.0 A136 136 0 0 1 906.0 196.0" fill="none" stroke="#262626" stroke-width="16"/>
+  <path d="M634.0 196.0 A136 136 0 0 1 728.0 66.7" fill="none" stroke="#22d3ee" stroke-width="16"/>
+  <path d="M849.9 86.0 A136 136 0 0 1 906.0 196.0" fill="none" stroke="#ef4444" stroke-width="16"/>
+  <path d="M648.0 196.0 L658.0 196.0" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="676.0" y="201.0" text-anchor="middle" font-size="14" font-weight="700" fill="#a3a3a3">0d</text>
+  <path d="M671.3 124.3 L679.4 130.2" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="694.0" y="145.7" text-anchor="middle" font-size="14" font-weight="700" fill="#a3a3a3">1d</text>
+  <path d="M732.3 80.0 L735.4 89.5" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="741.0" y="111.6" text-anchor="middle" font-size="14" font-weight="700" fill="#a3a3a3">2d</text>
+  <path d="M807.7 80.0 L804.6 89.5" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="799.0" y="111.6" text-anchor="middle" font-size="14" font-weight="700" fill="#a3a3a3">3d</text>
+  <path d="M868.7 124.3 L860.6 130.2" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="846.0" y="145.7" text-anchor="middle" font-size="14" font-weight="700" fill="#a3a3a3">4d</text>
+  <path d="M892.0 196.0 L882.0 196.0" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="864.0" y="201.0" text-anchor="middle" font-size="14" font-weight="700" fill="#a3a3a3">5d</text>
+  <g><animateTransform attributeName="transform" type="rotate" values="-129.6 770 196;-129.6 770 196;-28.8 770 196;-28.8 770 196;-57.6 770 196;-57.6 770 196;-79.2 770 196;-79.2 770 196;-97.2 770 196;-97.2 770 196;-115.2 770 196;-115.2 770 196;-129.6 770 196;-129.6 770 196" keyTimes="0.0000;0.0500;0.1167;0.2167;0.2833;0.3833;0.4500;0.5500;0.6167;0.7167;0.7833;0.8833;0.9500;1.0000" dur="12.0s" calcMode="spline" keySplines="0 0 1 1;0.2 0.8 0.3 1;0 0 1 1;0.2 0.8 0.3 1;0 0 1 1;0.2 0.8 0.3 1;0 0 1 1;0.2 0.8 0.3 1;0 0 1 1;0.2 0.8 0.3 1;0 0 1 1;0.2 0.8 0.3 1;0 0 1 1" repeatCount="indefinite"/>
+    <path d="M770 190 L876 196 L770 202 Z" fill="#f97316"/>
+  </g>
+  <circle cx="770" cy="196" r="11" fill="#1a1a1a" stroke="#f97316" stroke-width="3"/>
+  <text x="770" y="248" text-anchor="middle" font-size="34" font-weight="700" fill="#f2f2f2">4.2d<animate attributeName="opacity" values="0;1;0" keyTimes="0;0.0917;0.2583" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/></text>
+  <text x="770" y="248" text-anchor="middle" font-size="34" font-weight="700" fill="#f2f2f2">3.4d<animate attributeName="opacity" values="0;1;0" keyTimes="0;0.2583;0.4250" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/></text>
+  <text x="770" y="248" text-anchor="middle" font-size="34" font-weight="700" fill="#f2f2f2">2.8d<animate attributeName="opacity" values="0;1;0" keyTimes="0;0.4250;0.5917" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/></text>
+  <text x="770" y="248" text-anchor="middle" font-size="34" font-weight="700" fill="#f2f2f2">2.3d<animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5917;0.7583" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/></text>
+  <text x="770" y="248" text-anchor="middle" font-size="34" font-weight="700" fill="#f2f2f2">1.8d<animate attributeName="opacity" values="0;1;0" keyTimes="0;0.7583;0.9250" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/></text>
+  <text x="770" y="248" text-anchor="middle" font-size="34" font-weight="700" fill="#f2f2f2">1.4d<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.0917;0.9250" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/></text>
+  <text x="770" y="280" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Cycle Time</text>
+  <rect x="30" y="210" width="530" height="10" rx="5" fill="#262626"/>
+  <path d="M70 164 V208" stroke="#6b6b6b" stroke-width="3" stroke-linecap="round"/>
+  <text x="70" y="252" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Start</text>
+  <path d="M520 164 V208" stroke="#6b6b6b" stroke-width="3" stroke-linecap="round"/>
+  <text x="520" y="252" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Shipped</text>
+  <path d="M520 164 V208" stroke="#f97316" stroke-width="3" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.2750;0.3000;0.6000;1" dur="2.0s" repeatCount="indefinite"/></path>
+  <path d="M530 196 H612" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-dasharray="3 5"/>
+  <circle r="4" fill="#f97316" opacity="0"><animateMotion path="M530 196 H612" keyPoints="0;0;1;1" keyTimes="0;0.3000;0.4750;1" calcMode="linear" dur="2.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2990;0.3000;0.4750;0.4800;1" dur="2.0s" repeatCount="indefinite"/></circle>
+  <rect x="-11" y="-11" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.9"><animateMotion path="M56 196 H534" keyPoints="0;1;1" keyTimes="0;0.2250;1" calcMode="linear" dur="12.0s" begin="-2.100s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.2250;0.2550;1" dur="12.0s" begin="-2.100s" repeatCount="indefinite"/></rect>
+  <rect x="-11" y="-11" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.9"><animateMotion path="M56 196 H534" keyPoints="0;1;1" keyTimes="0;0.1917;1" calcMode="linear" dur="12.0s" begin="-11.700s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1917;0.2217;1" dur="12.0s" begin="-11.700s" repeatCount="indefinite"/></rect>
+  <rect x="-11" y="-11" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.9"><animateMotion path="M56 196 H534" keyPoints="0;1;1" keyTimes="0;0.1667;1" calcMode="linear" dur="12.0s" begin="-9.400s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1667;0.1967;1" dur="12.0s" begin="-9.400s" repeatCount="indefinite"/></rect>
+  <rect x="-11" y="-11" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.9"><animateMotion path="M56 196 H534" keyPoints="0;1;1" keyTimes="0;0.1458;1" calcMode="linear" dur="12.0s" begin="-7.150s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1458;0.1758;1" dur="12.0s" begin="-7.150s" repeatCount="indefinite"/></rect>
+  <rect x="-11" y="-11" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.9"><animateMotion path="M56 196 H534" keyPoints="0;1;1" keyTimes="0;0.1250;1" calcMode="linear" dur="12.0s" begin="-4.900s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1250;0.1550;1" dur="12.0s" begin="-4.900s" repeatCount="indefinite"/></rect>
+  <rect x="-11" y="-11" width="22" height="22" rx="4" fill="#f97316" fill-opacity="0.9"><animateMotion path="M56 196 H534" keyPoints="0;1;1" keyTimes="0;0.1083;1" calcMode="linear" dur="12.0s" begin="-2.700s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1083;0.1383;1" dur="12.0s" begin="-2.700s" repeatCount="indefinite"/></rect>
+</svg>

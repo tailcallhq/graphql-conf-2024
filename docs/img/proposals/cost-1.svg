@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Title: Steps Vs Slope | Concept: Headcount cost climbs in a staircase with every hire while compute cost rises as a gentle slope that tracks output. Both lines draw 0-5.5s, hold, fade, loop (10s). SMIL only -->
+  <path d="M140 200 H840" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <path d="M140 140 H840" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <path d="M140 80 H840" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <path d="M140 30 V260 H850" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+  <text transform="translate(100 145) rotate(-90)" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Cost</text>
+  <text x="490" y="292" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Output</text>
+  <g><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.9;0.96;0.999;1" dur="10s" begin="-4s" repeatCount="indefinite"/>
+    <path d="M140 214 H240 V188 H340 V162 H440 V136 H540 V110 H640 V84 H740 V58 H840" pathLength="1" fill="none" stroke="#a3a3a3" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1 2" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1;1" keyTimes="0;0.55;0.96;0.961;1" dur="10s" begin="-4s" repeatCount="indefinite"/></path>
+    <circle r="7" fill="#a3a3a3"><animateMotion path="M140 214 H240 V188 H340 V162 H440 V136 H540 V110 H640 V84 H740 V58 H840" keyPoints="0;1;1;0;0" keyTimes="0;0.55;0.96;0.961;1" calcMode="linear" dur="10s" begin="-4s" repeatCount="indefinite"/></circle>
+    <path d="M140 248 C420 242 620 230 840 212" pathLength="1" fill="none" stroke="#f97316" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1 2" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1;1" keyTimes="0;0.55;0.96;0.961;1" dur="10s" begin="-4s" repeatCount="indefinite"/></path>
+    <circle r="7" fill="#f97316"><animateMotion path="M140 248 C420 242 620 230 840 212" keyPoints="0;1;1;0;0" keyTimes="0;0.55;0.96;0.961;1" calcMode="linear" dur="10s" begin="-4s" repeatCount="indefinite"/></circle>
+    <g opacity="0" transform="translate(229 154) scale(0.92)" fill="none" stroke="#a3a3a3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0643;0.0843;0.9;0.96;1" dur="10s" begin="-4s" repeatCount="indefinite"/><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+    <g opacity="0" transform="translate(329 128) scale(0.92)" fill="none" stroke="#a3a3a3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1452;0.1652;0.9;0.96;1" dur="10s" begin="-4s" repeatCount="indefinite"/><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+    <g opacity="0" transform="translate(429 102) scale(0.92)" fill="none" stroke="#a3a3a3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2262;0.2462;0.9;0.96;1" dur="10s" begin="-4s" repeatCount="indefinite"/><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+    <g opacity="0" transform="translate(529 76) scale(0.92)" fill="none" stroke="#a3a3a3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3071;0.3271;0.9;0.96;1" dur="10s" begin="-4s" repeatCount="indefinite"/><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+    <g opacity="0" transform="translate(629 50) scale(0.92)" fill="none" stroke="#a3a3a3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3881;0.4081;0.9;0.96;1" dur="10s" begin="-4s" repeatCount="indefinite"/><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+    <g opacity="0" transform="translate(729 24) scale(0.92)" fill="none" stroke="#a3a3a3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.469;0.4890;0.9;0.96;1" dur="10s" begin="-4s" repeatCount="indefinite"/><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.56;0.9;0.96;1" dur="10s" begin="-4s" repeatCount="indefinite"/>
+      <text x="862" y="64" font-size="20" font-weight="700" letter-spacing="1" fill="#d8d8d8">People</text>
+      <text x="862" y="218" font-size="20" font-weight="700" letter-spacing="1" fill="#f97316">Compute</text>
+    </g>
+  </g>
+</svg>

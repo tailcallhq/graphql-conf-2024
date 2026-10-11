@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 290" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Title: Pay Per Use | Concept: As a playhead sweeps through time, people cost climbs steadily even while idle, but compute cost only rises while work is flowing and flatlines in the gaps. Sweep 0-9.6s, hold, fade, loop (12s). SMIL only -->
+  <defs><clipPath id="cost3-reveal"><rect x="0" y="0" height="300" width="0"><animate attributeName="width" values="190;888;888;190;190" keyTimes="0;0.8;0.97;0.971;1" dur="12s" begin="-5s" repeatCount="indefinite"/></rect></clipPath></defs>
+  <text x="166" y="57" text-anchor="end" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Work</text>
+  <rect x="190" y="38" width="690" height="26" rx="5" fill="#1a1a1a"/>
+  <text transform="translate(156 186) rotate(-90)" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Spend</text>
+  <path d="M190 96 V262 H890" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+  <text x="340.0" y="57" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#6b6b6b">Idle</text>
+  <text x="745.0" y="57" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#6b6b6b">Idle</text>
+  <g clip-path="url(#cost3-reveal)"><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.9;0.96;0.999;1" dur="12s" begin="-5s" repeatCount="indefinite"/>
+    <rect x="190" y="38" width="110" height="26" rx="5" fill="#22d3ee"/>
+    <rect x="190" y="76" width="110" height="186" fill="rgba(34,211,238,0.08)"/>
+    <rect x="380" y="38" width="50" height="26" rx="5" fill="#22d3ee"/>
+    <rect x="380" y="76" width="50" height="186" fill="rgba(34,211,238,0.08)"/>
+    <rect x="520" y="38" width="180" height="26" rx="5" fill="#22d3ee"/>
+    <rect x="520" y="76" width="180" height="186" fill="rgba(34,211,238,0.08)"/>
+    <rect x="790" y="38" width="40" height="26" rx="5" fill="#22d3ee"/>
+    <rect x="790" y="76" width="40" height="186" fill="rgba(34,211,238,0.08)"/>
+    <path d="M190 262 L880 110" fill="none" stroke="#a3a3a3" stroke-width="4" stroke-linecap="round"/>
+    <path d="M190 262.0 L300 247.5 L380 247.5 L430 240.9 L520 240.9 L700 217.3 L790 217.3 L830 212.0 L880 212.0" fill="none" stroke="#f97316" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <g><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.9;0.96;0.999;1" dur="12s" begin="-5s" repeatCount="indefinite"/>
+    <path d="M0 30 V262" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 5"><animateTransform attributeName="transform" type="translate" values="190 0;880 0;880 0;190 0;190 0" keyTimes="0;0.8;0.97;0.971;1" dur="12s" begin="-5s" repeatCount="indefinite"/></path>
+    <circle r="7" fill="#a3a3a3"><animateMotion path="M190 262 L880 110" keyPoints="0;1;1;0;0" keyTimes="0;0.8;0.97;0.971;1" calcMode="linear" dur="12s" begin="-5s" repeatCount="indefinite"/></circle>
+    <circle r="7" fill="#f97316" cx="190" cy="262"><animate attributeName="cx" values="190;300;380;430;520;700;790;830;880;880;190;190" keyTimes="0.0;0.1275;0.2203;0.2783;0.3826;0.5913;0.6957;0.742;0.8;0.97;0.971;1" dur="12s" begin="-5s" repeatCount="indefinite"/><animate attributeName="cy" values="262.0;247.5;247.5;240.9;240.9;217.3;217.3;212.0;212.0;212.0;262;262" keyTimes="0.0;0.1275;0.2203;0.2783;0.3826;0.5913;0.6957;0.742;0.8;0.97;0.971;1" dur="12s" begin="-5s" repeatCount="indefinite"/></circle>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.76;0.81;0.9;0.96;1" dur="12s" begin="-5s" repeatCount="indefinite"/>
+    <text x="902" y="116" font-size="18" font-weight="700" letter-spacing="1" fill="#d8d8d8">People</text>
+    <text x="902" y="218" font-size="18" font-weight="700" letter-spacing="1" fill="#f97316">Compute</text>
+  </g>
+</svg>

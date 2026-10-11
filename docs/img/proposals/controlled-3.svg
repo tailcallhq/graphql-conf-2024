@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Title: Policy Gate | Concept: Every work item stops at a business checkpoint and only moves on once Tests, Budget and Approval all go green; one item fails Budget and is sent back. SMIL only, 15s loop -->
+  <rect x="30" y="178" width="940" height="10" rx="5" fill="#262626"/>
+  <path d="M440 188 V232" stroke="#262626" stroke-width="10" stroke-linecap="round"/>
+  <text x="440" y="290" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#6b6b6b">Returned<animate attributeName="fill" values="#6b6b6b;#6b6b6b;#ef4444;#ef4444;#6b6b6b;#6b6b6b" keyTimes="0;0.8533;0.8667;0.9733;0.9933;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></text>
+  <text x="900" y="226" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Shipped</text>
+  <text x="90" y="226" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Backlog</text>
+  <path d="M330 62 V70 H500 V84" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <rect x="255" y="22" width="150" height="40" rx="6" fill="#1a1a1a"/>
+  <circle cx="280" cy="42" r="7" fill="#6b6b6b"><animate attributeName="fill" values="#6b6b6b;#6b6b6b;#22d3ee;#22d3ee;#6b6b6b;#6b6b6b;#22d3ee;#22d3ee;#6b6b6b;#6b6b6b;#22d3ee;#22d3ee;#6b6b6b;#6b6b6b" keyTimes="0;0.1200;0.1280;0.3000;0.3133;0.4533;0.4613;0.6333;0.6467;0.7867;0.7947;0.9667;0.9800;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></circle>
+  <text x="340" y="48" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="1" fill="#a3a3a3">Tests<animate attributeName="fill" values="#a3a3a3;#a3a3a3;#22d3ee;#22d3ee;#a3a3a3;#a3a3a3;#22d3ee;#22d3ee;#a3a3a3;#a3a3a3;#22d3ee;#22d3ee;#a3a3a3;#a3a3a3" keyTimes="0;0.1200;0.1280;0.3000;0.3133;0.4533;0.4613;0.6333;0.6467;0.7867;0.7947;0.9667;0.9800;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></text>
+  <path d="M500 62 V84" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <rect x="425" y="22" width="150" height="40" rx="6" fill="#1a1a1a"/>
+  <circle cx="450" cy="42" r="7" fill="#6b6b6b"><animate attributeName="fill" values="#6b6b6b;#6b6b6b;#22d3ee;#22d3ee;#6b6b6b;#6b6b6b;#22d3ee;#22d3ee;#6b6b6b;#6b6b6b;#ef4444;#ef4444;#6b6b6b;#6b6b6b" keyTimes="0;0.1500;0.1580;0.3000;0.3133;0.4833;0.4913;0.6333;0.6467;0.8167;0.8247;0.9667;0.9800;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></circle>
+  <text x="510" y="48" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="1" fill="#a3a3a3">Budget<animate attributeName="fill" values="#a3a3a3;#a3a3a3;#22d3ee;#22d3ee;#a3a3a3;#a3a3a3;#22d3ee;#22d3ee;#a3a3a3;#a3a3a3;#ef4444;#ef4444;#a3a3a3;#a3a3a3" keyTimes="0;0.1500;0.1580;0.3000;0.3133;0.4833;0.4913;0.6333;0.6467;0.8167;0.8247;0.9667;0.9800;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></text>
+  <path d="M670 62 V70 H500 V84" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <rect x="595" y="22" width="150" height="40" rx="6" fill="#1a1a1a"/>
+  <circle cx="620" cy="42" r="7" fill="#6b6b6b"><animate attributeName="fill" values="#6b6b6b;#6b6b6b;#22d3ee;#22d3ee;#6b6b6b;#6b6b6b;#22d3ee;#22d3ee;#6b6b6b;#6b6b6b" keyTimes="0;0.1800;0.1880;0.3000;0.3133;0.5133;0.5213;0.6333;0.6467;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></circle>
+  <text x="680" y="48" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="1" fill="#a3a3a3">Approval<animate attributeName="fill" values="#a3a3a3;#a3a3a3;#22d3ee;#22d3ee;#a3a3a3;#a3a3a3;#22d3ee;#22d3ee;#a3a3a3;#a3a3a3" keyTimes="0;0.1800;0.1880;0.3000;0.3133;0.5133;0.5213;0.6333;0.6467;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></text>
+  <rect x="496" y="128" width="8" height="48" rx="3" fill="#f97316"><animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -44;0 -44;0 0;0 0;0 -44;0 -44;0 0;0 0" keyTimes="0;0.2067;0.2333;0.2933;0.3200;0.5400;0.5667;0.6267;0.6533;1" dur="15s" begin="-0.6s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/></rect>
+  <rect x="478" y="84" width="44" height="44" rx="6" fill="#1a1a1a"/>
+  <g transform="translate(488 94)" fill="none" stroke="#a3a3a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></g>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0001;0.0200;0.2933;0.3133;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;320 0;320 0;770 0;770 0" keyTimes="0;0.0001;0.1067;0.2267;0.3067;1" dur="15s" begin="-0.6s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="60" y="140" width="104" height="34" rx="5" fill="#1a1a1a"/>
+    <rect x="60" y="140" width="5" height="34" fill="#f97316"/>
+    <text x="114.0" y="163" text-anchor="middle" font-size="14" font-weight="700" fill="#d8d8d8">FEAT 41</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3333;0.3533;0.6267;0.6467;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;320 0;320 0;770 0;770 0" keyTimes="0;0.3333;0.4400;0.5600;0.6400;1" dur="15s" begin="-0.6s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="60" y="140" width="104" height="34" rx="5" fill="#1a1a1a"/>
+    <rect x="60" y="140" width="5" height="34" fill="#ef4444"/>
+    <text x="114.0" y="163" text-anchor="middle" font-size="14" font-weight="700" fill="#d8d8d8">BUG 52</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6667;0.6867;0.9667;0.9867;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;320 0;320 0;320 70;320 70;320 70" keyTimes="0;0.6667;0.7733;0.8933;0.9267;0.9933;1" dur="15s" begin="-0.6s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="60" y="140" width="104" height="34" rx="5" fill="#1a1a1a"/>
+    <rect x="60" y="140" width="5" height="34" fill="#f97316"/>
+    <text x="114.0" y="163" text-anchor="middle" font-size="14" font-weight="700" fill="#d8d8d8">FEAT 43<animate attributeName="fill" values="#d8d8d8;#d8d8d8;#ef4444;#ef4444" keyTimes="0;0.8167;0.8267;1" dur="15s" begin="-0.6s" repeatCount="indefinite"/></text>
+  </g>
+</svg>
