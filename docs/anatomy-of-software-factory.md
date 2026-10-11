@@ -51,17 +51,23 @@ class: grid-2 center
 
 class: middle
 
-### Individual Productivity
+# Individual Productivity .icon[badge-question-mark]
 
 --
 
-# .icon[arrow-right] Massive Increase
+### .icon[arrow-up] Massive Improvements
 
 ---
 
-class: diagram
+class: diagram center
 
-![Individual output climbs to 10x while org velocity reaches 1.5x](./img/prod-graph-a.svg)
+![Each engineer's output climbs to 10x after AI agents are adopted](./img/prod-graph-individual.svg)
+
+---
+
+class: diagram center
+
+![Org velocity only reaches 1.5x while individual output is at 10x](./img/prod-graph-org.svg)
 
 --
 
@@ -71,9 +77,15 @@ class: diagram
 
 class: middle
 
-### Scaling Engineering
+# Scaling Engineering .icon[badge-question-mark]
+
+---
+
+class: diagram middle
 
 # .icon[arrow-up] Increasing Headcount
+
+![Engineers each paired with Claude and Codex](./img/org-a-before.svg)
 
 ---
 
