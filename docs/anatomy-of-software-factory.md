@@ -95,7 +95,15 @@ class: middle
 
 ![Adding teams of specialists one column at a time, then struck out](./img/bridge/d-more-humans.svg)
 
---
+.flex-row.spread[
+
+#### .icon[circle-alert] Bottlenecks
+
+#### .icon[circle-alert] Coordination
+
+#### .icon[circle-alert] Cost
+
+]
 
 ---
 
@@ -108,9 +116,13 @@ class: middle
 --
 
 .flex-row.spread[
+
 #### .icon[circle-alert] Signal
+
 #### .icon[circle-alert] Feedback
+
 #### .icon[circle-alert] Control
+
 ]
 
 ---
