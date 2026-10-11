@@ -25,7 +25,7 @@ class: grid-2
 
 ## Tushar Mathur
 
-- .icon[![ForgeCode](./img/forge-mark.svg)] Founder .font-grey[ForgeCode]
+- .icon[![ForgeCode](./img/forge-mark.svg)] CEO .font-grey[ForgeCode]
 - .icon[![Dream11](./img/dream11-mark.svg)] VP Engineering .font-grey[Dream11]
 - .icon[heart] Passionate about .font-grey[DevTools]
 
@@ -48,6 +48,8 @@ class: grid-2 center
 ![Codex](./img/codex-logo.svg)
 
 # .icon[arrow-right] .tc-underline[100%] Auto Generated
+
+.font-grey.font-sm[Illustrative]
 
 ---
 
@@ -75,7 +77,7 @@ class: bottom
 
 class: middle
 
-## .tc-underline[Bottlenecks] have moved .icon[arrow-down]
+## .tc-underline[Bottlenecks] Have Moved .icon[arrow-down]
 
 ![Work piling up at review](./img/bottleneck.svg)
 
@@ -91,17 +93,17 @@ class: middle
 
 class: middle
 
-### .tc-underline[More] People .font-grey[(Option 1)]
+## .tc-underline[More] People .font-grey[1/2]
 
 ![Adding teams of specialists one column at a time, then struck out](./img/bridge/d-more-humans.svg)
 
 .flex-row.spread[
 
-#### .icon[triangle-alert] Bottlenecks
+### .icon[triangle-alert] Bottlenecks
 
-#### .icon[triangle-alert] Coordination
+### .icon[triangle-alert] Coordination
 
-#### .icon[triangle-alert] Cost
+### .icon[triangle-alert] Cost
 
 ]
 
@@ -109,17 +111,17 @@ class: middle
 
 class: middle
 
-### .tc-underline[More] Tokens .font-grey[(Option 2)]
+## .tc-underline[More] Tokens .font-grey[2/2]
 
 ![The chaotic agent line piling up slop, then struck out](./img/bridge/d-more-agents.svg)
 
 .flex-row.spread[
 
-#### .icon[triangle-alert] Signal
+### .icon[triangle-alert] Signal
 
-#### .icon[triangle-alert] Feedback
+### .icon[triangle-alert] Feedback
 
-#### .icon[triangle-alert] Control
+### .icon[triangle-alert] Control
 
 ]
 
@@ -129,7 +131,7 @@ class: middle
 
 ### .font-grey[Part 3]
 
-# .tc-underline[Who] Runs The Line .icon[message-circle-question-mark]
+# .tc-underline[Who] Runs the Line .icon[message-circle-question-mark]
 
 ---
 
@@ -141,15 +143,17 @@ class: middle celebrate
 
 ---
 
-class: middle
+class: diagram
+
+## The .tc-underline[Idea]
 
 ![A closed loop from an idea through triage, spec, implement, verify, ship and monitor, with humans reviewing the spec, the code and the product](./img/software-factory-loop.svg)
 
 ---
 
-class: middle
+class: diagram
 
-## ![ForgeCode](./img/forgecode-logo.svg) .icon[arrow-right]
+## How It .tc-underline[Works]
 
 ![Software Factory](./img/factory.svg)
 
@@ -159,53 +163,65 @@ class: middle
 
 ### .font-grey[Part 4]
 
-# .tc-underline[ForgeCode] Anatomy
+# .tc-underline[ForgeCode] Anatomy .icon[arrow-right]
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[bot] Works Autonomously .font-grey[1/6]
+
+### .font-grey[Fixes] Bottlenecks
 
 ![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[expand] Highly Scalable .font-grey[2/6]
+
+### .font-grey[Fixes] Coordination
 
 ![A surge of work lands and the agent fleet grows to drain it, then shrinks back](./img/tenets/scalable-1.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[piggy-bank] Cost Effective .font-grey[3/6]
+
+### .font-grey[Fixes] Cost
 
 ![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[chart-line] Measurable .font-grey[4/6]
+
+### .font-grey[Fixes] Signal
 
 ![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[refresh-cw] Improves Automatically .font-grey[5/6]
+
+### .font-grey[Fixes] Feedback
 
 ![The factory hill-climbs a metric: each experiment that beats the best so far is kept and steps the best score up, the rest are dropped](./img/tenets/improves-hill.svg)
 
 ---
 
-class: middle
+class: diagram
 
 ## .icon[sliders-horizontal] Business Controlled .font-grey[6/6]
+
+### .font-grey[Fixes] Control
 
 ![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
 
@@ -215,7 +231,7 @@ class: grid-2 top
 
 .cell.span-all[
 
-#### Anatomy Recap .icon[arrow-right]
+## Anatomy .tc-underline[Recap]
 
 ]
 
@@ -239,24 +255,22 @@ class: grid-2 top
 
 ]
 
-
 ---
 
 class: middle center
 
-.font-size-4.weight-700[
-Individual .tc-underline[Productivity]
-]
-
-.font-size-4.weight-700.font-grey[≠]
-
-.font-size-4.weight-700[
-Organizational .tc-underline[Velocity]
-]
+# Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
 
 ---
 
-class: middle
+class: middle center
+count: false
+
+# Individual Productivity </br> .icon[equal] </br> Organizational .tc-underline[Velocity]
+
+---
+
+class: diagram
 
 ## Organizational .tc-underline[Velocity] .icon[rocket]
 
@@ -266,9 +280,7 @@ class: middle
 
 class: middle center
 
-.font-size-4.weight-700[
-It Never .tc-underline[Clocks] Out
-]
+# It Never .tc-underline[Clocks] Out
 
 ---
 
