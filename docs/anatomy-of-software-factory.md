@@ -137,7 +137,7 @@ class: middle
 
 ## A Software .tc-underline[Factory] .icon[factory]
 
-![A closed loop from idea through triage, spec, implement, verify, ship and monitor, with humans reviewing the spec, the code and the product](./img/software-factory-loop.svg)
+![A closed loop from an idea through triage, spec, implement, verify, ship and monitor, with humans reviewing the spec, the code and the product](./img/software-factory-loop.svg)
 
 ---
 
