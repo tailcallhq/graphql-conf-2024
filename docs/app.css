@@ -59,7 +59,8 @@ body {
    every 5 cells. Only for the Anatomy of a Software Factory deck.
    Sizes are percentages of the 16:9 slide, so the grid scales with the
    screen: 32 x 18 major cells, each split into 5 x 5 minor cells. */
-[data-deck="anatomy-of-software-factory"] .remark-slide-content {
+[data-deck="anatomy-of-software-factory"] .remark-slide-content,
+[data-deck^="bridge-"] .remark-slide-content {
   --sq-minor: calc(100% / 160) calc(100% / 90);
   --sq-major: calc(100% / 32) calc(100% / 18);
   /* Solid colors (no alpha): contrast against the #000 slide is set by
@@ -87,7 +88,8 @@ body {
 /* ForgeCode watermark on every slide of this deck: the white wordmark
    (forge-desktop logo-light.svg), bottom-left, sized relative to the
    slide so it scales with the screen. */
-[data-deck="anatomy-of-software-factory"] .remark-slide-content::after {
+[data-deck="anatomy-of-software-factory"] .remark-slide-content::after,
+[data-deck^="bridge-"] .remark-slide-content::after {
   content: "";
   position: absolute;
   left: 3%;
