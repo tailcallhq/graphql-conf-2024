@@ -109,10 +109,42 @@
       // Remark builds every slide at load, so SVG animations would start (and one-shot
       // ones finish) before their slide is shown. Reload the slide's SVG images on show
       // so each animation starts from the beginning when the slide appears.
-      slideshow.on("afterShowSlide", function () {
-        document
-          .querySelectorAll('.remark-visible img[src*=".svg"]')
-          .forEach(function (img) {
+      // `--` steps of one slide share a build group; moving between them keeps the
+      // running animations instead of restarting them.
+      function groupOf(index) {
+        var slides = slideshow.getSlides();
+        while (index > 0 && slides[index].properties.continued === "true") index--;
+        return index;
+      }
+      function svgImages(container) {
+        return Array.prototype.filter.call(
+          container.querySelectorAll('img[src*=".svg"]:not(.celebrate-overlay)'),
+          function (img) {
+            return !img.closest(".incremental-pending");
+          }
+        );
+      }
+      var lastIndex = null;
+      slideshow.on("afterShowSlide", function (slide) {
+        var index = slide.getSlideIndex();
+        var contents = document.querySelectorAll(".remark-slide-content");
+        var current = svgImages(contents[index]);
+        if (lastIndex !== null && lastIndex !== index && groupOf(lastIndex) === groupOf(index)) {
+          // Same slide, next/previous build step: move the playing images across.
+          var playing = svgImages(contents[lastIndex]);
+          current.forEach(function (img, k) {
+            var src = playing[k] && playing[k].getAttribute("src").split("?")[0];
+            if (src && src === img.getAttribute("src").split("?")[0]) {
+              var placeholder = playing[k].cloneNode();
+              playing[k].replaceWith(placeholder);
+              img.replaceWith(playing[k]);
+            }
+          });
+          lastIndex = index;
+          return;
+        }
+        lastIndex = index;
+        current.forEach(function (img) {
             // A fresh element (not just a new src) gets its own animation timeline.
             var fresh = img.cloneNode();
             fresh.src = img.getAttribute("src").split("?")[0] + "?t=" + Date.now();
