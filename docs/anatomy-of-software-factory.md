@@ -239,19 +239,26 @@ class: grid-2 top
 
 ]
 
+
+---
+
+class: middle center
+
+.font-size-4.weight-700[
+Individual .tc-underline[Productivity]
+]
+
+.font-size-4.weight-700.font-grey[≠]
+
+.font-size-4.weight-700[
+Organizational .tc-underline[Velocity]
+]
+
 ---
 
 class: middle
 
-## Previous SDLC .icon[arrow-right]
-
-![Humans each paired with Claude and Codex](./img/org-a-before.svg)
-
----
-
-class: middle
-
-## The New SDLC .icon[arrow-right]
+## Organizational .tc-underline[Velocity] .icon[rocket]
 
 ![A few people steer hundreds of agents](./img/org-a-after.svg)
 
@@ -259,28 +266,26 @@ class: middle
 
 class: middle center
 
-# Thank You .icon[heart]
-
-### Tushar Mathur (CEO ForgeCode)
+.font-size-4.weight-700[
+It Never .tc-underline[Clocks] Out
+]
 
 ---
 
-class: grid-2
+class: grid-2 celebrate
 
 .cell[
-
 ![ForgeCode](./img/forgecode-logo.svg)
 
-## See It .tc-underline[Live]
+## Start Your .tc-underline[Factory]
 
-### .icon[calendar] Book a Demo Today
+### .icon[calendar] Book a Demo
 
+.font-grey[Tushar Mathur · CEO ForgeCode]
 ]
 
 .cell.text-center[
-
 ![Scan to book a demo](./img/forgecode-demo-qr.svg)
 
 .font-grey[forgecode.dev]
-
 ]
