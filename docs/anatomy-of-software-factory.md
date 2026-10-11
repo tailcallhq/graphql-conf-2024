@@ -201,33 +201,29 @@ class: grid-2 top
 
 ---
 
-class: middle
+class: diagram middle
 
-# The New Engineering Org .icon[arrow-right]
+# Previous Engineering Org .icon[arrow-right]
 
-## with Software .tc-underline[Factories]
-
----
-
-class: middle
-
-### .icon[arrow-right] Scale SDLC
-
-### .icon[arrow-right] Lean Organization
-
-### .icon[arrow-right] Build not Buy
-
----
-
-class: diagram
-
-#### Individual Productivity
+<!-- FIXME: New image with the progress bar and a clock like the org-a-after -->
 
 ![Engineers each paired with Claude and Codex](./img/org-a-before.svg)
 
-#### Organizational .tc-underline[Velocity]
+---
+
+class: diagram middle
 
 ![A few people steer hundreds of agents](./img/org-a-after.svg)
+
+# The New Engineering Org .icon[arrow-right]
+
+---
+
+class: middle center
+
+# Thank You .icon[heart] 
+
+### Tushar Mathur (CEO ForgeCode)
 
 ---
 
