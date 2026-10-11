@@ -105,11 +105,19 @@ class: middle
 
 ![The same line degrades the work at every station and piles up slop at the end](./img/sdlc-line-slop.svg)
 
+--
+
 .flex-row.spread[
 #### .icon[circle-alert] Signal
 #### .icon[circle-alert] Feedback
 #### .icon[circle-alert] Control
 ]
+
+---
+
+class: middle center
+
+# Who .tc-underline[Runs] The Line .icon[message-circle-question-mark]
 
 ---
 
