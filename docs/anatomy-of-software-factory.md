@@ -27,7 +27,7 @@ class: grid-2
 
 - .icon[![ForgeCode](./img/forge-mark.svg)] Founder .font-grey[ForgeCode]
 - .icon[![Dream11](./img/dream11-mark.svg)] VP Engineering .font-grey[Dream11]
-- .icon[heart] Loves .font-grey[DevTools]
+- .icon[heart] Passionate about .font-grey[DevTools]
 
 ]
 
@@ -45,11 +45,11 @@ class: grid-2 center
 
 ![Codex](./img/codex-logo.svg)
 
-# .icon[sparkles] 100% Auto Generated
+# .icon[arrow-right] 100% Auto Generated
 
 ---
 
-class: middle
+class: bottom
 
 ## .icon[arrow-up] Individual Productivity
 
@@ -57,7 +57,7 @@ class: middle
 
 ---
 
-class: middle
+class: bottom
 
 ## .icon[arrow-right] Organizational Velocity
 
@@ -67,25 +67,36 @@ class: middle
 
 class: middle
 
-## .icon[arrow-up] Organizational Velocity
+![Rows of humans, each paired with Claude or Codex, joining one by one](./img/org-headcount.svg)
 
-![Engineers each paired with Claude and Codex](./img/org-a-before.svg)
+
+### .icon[arrow-up] Increasing Headcount
 
 ---
 
 class: middle
 
-### .tc-underline[Bottlenecks] have moved .icon[arrow-right]
+## .tc-underline[Bottlenecks] have moved .icon[arrow-right]
 
 ![Work piling up at review](./img/bottleneck.svg)
 
 ---
 
+class: middle center
+
+## Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
+
+---
+
 class: middle
 
-## Scaling Engineering .icon[message-circle-question-mark]
+# Scaling Engineering .icon[message-circle-question-mark]
 
---
+---
+
+class: middle
+
+## .tc-underline[Automate] Software Creation
 
 ![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)
 
@@ -109,7 +120,16 @@ class: middle
 
 class: middle
 
+# .tc-underline[ForgeCode] Tenets
+
+---
+
+class: middle
+
 ## .icon[bot] Works Autonomously .font-grey[1/6]
+
+<!-- Improve the images, show multiple humans choking on each other -->
+<!-- In the loop is always in waiting -->
 
 ![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)
 
@@ -117,9 +137,9 @@ class: middle
 
 class: middle
 
-## .icon[refresh-cw] Continuously Improves .font-grey[2/6]
+## .icon[refresh-cw] Self Improving .font-grey[2/6]
 
-![Failure rate falling from 31% to 3% across versions](./img/tenets/improves-2.svg)
+![Accuracy rising from 69% to 97% across versions](./img/tenets/improves-2.svg)
 
 ---
 
@@ -159,7 +179,7 @@ class: grid-2 top
 
 .cell.span-all[
 
-#### Six Tenets of the Software Factory .icon[arrow-right]
+#### Tenet Recap .icon[arrow-right]
 
 ]
 
@@ -185,21 +205,19 @@ class: grid-2 top
 
 ---
 
-class: middle middle
+class: middle
 
-# Previous Engineering Org .icon[arrow-right]
+# Previous SDLC .icon[arrow-right]
 
-<!-- FIXME: New image with the progress bar and a clock like the org-a-after -->
-
-![Engineers each paired with Claude and Codex](./img/org-a-before.svg)
+![Humans each paired with Claude and Codex](./img/org-a-before.svg)
 
 ---
 
-class: middle middle
+class: middle
+
+# The New SDLC .icon[arrow-right]
 
 ![A few people steer hundreds of agents](./img/org-a-after.svg)
-
-# The New Engineering Org .icon[arrow-right]
 
 ---
 
@@ -217,9 +235,9 @@ class: grid-2
 
 ![ForgeCode](./img/forgecode-logo.svg)
 
-## Build Your Software .tc-underline[Factory]
+## See It .tc-underline[Live]
 
-### .icon[calendar] Book a Demo
+### .icon[calendar] Book a Demo Today
 
 ]
 
