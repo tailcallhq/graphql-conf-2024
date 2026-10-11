@@ -113,37 +113,49 @@ class: middle wide
 
 class: middle
 
-# .icon[bot] Works Autonomously .font-grey[1/6]
+## .icon[bot] Works Autonomously .font-grey[1/6]
+
+.fill[![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)]
 
 ---
 
 class: middle
 
-# .icon[refresh-cw] Continuously Improves .font-grey[2/6]
+## .icon[refresh-cw] Continuously Improves .font-grey[2/6]
+
+.fill[![Failure rate falling from 31% to 3% across versions](./img/tenets/improves-2.svg)]
 
 ---
 
 class: middle
 
-# .icon[chart-line] Measures Outcomes .font-grey[3/6]
+## .icon[chart-line] Measures Outcomes .font-grey[3/6]
+
+.fill[![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)]
 
 ---
 
 class: middle
 
-# .icon[expand] Highly Scalable .font-grey[4/6]
+## .icon[expand] Highly Scalable .font-grey[4/6]
+
+.fill[![Hiring takes months, scaling agents takes seconds](./img/tenets/scalable-4.svg)]
 
 ---
 
 class: middle
 
-# .icon[sliders-horizontal] Business Controlled .font-grey[5/6]
+## .icon[sliders-horizontal] Business Controlled .font-grey[5/6]
+
+.fill[![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)]
 
 ---
 
 class: middle
 
-# .icon[piggy-bank] Cost Effective .font-grey[6/6]
+## .icon[piggy-bank] Cost Effective .font-grey[6/6]
+
+.fill[![Same budget shifts from people to compute and ships more](./img/tenets/cost-4.svg)]
 
 ---
 

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" font-family="Space Mono, ui-monospace, Menlo, monospace">
+  <!-- Title: Instrumented Items | Concept: Every item that ships is scanned and writes its own outcome record, so the factory's numbers come from shipped work, not timesheets. -->
+  <!-- Items ride a belt under a scanner; at each scan a beam sweeps the item, and a new row (Value, Cycle, Defects, Cost) slides into the top of the ledger while older rows push down and fade. SMIL only, 12s loop, 2s per item -->
+  <defs>
+    <clipPath id="m4b"><rect x="30" y="100" width="420" height="160"/></clipPath>
+    <clipPath id="m4t"><rect x="500" y="62" width="470" height="220"/></clipPath>
+  </defs>
+  <rect x="30" y="228" width="420" height="10" rx="5" fill="#262626"/>
+  <g clip-path="url(#m4b)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 0;120 0" keyTimes="0;0.25;1" calcMode="spline" keySplines="0 0 1 1;0.4 0 0.2 1" dur="2.0s" repeatCount="indefinite"/>
+    <rect x="-144" y="198" width="28" height="28" rx="5" fill="#6b6b6b" fill-opacity="0.9"/>
+    <rect x="-24" y="198" width="28" height="28" rx="5" fill="#6b6b6b" fill-opacity="0.9"/>
+    <rect x="96" y="198" width="28" height="28" rx="5" fill="#6b6b6b" fill-opacity="0.9"/>
+    <rect x="216" y="198" width="28" height="28" rx="5" fill="#f97316" fill-opacity="0.9"/>
+    <rect x="336" y="198" width="28" height="28" rx="5" fill="#f97316" fill-opacity="0.9"/>
+    <rect x="456" y="198" width="28" height="28" rx="5" fill="#f97316" fill-opacity="0.9"/>
+  </g></g>
+  <rect x="216" y="198" width="28" height="28" rx="5" fill="#6b6b6b"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.12;0.13;1" dur="2.0s" repeatCount="indefinite"/></rect>
+  <rect x="200" y="104" width="60" height="22" rx="4" fill="#1a1a1a"/>
+  <path d="M210 115 H250" stroke="#6b6b6b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M208 126 L200 226 H260 L252 126 Z" fill="#22d3ee" opacity="0"><animate attributeName="opacity" values="0;0.22;0.22;0;0" keyTimes="0;0.02;0.12;0.16;1" dur="2.0s" repeatCount="indefinite"/></path>
+  <path d="M202 196 H258" stroke="#22d3ee" stroke-width="2" opacity="0"><animateTransform attributeName="transform" type="translate" values="0 -60;0 26;0 26" keyTimes="0;0.12;1" dur="2.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.12;0.13;1" dur="2.0s" repeatCount="indefinite"/></path>
+  <text x="230" y="92" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="2" fill="#d8d8d8">Scan</text>
+  <text x="40" y="270" font-size="14" font-weight="700" letter-spacing="2" fill="#6b6b6b">Work</text>
+  <text x="440" y="270" text-anchor="end" font-size="14" font-weight="700" letter-spacing="2" fill="#f97316">Shipped</text>
+  <path d="M260 115 H500" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-dasharray="3 5"/>
+  <circle r="4" fill="#22d3ee"><animateMotion path="M260 115 H500" keyPoints="0;0;1;1" keyTimes="0;0.12;0.22;1" calcMode="linear" dur="2.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.119;0.12;0.22;0.221;1" dur="2.0s" repeatCount="indefinite"/></circle>
+  <text x="520" y="50" text-anchor="start" font-size="14" font-weight="700" letter-spacing="1" fill="#a3a3a3">Item</text>
+  <text x="700" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#a3a3a3">Value</text>
+  <text x="790" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#a3a3a3">Cycle</text>
+  <text x="880" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#a3a3a3">Defects</text>
+  <text x="960" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#a3a3a3">Cost</text>
+  <g clip-path="url(#m4t)"><g><animateTransform attributeName="transform" type="translate" values="0 264;0 24;0 64;0 64;0 104;0 104;0 144;0 144;0 184;0 184;0 224;0 224;0 264;0 264" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0.8;0.8;0.6;0.6;0.4;0.4;0.2;0.2;0;0" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="506" y="0" width="464" height="34" rx="4" fill="#1a1a1a"/>
+    <rect x="524" y="8.0" width="18" height="18" rx="4" fill="#f97316"/>
+    <text x="700" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">$12K</text>
+    <text x="790" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">1.8d</text>
+    <text x="880" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">0</text>
+    <text x="960" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">$84</text>
+  </g></g>
+  <g clip-path="url(#m4t)"><g><animateTransform attributeName="transform" type="translate" values="0 224;0 224;0 264;0 24;0 64;0 64;0 104;0 104;0 144;0 144;0 184;0 184;0 224;0 224" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.2;0;0;1;1;0.8;0.8;0.6;0.6;0.4;0.4;0.2;0.2" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="506" y="0" width="464" height="34" rx="4" fill="#1a1a1a"/>
+    <rect x="524" y="8.0" width="18" height="18" rx="4" fill="#f97316"/>
+    <text x="700" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">$7K</text>
+    <text x="790" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">2.1d</text>
+    <text x="880" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">1</text>
+    <text x="960" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">$97</text>
+  </g></g>
+  <g clip-path="url(#m4t)"><g><animateTransform attributeName="transform" type="translate" values="0 184;0 184;0 224;0 224;0 264;0 24;0 64;0 64;0 104;0 104;0 144;0 144;0 184;0 184" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0.4;0.2;0.2;0;0;1;1;0.8;0.8;0.6;0.6;0.4;0.4" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="506" y="0" width="464" height="34" rx="4" fill="#1a1a1a"/>
+    <rect x="524" y="8.0" width="18" height="18" rx="4" fill="#f97316"/>
+    <text x="700" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">$21K</text>
+    <text x="790" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">1.4d</text>
+    <text x="880" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">0</text>
+    <text x="960" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">$66</text>
+  </g></g>
+  <g clip-path="url(#m4t)"><g><animateTransform attributeName="transform" type="translate" values="0 144;0 144;0 184;0 184;0 224;0 224;0 264;0 24;0 64;0 64;0 104;0 104;0 144;0 144" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0.6;0.4;0.4;0.2;0.2;0;0;1;1;0.8;0.8;0.6;0.6" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="506" y="0" width="464" height="34" rx="4" fill="#1a1a1a"/>
+    <rect x="524" y="8.0" width="18" height="18" rx="4" fill="#f97316"/>
+    <text x="700" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">$9K</text>
+    <text x="790" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">1.6d</text>
+    <text x="880" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">0</text>
+    <text x="960" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">$71</text>
+  </g></g>
+  <g clip-path="url(#m4t)"><g><animateTransform attributeName="transform" type="translate" values="0 104;0 104;0 144;0 144;0 184;0 184;0 224;0 224;0 264;0 24;0 64;0 64;0 104;0 104" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0.8;0.6;0.6;0.4;0.4;0.2;0.2;0;0;1;1;0.8;0.8" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="506" y="0" width="464" height="34" rx="4" fill="#1a1a1a"/>
+    <rect x="524" y="8.0" width="18" height="18" rx="4" fill="#f97316"/>
+    <text x="700" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">$15K</text>
+    <text x="790" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">2.4d</text>
+    <text x="880" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">0</text>
+    <text x="960" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">$90</text>
+  </g></g>
+  <g clip-path="url(#m4t)"><g><animateTransform attributeName="transform" type="translate" values="0 64;0 64;0 104;0 104;0 144;0 144;0 184;0 184;0 224;0 224;0 264;0 24;0 64;0 64" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0.8;0.8;0.6;0.6;0.4;0.4;0.2;0.2;0;0;1;1" keyTimes="0.0000;0.0367;0.0783;0.2033;0.2450;0.3700;0.4117;0.5367;0.5783;0.7033;0.7450;0.8700;0.9117;1.0000" dur="12.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <rect x="506" y="0" width="464" height="34" rx="4" fill="#1a1a1a"/>
+    <rect x="524" y="8.0" width="18" height="18" rx="4" fill="#f97316"/>
+    <text x="700" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">$11K</text>
+    <text x="790" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">1.2d</text>
+    <text x="880" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">1</text>
+    <text x="960" y="26" text-anchor="end" font-size="18" font-weight="700" fill="#f2f2f2">$58</text>
+  </g></g>
+</svg>
