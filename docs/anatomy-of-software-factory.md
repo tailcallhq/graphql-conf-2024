@@ -35,7 +35,7 @@ class: grid-2
 
 class: middle
 
-## .font-grey[Part 1]
+### .font-grey[Part 1]
 
 # .tc-underline[State] of Software in 2026 .icon[arrow-right]
 
@@ -48,6 +48,12 @@ class: grid-2 center
 ![Codex](./img/codex-logo.svg)
 
 # .icon[arrow-right] .tc-underline[100%] Auto Generated
+
+---
+
+class: middle center
+
+# Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
 
 ---
 
@@ -69,55 +75,59 @@ class: bottom
 
 class: middle
 
-![Teams of specialists (PM, Planner, Design, Dev, Test, QA) added one column at a time, work handed down each column](./img/org-headcount.svg)
-
-### .icon[arrow-up] Increasing Headcount
-
----
-
-class: middle
-
-## .tc-underline[Bottlenecks] have moved .icon[arrow-right]
+## .tc-underline[Bottlenecks] have moved .icon[arrow-down]
 
 ![Work piling up at review](./img/bottleneck.svg)
 
 ---
 
-class: middle center
+class: middle
 
-# Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
+### .font-grey[Part 2]
+
+# .tc-underline[Scaling] SDLC .icon[arrow-right]
 
 ---
 
 class: middle
 
-## .font-grey[Part 2]
+### .tc-underline[More] People .font-grey[(Option 1)]
 
-# .tc-underline[Scaling] Engineering .icon[arrow-right]
-
----
-
-class: middle
-
-## .tc-underline[Obvious] Solution .icon[message-circle-question-mark]
-
-![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)
+![Adding teams of specialists one column at a time, then struck out](./img/bridge/d-more-humans.svg)
 
 ---
 
 class: middle
 
-## .tc-underline[Automate] Software Creation .font-grey[Reality]
+### .tc-underline[More] Tokens .font-grey[(Option 2)]
+
+--
 
 ![The same line degrades the work at every station and piles up slop at the end](./img/sdlc-line-slop.svg)
 
 ---
 
+class: middle celebrate
+
+![ForgeCode](./img/forgecode-logo.svg)
+
+## .tc-underline[State] of the Art Software Factory
+
+---
+
 class: middle
 
-## .font-grey[Part 3]
+## ![ForgeCode](./img/forgecode-logo.svg) .icon[arrow-right]
 
-# .tc-underline[Tenet] of a Software Factory
+![Software Factory](./img/factory.svg)
+
+---
+
+class: middle
+
+### .font-grey[Part 3]
+
+# .tc-underline[ForgeCode] Tenets
 
 ---
 
@@ -131,7 +141,7 @@ class: middle
 
 class: middle
 
-## .icon[refresh-cw] Self Improving .font-grey[2/6]
+## .icon[refresh-cw] Improves Automatically .font-grey[2/6]
 
 ![Accuracy rising from 69% to 97% across versions](./img/tenets/improves-2.svg)
 
@@ -139,7 +149,7 @@ class: middle
 
 class: middle
 
-## .icon[chart-line] Insights .font-grey[3/6]
+## .icon[chart-line] Provides Insights .font-grey[3/6]
 
 ![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
 
@@ -166,28 +176,6 @@ class: middle
 ## .icon[piggy-bank] Cost Effective .font-grey[6/6]
 
 ![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
-
----
-
-class: middle celebrate
-
-![ForgeCode](./img/forgecode-logo.svg)
-
-## .tc-underline[State] of the Art Software Factory
-
----
-
-class: middle
-
-## ![ForgeCode](./img/forgecode-logo.svg) .icon[arrow-right]
-
-![Software Factory](./img/factory.svg)
-
----
-
-class: middle
-
-# .tc-underline[ForgeCode] Anatomy
 
 ---
 
