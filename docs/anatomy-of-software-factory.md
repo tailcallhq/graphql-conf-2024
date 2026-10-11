@@ -113,25 +113,11 @@ class: middle
 
 ---
 
-class: middle celebrate
-
-![ForgeCode](./img/forgecode-logo.svg)
-
-## .tc-underline[State] of the Art Software Factory
-
----
-
 class: middle
 
-## ![ForgeCode](./img/forgecode-logo.svg) .icon[arrow-right]
+## .font-grey[Part 3]
 
-![Software Factory](./img/factory.svg)
-
----
-
-class: middle
-
-# .tc-underline[ForgeCode] Anatomy
+# .tc-underline[Tenet] of a Software Factory
 
 ---
 
@@ -180,6 +166,28 @@ class: middle
 ## .icon[piggy-bank] Cost Effective .font-grey[6/6]
 
 ![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
+
+---
+
+class: middle celebrate
+
+![ForgeCode](./img/forgecode-logo.svg)
+
+## .tc-underline[State] of the Art Software Factory
+
+---
+
+class: middle
+
+## ![ForgeCode](./img/forgecode-logo.svg) .icon[arrow-right]
+
+![Software Factory](./img/factory.svg)
+
+---
+
+class: middle
+
+# .tc-underline[ForgeCode] Anatomy
 
 ---
 
