@@ -685,3 +685,9 @@ h3 {
   width: auto;
   vertical-align: -0.12em;
 }
+
+/* Not-yet-revealed `--` content: takes its space so the layout never shifts
+   between build steps (added by index.html). */
+.incremental-pending {
+  visibility: hidden;
+}

@@ -69,8 +69,42 @@
           },
           countIncrementalSlides: false,
         },
-        renderIcons
+        function () {
+          renderIcons();
+          reserveIncrementalSpace();
+        }
       );
+
+      // `--` builds: remark renders each step as its own slide holding only the
+      // content revealed so far, so centred layouts re-centre on every step.
+      // Give each step the not-yet-revealed content from the final step, hidden,
+      // so every step lays out exactly like the finished slide and nothing moves.
+      function reserveIncrementalSpace() {
+        var slides = slideshow.getSlides();
+        var contents = document.querySelectorAll(".remark-slide-content");
+        var blocks = function (el) {
+          return Array.prototype.filter.call(el.children, function (c) {
+            return !c.classList.contains("remark-slide-number");
+          });
+        };
+        for (var i = 0; i < slides.length; i++) {
+          // Find the last step of the group that starts here.
+          var last = i;
+          while (last + 1 < slides.length && slides[last + 1].properties.continued === "true") last++;
+          var full = blocks(contents[last]);
+          for (var j = i; j < last; j++) {
+            var shown = blocks(contents[j]).length;
+            var number = contents[j].querySelector(".remark-slide-number");
+            full.slice(shown).forEach(function (b) {
+              var ghost = b.cloneNode(true);
+              ghost.classList.add("incremental-pending");
+              ghost.setAttribute("aria-hidden", "true");
+              contents[j].insertBefore(ghost, number);
+            });
+          }
+          i = last;
+        }
+      }
 
       // Remark builds every slide at load, so SVG animations would start (and one-shot
       // ones finish) before their slide is shown. Reload the slide's SVG images on show
