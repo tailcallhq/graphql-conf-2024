@@ -35,7 +35,9 @@ class: grid-2
 
 class: middle
 
-# State of Software Engineering </br> in .tc-underline[2026]
+## .font-grey[Part 1]
+
+# .tc-underline[State] of Software in 2026 .icon[arrow-right]
 
 ---
 
@@ -45,7 +47,7 @@ class: grid-2 center
 
 ![Codex](./img/codex-logo.svg)
 
-# .icon[arrow-right] 100% Auto Generated
+# .icon[arrow-right] .tc-underline[100%] Auto Generated
 
 ---
 
@@ -67,7 +69,7 @@ class: bottom
 
 class: middle
 
-![Rows of humans, each paired with Claude or Codex, joining one by one](./img/org-headcount.svg)
+![Teams of specialists (PM, Planner, Design, Dev, Test, QA) added one column at a time, work handed down each column](./img/org-headcount.svg)
 
 ### .icon[arrow-up] Increasing Headcount
 
@@ -83,19 +85,21 @@ class: middle
 
 class: middle center
 
-## Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
+# Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
 
 ---
 
 class: middle
 
-# Scaling Engineering .icon[message-circle-question-mark]
+## .font-grey[Part 2]
+
+# .tc-underline[Scaling] Engineering .icon[arrow-right]
 
 ---
 
 class: middle
 
-## .tc-underline[Automate] Software Creation .font-grey[Expectation]
+## .tc-underline[Obvious] Solution .icon[message-circle-question-mark]
 
 ![Work items moving through Plan, Code, Review, Test and Deploy stations on an automated line](./img/sdlc-line.svg)
 
