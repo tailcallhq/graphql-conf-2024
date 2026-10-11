@@ -135,9 +135,6 @@ class: middle
 
 ## .icon[bot] Works Autonomously .font-grey[1/6]
 
-<!-- Improve the images, show multiple humans choking on each other -->
-<!-- In the loop is always in waiting -->
-
 ![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)
 
 ---
@@ -222,7 +219,7 @@ class: middle
 
 class: middle
 
-# The New SDLC .icon[arrow-right]
+## The New SDLC .icon[arrow-right]
 
 ![A few people steer hundreds of agents](./img/org-a-after.svg)
 
@@ -255,4 +252,3 @@ class: grid-2
 .font-grey[forgecode.dev]
 
 ]
-
