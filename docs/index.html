@@ -71,6 +71,20 @@
         },
         renderIcons
       );
+
+      // Remark builds every slide at load, so SVG animations would start (and one-shot
+      // ones finish) before their slide is shown. Reload the slide's SVG images on show
+      // so each animation starts from the beginning when the slide appears.
+      slideshow.on("afterShowSlide", function () {
+        document
+          .querySelectorAll('.remark-visible img[src*=".svg"]')
+          .forEach(function (img) {
+            // A fresh element (not just a new src) gets its own animation timeline.
+            var fresh = img.cloneNode();
+            fresh.src = img.getAttribute("src").split("?")[0] + "?t=" + Date.now();
+            img.replaceWith(fresh);
+          });
+      });
     </script>
   </body>
 </html>
