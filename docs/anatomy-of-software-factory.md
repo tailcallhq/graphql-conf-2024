@@ -143,8 +143,6 @@ class: middle celebrate
 
 class: middle
 
-## A Software .tc-underline[Factory] .icon[factory]
-
 ![A closed loop from an idea through triage, spec, implement, verify, ship and monitor, with humans reviewing the spec, the code and the product](./img/software-factory-loop.svg)
 
 ---
@@ -161,7 +159,7 @@ class: middle
 
 ### .font-grey[Part 4]
 
-# .tc-underline[ForgeCode] Tenets
+# .tc-underline[ForgeCode] Anatomy
 
 ---
 
@@ -175,23 +173,7 @@ class: middle
 
 class: middle
 
-## .icon[refresh-cw] Improves Automatically .font-grey[2/6]
-
-![Accuracy rising from 69% to 97% across versions](./img/tenets/improves-2.svg)
-
----
-
-class: middle
-
-## .icon[chart-line] Provides Insights .font-grey[3/6]
-
-![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
-
----
-
-class: middle
-
-## .icon[expand] Highly Scalable .font-grey[4/6]
+## .icon[expand] Highly Scalable .font-grey[2/6]
 
 ![A surge of work lands and the agent fleet grows to drain it, then shrinks back](./img/tenets/scalable-1.svg)
 
@@ -199,17 +181,33 @@ class: middle
 
 class: middle
 
-## .icon[sliders-horizontal] Business Controlled .font-grey[5/6]
+## .icon[piggy-bank] Cost Effective .font-grey[3/6]
 
-![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
+![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
 
 ---
 
 class: middle
 
-## .icon[piggy-bank] Cost Effective .font-grey[6/6]
+## .icon[chart-line] Measurable .font-grey[4/6]
 
-![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
+![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
+
+---
+
+class: middle
+
+## .icon[refresh-cw] Improves Automatically .font-grey[5/6]
+
+![The factory hill-climbs a metric: each experiment that beats the best so far is kept and steps the best score up, the rest are dropped](./img/tenets/improves-hill.svg)
+
+---
+
+class: middle
+
+## .icon[sliders-horizontal] Business Controlled .font-grey[6/6]
+
+![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
 
 ---
 
@@ -225,19 +223,19 @@ class: grid-2 top
 
 ### .icon[bot] Works Autonomously
 
-### .icon[refresh-cw] Continuously Improves
+### .icon[expand] Highly Scalable
 
-### .icon[chart-line] Insights
+### .icon[piggy-bank] Cost Effective
 
 ]
 
 .cell[
 
-### .icon[expand] Highly Scalable
+### .icon[chart-line] Measurable
+
+### .icon[refresh-cw] Improves Automatically
 
 ### .icon[sliders-horizontal] Business Controlled
-
-### .icon[piggy-bank] Cost Effective
 
 ]
 
@@ -245,7 +243,7 @@ class: grid-2 top
 
 class: middle
 
-# Previous SDLC .icon[arrow-right]
+## Previous SDLC .icon[arrow-right]
 
 ![Humans each paired with Claude and Codex](./img/org-a-before.svg)
 
