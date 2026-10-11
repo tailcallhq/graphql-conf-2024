@@ -55,6 +55,50 @@ body {
   }
 }
 
+/* Excalidraw-style square grid: faint minor cells with a stronger line
+   every 5 cells. Only for the Anatomy of a Software Factory deck.
+   Sizes are percentages of the 16:9 slide, so the grid scales with the
+   screen: 32 x 18 major cells, each split into 5 x 5 minor cells. */
+[data-deck="anatomy-of-software-factory"] .remark-slide-content {
+  --sq-minor: calc(100% / 160) calc(100% / 90);
+  --sq-major: calc(100% / 32) calc(100% / 18);
+  /* Solid colors (no alpha): contrast against the #000 slide is set by
+     how light each gray is. */
+  --sq-minor-color: #121212;
+  --sq-major-color: #333333;
+  --sq-line: 0.5px;
+  background-image: radial-gradient(
+      circle at 100% 10%,
+      #ffffff11 10%,
+      #0000 60%
+    ),
+    linear-gradient(var(--sq-major-color) var(--sq-line), transparent var(--sq-line)),
+    linear-gradient(90deg, var(--sq-major-color) var(--sq-line), transparent var(--sq-line)),
+    linear-gradient(var(--sq-minor-color) var(--sq-line), transparent var(--sq-line)),
+    linear-gradient(90deg, var(--sq-minor-color) var(--sq-line), transparent var(--sq-line));
+  background-size: 100% 100%, var(--sq-major), var(--sq-major),
+    var(--sq-minor), var(--sq-minor);
+  /* remark defaults slide backgrounds to no-repeat/center, which shows a
+     single tile; tile from the top-left instead. */
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+/* ForgeCode watermark on every slide of this deck: the white wordmark
+   (forge-desktop logo-light.svg), bottom-left, sized relative to the
+   slide so it scales with the screen. */
+[data-deck="anatomy-of-software-factory"] .remark-slide-content::after {
+  content: "";
+  position: absolute;
+  left: 3%;
+  bottom: 4%;
+  width: 12%;
+  aspect-ratio: 574 / 95;
+  background: url("./img/forgecode-logo.svg") no-repeat center / contain;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
 .tc-highlight {
   background-color: var(--tc-accent);
   padding: 0rem 0.5rem;
@@ -280,6 +324,102 @@ img {
   margin-bottom: -0.2em;
 }
 
+/* Slide layouts: put ONE on the slide's `class:` line, e.g. `class: grid-2`.
+   Each top-level block (heading, paragraph, list, image) becomes a grid cell,
+   filled left to right. An h1 spans the full width as the slide title.
+   Wrap several blocks in `.cell[...]` to keep them in one cell.
+   Add `center` to centre text and pull the columns into the middle. */
+.remark-slide-content:is(.grid-1, .grid-2, .grid-3, .grid-4) {
+  display: grid !important;
+  align-content: center;
+  align-items: center;
+  column-gap: 2em;
+}
+.remark-slide-content:is(.grid-1, .grid-2, .grid-3, .grid-4) {
+  grid-template-columns: repeat(var(--cols), 1fr);
+}
+.remark-slide-content.grid-1 {
+  --cols: 1;
+}
+.remark-slide-content.grid-2 {
+  --cols: 2;
+}
+.remark-slide-content.grid-3 {
+  --cols: 3;
+}
+.remark-slide-content.grid-4 {
+  --cols: 4;
+}
+/* `center`: equal columns, each cell centred inside its column. */
+.remark-slide-content:is(.grid-1, .grid-2, .grid-3, .grid-4).center {
+  justify-items: center;
+  text-align: center;
+}
+/* `top`: line cells up along their top edge instead of centring them, so
+   columns of different lengths start on the same line. */
+.remark-slide-content:is(.grid-1, .grid-2, .grid-3, .grid-4).top {
+  align-items: start;
+}
+.remark-slide-content:is(.grid-1, .grid-2, .grid-3, .grid-4) > h1 {
+  grid-column: 1 / -1;
+  grid-row: auto;
+}
+.remark-slide-content:is(.grid-1, .grid-2, .grid-3, .grid-4) > p {
+  margin: 0;
+}
+.cell {
+  display: block;
+}
+/* Start a cell in a later column, e.g. `.cell.start-2[...]`. */
+.start-2 {
+  grid-column-start: 2;
+}
+.start-3 {
+  grid-column-start: 3;
+}
+.start-4 {
+  grid-column-start: 4;
+}
+/* Stretch a cell across every column, e.g. `.cell.span-all[...]`. */
+.span-all {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+}
+/* `wide`: trim the slide's side padding so wide images and diagrams get more
+   room, e.g. `class: middle wide`. Works with any layout. */
+.remark-slide-content.wide {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* Make images in a cell fill its width, e.g. `.cell.span-all.fill[...]`. */
+.fill img {
+  width: 100%;
+}
+
+/* List items that start with an icon: the icon replaces the bullet. */
+ul:has(> li > .icon:first-child) {
+  padding-left: 0;
+}
+li:has(> .icon:first-child) {
+  list-style: none;
+  margin: 0.3em 0;
+  white-space: nowrap;
+}
+/* Short "icon + label" paragraphs and headings (e.g. grid cells) stay on one
+   line, icon beside the label. */
+:is(p, h2, h3, h4):has(> .icon:first-child) {
+  white-space: nowrap;
+}
+li > .icon:first-child {
+  height: 1.2em;
+  width: 1.2em;
+  justify-content: center;
+  margin-right: 0.3em;
+}
+li > .icon:first-child :is(img, svg) {
+  height: 1.1em;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -459,7 +599,11 @@ h3 {
   height: 1em;
   vertical-align: -0.12em;
 }
-.icon img {
+.icon {
+  color: #f97316;
+}
+.icon img,
+.icon svg {
   display: block;
   height: 0.85em;
   width: auto;
@@ -497,4 +641,34 @@ h3 {
 .deck-list a:hover {
   color: var(--tc-accent);
   border-bottom-color: var(--tc-accent);
+}
+
+/* Closing slide: ForgeCode pitch on the left, demo QR code on the right. */
+.closing .qr {
+  justify-self: center;
+  text-align: center;
+}
+.closing .qr img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 0.6em;
+}
+
+/* Bottleneck diagram under the Amdahl's Law heading. */
+.bottleneck-fig img {
+  width: 100%;
+  max-height: 360px;
+  margin-top: 1em;
+}
+
+/* Before/after velocity comparison: two compact flow diagrams stacked, each under its caption. */
+.compare h4 {
+  margin: 0 0 0.4em;
+}
+.compare p {
+  margin: 0 0 1.4em;
+}
+.compare img {
+  width: 100%;
 }

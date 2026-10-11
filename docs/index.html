@@ -39,20 +39,38 @@
     <textarea id="source"> </textarea>
 
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script src="https://unpkg.com/lucide@1.55.0/dist/umd/lucide.min.js"></script>
     <script>
       // Pick the deck from ?deck=<name> → ./<name>.md (defaults to index.md, the deck list).
       var deck = new URLSearchParams(location.search).get("deck") || "index";
       if (!/^[\w-]+$/.test(deck)) deck = "index";
-      var slideshow = remark.create({
-        sourceUrl: "./" + deck + ".md",
-        highlightStyle: "tomorrow-night",
-        ratio: "16:9",
-        navigation: {
-          scroll: false,
-          click: false,
+      // Lets app.css style one deck without touching the others.
+      document.body.dataset.deck = deck;
+      // `.icon[sparkles]` → Lucide "sparkles" icon (names: https://lucide.dev/icons).
+      // Remark renders it as <span class="icon">sparkles</span>; swap the text for the SVG.
+      function renderIcons() {
+        document.querySelectorAll(".icon").forEach(function (el) {
+          var name = el.textContent.trim();
+          if (el.children.length || !/^[a-z0-9-]+$/.test(name)) return;
+          el.innerHTML = '<i data-lucide="' + name + '"></i>';
+        });
+        lucide.createIcons();
+      }
+
+      // The deck markdown loads asynchronously; the callback fires once slides are in the DOM.
+      var slideshow = remark.create(
+        {
+          sourceUrl: "./" + deck + ".md",
+          highlightStyle: "tomorrow-night",
+          ratio: "16:9",
+          navigation: {
+            scroll: false,
+            click: false,
+          },
+          countIncrementalSlides: false,
         },
-        countIncrementalSlides: false,
-      });
+        renderIcons
+      );
     </script>
   </body>
 </html>

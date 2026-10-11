@@ -11,7 +11,7 @@ class: middle fig
 .split[
 .split-left[
 
-# .icon[![](./img/icons/bot.svg)] .tc-underline[Agent] .font-grey[1/3]
+# .icon[bot] .tc-underline[Agent] .font-grey[1/3]
 
 ]
 .split-right.agent-fig[![Agent loop](./img/agent.svg)]
@@ -21,7 +21,7 @@ class: middle fig
 
 class: middle
 
-# .icon[![](./img/icons/hard-hat.svg)] .tc-underline[Harness] .font-grey[2/3]
+# .icon[hard-hat] .tc-underline[Harness] .font-grey[2/3]
 
 ---
 
@@ -33,7 +33,7 @@ class: middle fig
 
 .block.center[
 
-### .icon[![](./img/icons/target.svg)] .tc-underline[Individual] Productivity
+### .icon[target] .tc-underline[Individual] Productivity
 
 ]
 
@@ -41,7 +41,7 @@ class: middle fig
 
 class: middle
 
-# .icon[![](./img/icons/factory.svg)] .tc-underline[Factory] .font-grey[3/3]
+# .icon[factory] .tc-underline[Factory] .font-grey[3/3]
 
 ---
 
@@ -53,7 +53,7 @@ class: middle fig
 
 .block.center[
 
-### .icon[![](./img/icons/target.svg)] .tc-underline[Organizational] Velocity
+### .icon[target] .tc-underline[Organizational] Velocity
 
 ]
 
