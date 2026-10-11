@@ -4,5 +4,6 @@ class: middle deck-list
 
 - [State of the Art of Coding Agents 2026](?deck=soa-coding-agents)
 - [Anatomy of a Software Factory](?deck=anatomy-of-software-factory)
+- [Software Factory Visual Proposals](?deck=proposals)
 - [Scaling GraphQL for 500,000,000 req/min](?deck=slides-graphql)
 - [Software Engineering of the Future](?deck=slides-future-of-software)
