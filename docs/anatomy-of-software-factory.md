@@ -65,12 +65,6 @@ class: middle
 
 ---
 
-class: middle center
-
-## Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
-
----
-
 class: middle
 
 ## .icon[arrow-up] Organizational Velocity
@@ -79,7 +73,7 @@ class: middle
 
 ---
 
-class: diagram
+class: middle
 
 ### .tc-underline[Bottlenecks] have moved .icon[arrow-right]
 
@@ -87,7 +81,7 @@ class: diagram
 
 ---
 
-class: diagram
+class: middle
 
 ## Scaling Engineering .icon[message-circle-question-mark]
 
@@ -105,7 +99,7 @@ class: middle celebrate
 
 ---
 
-class: diagram
+class: middle
 
 ## ![ForgeCode](./img/forgecode-logo.svg) .icon[arrow-right]
 
@@ -113,7 +107,7 @@ class: diagram
 
 ---
 
-class: diagram
+class: middle
 
 ## .icon[bot] Works Autonomously .font-grey[1/6]
 
@@ -121,7 +115,7 @@ class: diagram
 
 ---
 
-class: diagram
+class: middle
 
 ## .icon[refresh-cw] Continuously Improves .font-grey[2/6]
 
@@ -129,7 +123,7 @@ class: diagram
 
 ---
 
-class: diagram
+class: middle
 
 ## .icon[chart-line] Measures Outcomes .font-grey[3/6]
 
@@ -137,7 +131,7 @@ class: diagram
 
 ---
 
-class: diagram
+class: middle
 
 ## .icon[expand] Highly Scalable .font-grey[4/6]
 
@@ -145,7 +139,7 @@ class: diagram
 
 ---
 
-class: diagram
+class: middle
 
 ## .icon[sliders-horizontal] Business Controlled .font-grey[5/6]
 
@@ -153,7 +147,7 @@ class: diagram
 
 ---
 
-class: diagram
+class: middle
 
 ## .icon[piggy-bank] Cost Effective .font-grey[6/6]
 
@@ -191,7 +185,7 @@ class: grid-2 top
 
 ---
 
-class: diagram middle
+class: middle middle
 
 # Previous Engineering Org .icon[arrow-right]
 
@@ -201,7 +195,7 @@ class: diagram middle
 
 ---
 
-class: diagram middle
+class: middle middle
 
 ![A few people steer hundreds of agents](./img/org-a-after.svg)
 
