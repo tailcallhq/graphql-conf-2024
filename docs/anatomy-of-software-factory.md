@@ -121,6 +121,14 @@ class: middle
 
 ![Agents move every item cleanly from Plan to Deploy on an automated line](./img/sdlc-line.svg)
 
+--
+
+.flex-row.spread[
+
+### .icon[arrow-up] Expectation
+
+]
+
 ---
 
 class: middle
