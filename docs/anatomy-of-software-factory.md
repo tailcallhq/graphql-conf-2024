@@ -117,8 +117,6 @@ class: middle
 
 ![Six teams of four, dimmed, with a big red cross over them](./img/org-headcount-struck.svg)
 
---
-
 .flex-row.spread[
 
 ### .icon[triangle-alert] Bottlenecks
@@ -137,8 +135,6 @@ class: middle
 
 ![Agents move every item cleanly from Plan to Deploy on an automated line](./img/sdlc-line.svg)
 
---
-
 .flex-row.spread[
 
 ### .icon[arrow-up] Expectation
@@ -152,8 +148,6 @@ class: middle
 ## .tc-underline[More] Tokens .font-grey[2/2]
 
 ![The chaotic agent line piling up slop, then struck out](./img/bridge/d-more-agents.svg)
-
---
 
 .flex-row.spread[
 
@@ -213,8 +207,6 @@ class: diagram
 
 ![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)
 
---
-
 .text-center[
 
 ### .icon[arrow-right] Bottlenecks
@@ -228,8 +220,6 @@ class: diagram
 ## .icon[expand] Highly Scalable .font-grey[2/6]
 
 ![A surge of work lands and the agent fleet grows to drain it, then shrinks back](./img/tenets/scalable-1.svg)
-
---
 
 .text-center[
 
@@ -245,8 +235,6 @@ class: diagram
 
 ![The same budget, moved from manual work to agents, ships far more](./img/tenets/cost-4.svg)
 
---
-
 .text-center[
 
 ### .icon[arrow-right] Beats Outsourcing
@@ -260,8 +248,6 @@ class: diagram
 ## .icon[chart-line] Measurable .font-grey[4/6]
 
 ![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
-
---
 
 .text-center[
 
@@ -277,8 +263,6 @@ class: diagram
 
 ![The factory hill-climbs a metric: each experiment that beats the best so far is kept and steps the best score up, the rest are dropped](./img/tenets/improves-hill.svg)
 
---
-
 .text-center[
 
 ### .icon[arrow-right] Feedback
@@ -292,8 +276,6 @@ class: diagram
 ## .icon[sliders-horizontal] Business Driven .font-grey[6/6]
 
 ![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
-
---
 
 .text-center[
 
@@ -338,8 +320,6 @@ class: middle center
 ### Individual Productivity .icon[arrow-right] Organizational Velocity
 
 ![The same pipeline with no bottleneck: work streams through every stage at full speed](./img/bottleneck-none.svg)
-
---
 
 ### It .tc-underline[Never] Clocks Out
 
