@@ -113,7 +113,7 @@ class: middle
 
 class: middle
 
-## .tc-underline[More] People .font-grey[1/2 Reality]
+## .tc-underline[More] People .font-grey[1/2]
 
 ![Six teams of four, dimmed, with a big red cross over them](./img/org-headcount-struck.svg)
 
@@ -152,6 +152,8 @@ class: middle
 ## .tc-underline[More] Tokens .font-grey[2/2]
 
 ![The chaotic agent line piling up slop, then struck out](./img/bridge/d-more-agents.svg)
+
+--
 
 .flex-row.spread[
 
