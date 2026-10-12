@@ -75,11 +75,17 @@ class: bottom
 
 class: middle
 
+## .tc-underline[Bottleneck] .font-grey[Before]
+
+![Work piling up in front of Code while everything downstream flows](./img/bottleneck-before.svg)
+
+---
+
+class: middle
+
 ## .tc-underline[Bottlenecks] Have Moved .icon[arrow-down]
 
-<!-- FIXME: Break into two slides - Before only code, after moving to different parts -->
-
-![Work piling up at review](./img/bottleneck.svg)
+![The squeeze hops from Review to Test to Deploy and work piles up wherever it lands](./img/bottleneck-after.svg)
 
 ---
 
