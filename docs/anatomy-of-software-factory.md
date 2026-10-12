@@ -339,13 +339,9 @@ class: middle center
 
 ![The same pipeline with no bottleneck: work streams through every stage at full speed](./img/bottleneck-none.svg)
 
-### Bottlenecks Cleared
+--
 
----
-
-class: middle center
-
-# .tc-underline[It] Never Clocks Out
+### It .tc-underline[Never] Clocks Out
 
 ---
 
