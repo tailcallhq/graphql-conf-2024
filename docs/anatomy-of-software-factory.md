@@ -117,7 +117,7 @@ class: middle
 
 class: middle
 
-## .tc-underline[More] Tokens .font-grey[Expectation]
+## .tc-underline[More] Tokens .font-grey[2/2]
 
 ![Agents move every item cleanly from Plan to Deploy on an automated line](./img/sdlc-line.svg)
 
@@ -125,7 +125,7 @@ class: middle
 
 class: middle
 
-## .tc-underline[More] Tokens .font-grey[2/2 Reality]
+## .tc-underline[More] Tokens .font-grey[2/2]
 
 ![The chaotic agent line piling up slop, then struck out](./img/bridge/d-more-agents.svg)
 
@@ -312,7 +312,7 @@ class: diagram
 
 ## Organizational .tc-underline[Velocity] .icon[rocket]
 
-![A few people steer hundreds of agents](./img/org-a-after.svg)
+![The same pipeline with no bottleneck: work streams through every stage at full speed](./img/bottleneck-none.svg)
 
 ---
 
