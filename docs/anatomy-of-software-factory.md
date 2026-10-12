@@ -193,7 +193,7 @@ class: diagram
 
 class: diagram
 
-## How It .tc-underline[Works]
+## ![ForgeCode](./img/forgecode-logo.svg)
 
 ![Software Factory](./img/factory.svg)
 
