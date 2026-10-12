@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" font-family="Space Mono, ui-monospace, Menlo, monospace">
-  <!-- Option D: sdlc-line-slop.svg plays, then dims and is struck out at 4.0s. SMIL only -->
+  <!-- Option D: sdlc-line-slop.svg plays, then is struck out at 4.0s. SMIL only -->
 <g><g transform="translate(0.00 0.00) scale(1.0000)" font-family="Space Mono, ui-monospace, Menlo, monospace">
   <!-- Reality: five arms on one rail roam anywhere, pull work out of each other's stations, drop it in the wrong place, collide, fling it on the slop pile and pull slop back out. SMIL only, 16s loop -->
   <path d="M40 22 H960" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-linecap="round"/>
@@ -148,6 +148,6 @@
   <text x="580" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Test</text>
   <text x="740" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#d8d8d8">Deploy</text>
   <text x="900" y="246" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#ef4444">Slop</text>
-</g><animate attributeName="opacity" values="1;0.25" begin="4.0s" dur="0.6s" fill="freeze"/></g>
-<g opacity="0"><animate attributeName="opacity" values="0;1" begin="4.2s" dur="0.4s" fill="freeze"/><g transform="translate(428.5 58.5) scale(5.958)" fill="none" stroke="#ef4444" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></g></g>
+</g></g>
+<g opacity="0"><animate attributeName="opacity" values="0;1" begin="4.2s" dur="0.4s" fill="freeze"/><circle cx="500.0" cy="130.0" r="59.6" fill="rgba(11,11,11,0.8)"/><g transform="translate(428.5 58.5) scale(5.958)" fill="none" stroke="#ef4444" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></g></g>
 </svg>
