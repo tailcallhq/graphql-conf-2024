@@ -287,7 +287,7 @@ class: diagram
 
 class: diagram
 
-## .icon[sliders-horizontal] Business Controlled .font-grey[6/6]
+## .icon[sliders-horizontal] Business Driven .font-grey[6/6]
 
 ![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
 
@@ -325,7 +325,7 @@ class: grid-2 top
 
 ### .icon[refresh-cw] Improves Automatically
 
-### .icon[sliders-horizontal] Business Controlled
+### .icon[sliders-horizontal] Business Driven
 
 ]
 
