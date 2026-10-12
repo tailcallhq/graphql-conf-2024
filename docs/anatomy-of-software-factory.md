@@ -217,7 +217,7 @@ class: diagram
 
 .text-center[
 
-### .font-grey[Fixes] Bottlenecks
+### .icon[arrow-right] Bottlenecks
 
 ]
 
@@ -233,7 +233,7 @@ class: diagram
 
 .text-center[
 
-### .font-grey[Fixes] Coordination
+### .icon[arrow-right] Coordination
 
 ]
 
@@ -249,7 +249,7 @@ class: diagram
 
 .text-center[
 
-### .font-grey[Fixes] Payroll
+### .icon[arrow-right] Payroll
 
 ]
 
@@ -265,7 +265,7 @@ class: diagram
 
 .text-center[
 
-### .font-grey[Fixes] Signal
+### .icon[arrow-right] Signal
 
 ]
 
@@ -281,7 +281,7 @@ class: diagram
 
 .text-center[
 
-### .font-grey[Fixes] Feedback
+### .icon[arrow-right] Feedback
 
 ]
 
@@ -297,7 +297,7 @@ class: diagram
 
 .text-center[
 
-### .font-grey[Fixes] Control
+### .icon[arrow-right] Control
 
 ]
 
