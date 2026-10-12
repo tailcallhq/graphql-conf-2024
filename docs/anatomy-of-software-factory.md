@@ -249,7 +249,7 @@ class: diagram
 
 .text-center[
 
-### .font-grey[Fixes] Cost
+### .font-grey[Fixes] Payroll
 
 ]
 
