@@ -41,6 +41,24 @@
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script src="https://unpkg.com/lucide@1.55.0/dist/umd/lucide.min.js"></script>
     <script>
+      // ---------------------------------------------------------------------------
+      // Configuration
+      // ---------------------------------------------------------------------------
+      var CONFIG = {
+        // Bottom-right corner of every slide:
+        //   "none"    nothing
+        //   "number"  slide number (e.g. 12 / 29)
+        //   "preview" tiny preview of the next slide
+        // Override per visit with ?footer=none|number|preview in the URL.
+        footer: "number",
+        // Size of the next-slide preview, as a fraction of the slide.
+        previewScale: 0.08,
+      };
+      var FOOTERS = ["none", "number", "preview"];
+      var footerParam = new URLSearchParams(location.search).get("footer");
+      var footer = FOOTERS.indexOf(footerParam) >= 0 ? footerParam : CONFIG.footer;
+      document.body.dataset.footer = footer;
+
       // Pick the deck from ?deck=<name> → ./<name>.md (defaults to index.md, the deck list).
       var deck = new URLSearchParams(location.search).get("deck") || "index";
       if (!/^[\w-]+$/.test(deck)) deck = "index";
@@ -137,11 +155,12 @@
       // Bottom right: a tiny live preview of the next slide (instead of the slide
       // number). `--` steps of the current slide are skipped, so it always shows the
       // next real slide; the last slide shows nothing.
-      var PREVIEW_SCALE = 0.08;
+      var PREVIEW_SCALE = CONFIG.previewScale;
       function showNextPreview(index) {
         document.querySelectorAll(".slide-preview").forEach(function (el) {
           el.remove();
         });
+        if (footer !== "preview") return;
         var slides = slideshow.getSlides();
         var contents = slideContents();
         var next = index + 1;

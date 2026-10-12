@@ -103,9 +103,10 @@ body {
   pointer-events: none;
 }
 
-/* Bottom right: a tiny preview of the next slide replaces the slide number
-   (built in index.html, showNextPreview). */
-.remark-slide-number {
+/* Bottom right: chosen by CONFIG.footer in index.html (or ?footer=…), set as
+   body[data-footer]: "none", "number" (remark's slide number) or "preview"
+   (a tiny preview of the next slide, built by showNextPreview). */
+body:not([data-footer="number"]) .remark-slide-number {
   display: none;
 }
 .slide-preview {
