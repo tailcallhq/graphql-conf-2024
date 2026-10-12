@@ -49,7 +49,6 @@ class: grid-2 center
 
 # .icon[arrow-right] .tc-underline[100%] Auto Generated
 
-
 ---
 
 class: middle center
@@ -77,6 +76,8 @@ class: bottom
 class: middle
 
 ## .tc-underline[Bottlenecks] Have Moved .icon[arrow-down]
+
+<!-- FIXME: Break into two slides - Before only code, after moving to different parts -->
 
 ![Work piling up at review](./img/bottleneck.svg)
 
@@ -110,7 +111,15 @@ class: middle
 
 class: middle
 
-## .tc-underline[More] Tokens .font-grey[2/2]
+## .tc-underline[More] Tokens .font-grey[Expectation]
+
+![Agents move every item cleanly from Plan to Deploy on an automated line](./img/sdlc-line.svg)
+
+---
+
+class: middle
+
+## .tc-underline[More] Tokens .font-grey[2/2 Reality]
 
 ![The chaotic agent line piling up slop, then struck out](./img/bridge/d-more-agents.svg)
 
@@ -162,7 +171,7 @@ class: middle
 
 ### .font-grey[Part 4]
 
-# .tc-underline[ForgeCode] Anatomy .icon[arrow-right]
+# .tc-underline[ForgeCode] Tenets .icon[arrow-right]
 
 ---
 
@@ -173,7 +182,9 @@ class: diagram
 ![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)
 
 .text-center[
+
 ### .font-grey[Fixes] Bottlenecks
+
 ]
 
 ---
@@ -185,7 +196,9 @@ class: diagram
 ![A surge of work lands and the agent fleet grows to drain it, then shrinks back](./img/tenets/scalable-1.svg)
 
 .text-center[
+
 ### .font-grey[Fixes] Coordination
+
 ]
 
 ---
@@ -197,7 +210,9 @@ class: diagram
 ![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
 
 .text-center[
+
 ### .font-grey[Fixes] Cost
+
 ]
 
 ---
@@ -209,7 +224,9 @@ class: diagram
 ![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
 
 .text-center[
+
 ### .font-grey[Fixes] Signal
+
 ]
 
 ---
@@ -221,7 +238,9 @@ class: diagram
 ![The factory hill-climbs a metric: each experiment that beats the best so far is kept and steps the best score up, the rest are dropped](./img/tenets/improves-hill.svg)
 
 .text-center[
+
 ### .font-grey[Fixes] Feedback
+
 ]
 
 ---
@@ -233,7 +252,9 @@ class: diagram
 ![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
 
 .text-center[
+
 ### .font-grey[Fixes] Control
+
 ]
 
 ---
@@ -242,7 +263,7 @@ class: grid-2 top
 
 .cell.span-all[
 
-## Anatomy .tc-underline[Recap]
+## Tenets .tc-underline[Recap]
 
 ]
 
