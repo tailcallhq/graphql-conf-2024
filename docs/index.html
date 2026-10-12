@@ -120,14 +120,59 @@
         return Array.prototype.filter.call(
           container.querySelectorAll('img[src*=".svg"]:not(.celebrate-overlay)'),
           function (img) {
-            return !img.closest(".incremental-pending");
+            return !img.closest(".incremental-pending") && !img.closest(".slide-preview");
           }
         );
+      }
+      // The real slides only (not the copies inside the next-slide preview).
+      function slideContents() {
+        return Array.prototype.filter.call(
+          document.querySelectorAll(".remark-slide-content"),
+          function (el) {
+            return !el.closest(".slide-preview");
+          }
+        );
+      }
+
+      // Bottom right: a tiny live preview of the next slide (instead of the slide
+      // number). `--` steps of the current slide are skipped, so it always shows the
+      // next real slide; the last slide shows nothing.
+      var PREVIEW_SCALE = 0.08;
+      function showNextPreview(index) {
+        document.querySelectorAll(".slide-preview").forEach(function (el) {
+          el.remove();
+        });
+        var slides = slideshow.getSlides();
+        var contents = slideContents();
+        var next = index + 1;
+        while (next < slides.length && slides[next].properties.continued === "true") next++;
+        if (next >= slides.length) return;
+        var host = contents[index];
+        var w = host.offsetWidth;
+        var h = host.offsetHeight;
+        var box = document.createElement("div");
+        box.className = "slide-preview";
+        box.setAttribute("aria-hidden", "true");
+        box.style.width = w * PREVIEW_SCALE + "px";
+        box.style.height = h * PREVIEW_SCALE + "px";
+        var inner = document.createElement("div");
+        inner.className = "slide-preview-inner";
+        inner.style.width = w + "px";
+        inner.style.height = h + "px";
+        inner.style.transform = "scale(" + PREVIEW_SCALE + ")";
+        var copy = contents[next].cloneNode(true);
+        copy.querySelectorAll(".remark-slide-number, .celebrate-overlay").forEach(function (el) {
+          el.remove();
+        });
+        inner.appendChild(copy);
+        box.appendChild(inner);
+        host.appendChild(box);
       }
       var lastIndex = null;
       slideshow.on("afterShowSlide", function (slide) {
         var index = slide.getSlideIndex();
-        var contents = document.querySelectorAll(".remark-slide-content");
+        showNextPreview(index);
+        var contents = slideContents();
         var current = svgImages(contents[index]);
         if (lastIndex !== null && lastIndex !== index && groupOf(lastIndex) === groupOf(index)) {
           // Same slide, next/previous build step: move the playing images across.
@@ -154,8 +199,8 @@
         document.querySelectorAll(".celebrate-overlay").forEach(function (el) {
           el.remove();
         });
-        var slide = document.querySelector(".remark-visible .remark-slide-content.celebrate");
-        if (slide) {
+        var slide = contents[index];
+        if (slide.classList.contains("celebrate")) {
           var burst = document.createElement("img");
           burst.className = "celebrate-overlay";
           burst.alt = "";

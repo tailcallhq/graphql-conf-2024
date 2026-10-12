@@ -103,6 +103,33 @@ body {
   pointer-events: none;
 }
 
+/* Bottom right: a tiny preview of the next slide replaces the slide number
+   (built in index.html, showNextPreview). */
+.remark-slide-number {
+  display: none;
+}
+.slide-preview {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 5;
+}
+.slide-preview-inner {
+  transform-origin: 0 0;
+}
+.slide-preview-inner > .remark-slide-content {
+  position: absolute;
+  inset: 0;
+}
+.slide-preview-inner > .remark-slide-content::after {
+  display: none;
+}
+
 .tc-highlight {
   background-color: var(--tc-accent);
   padding: 0rem 0.5rem;
