@@ -241,15 +241,15 @@ class: diagram
 
 class: diagram
 
-## .icon[piggy-bank] Cost Effective .font-grey[3/6]
+## .icon[trending-up] High ROI .font-grey[3/6]
 
-![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
+![The same budget, moved from manual work to agents, ships far more](./img/tenets/cost-4.svg)
 
 --
 
 .text-center[
 
-### .icon[arrow-right] Cheaper Than Hiring
+### .icon[arrow-right] Beats Hiring and Outsourcing
 
 ]
 
@@ -317,7 +317,7 @@ class: grid-2 top
 
 ### .icon[expand] Highly Scalable
 
-### .icon[piggy-bank] Cost Effective
+### .icon[trending-up] High ROI
 
 ]
 
