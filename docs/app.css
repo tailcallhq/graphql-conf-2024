@@ -24,8 +24,15 @@ body {
   background: transparent !important;
   padding: 1em 1.25em;
 }
+/* Letterbox area around the slide (when the screen isn't 16:9): pure black so
+   it blends with the slide, and no remark drop-shadow halo around the edges. */
+html,
+body,
 .remark-container {
-  background-color: var(--tc-accent);
+  background-color: #000;
+}
+.remark-slide-scaler {
+  box-shadow: none !important;
 }
 
 .remark-slide-content {
