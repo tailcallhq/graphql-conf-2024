@@ -273,7 +273,7 @@ class: diagram
 
 class: diagram
 
-## .icon[refresh-cw] Improves Automatically .font-grey[5/6]
+## .icon[refresh-cw] Self-Improving .font-grey[5/6]
 
 ![The factory hill-climbs a metric: each experiment that beats the best so far is kept and steps the best score up, the rest are dropped](./img/tenets/improves-hill.svg)
 
@@ -325,7 +325,7 @@ class: grid-2 top
 
 ### .icon[chart-line] Measurable
 
-### .icon[refresh-cw] Improves Automatically
+### .icon[refresh-cw] Self-Improving
 
 ### .icon[sliders-horizontal] Business Driven
 
