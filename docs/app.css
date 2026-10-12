@@ -109,6 +109,12 @@ body {
 body:not([data-footer="number"]) .remark-slide-number {
   display: none;
 }
+.remark-slide-number {
+  font-size: 0.55em;
+  right: 3%;
+  bottom: 4%;
+  opacity: 0.45;
+}
 .slide-preview {
   position: absolute;
   right: 3%;
