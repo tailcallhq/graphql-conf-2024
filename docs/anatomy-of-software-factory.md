@@ -37,7 +37,7 @@ class: middle
 
 ### .font-grey[Part 1]
 
-# .tc-underline[State] of Software in 2026 .icon[arrow-right]
+# .tc-underline[Software] Engineering in 2026 .icon[arrow-right]
 
 ---
 
@@ -93,15 +93,23 @@ class: middle
 
 ### .font-grey[Part 2]
 
-# .tc-underline[Scaling] SDLC .icon[arrow-right]
+# .tc-underline[Scaling] Software Engineering .icon[arrow-right]
 
 ---
 
 class: middle
 
-## .tc-underline[More] People .font-grey[1/2]
+## .tc-underline[More] People .font-grey[Expectation]
 
-![Adding teams of specialists one column at a time, then struck out](./img/bridge/d-more-humans.svg)
+![Teams of specialists added one column at a time, work handed down each column](./img/org-headcount.svg)
+
+---
+
+class: middle
+
+## .tc-underline[More] People .font-grey[1/2 Reality]
+
+![Six teams of four, dimmed, with a big red cross over them](./img/org-headcount-struck.svg)
 
 .flex-row.spread[
 
@@ -305,28 +313,17 @@ class: grid-2 top
 
 class: middle center
 
-# Individual Productivity </br> .icon[equal-not] </br> Organizational Velocity
-
----
-
-class: middle center
-count: false
-
-# Individual Productivity </br> .icon[equal] </br> Organizational .tc-underline[Velocity]
-
----
-
-class: diagram
-
-## Organizational .tc-underline[Velocity] .icon[rocket]
+### Individual Productivity .icon[arrow-right] Organizational Velocity
 
 ![The same pipeline with no bottleneck: work streams through every stage at full speed](./img/bottleneck-none.svg)
 
+### Bottlenecks Cleared
+
 ---
 
 class: middle center
 
-# It Never .tc-underline[Clocks] Out
+# .tc-underline[ForgeCode] Never Clocks Out
 
 ---
 
