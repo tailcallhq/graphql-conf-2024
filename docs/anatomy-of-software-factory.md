@@ -249,7 +249,7 @@ class: diagram
 
 .text-center[
 
-### .icon[arrow-right] Payroll
+### .icon[arrow-right] Cheaper Than Hiring
 
 ]
 
@@ -345,7 +345,7 @@ class: middle center
 
 class: middle center
 
-# .tc-underline[ForgeCode] Never Clocks Out
+# .tc-underline[It] Never Clocks Out
 
 ---
 
