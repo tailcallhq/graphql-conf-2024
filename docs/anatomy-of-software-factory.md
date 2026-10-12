@@ -99,9 +99,15 @@ class: middle
 
 class: middle
 
-## .tc-underline[More] People .font-grey[Expectation]
+## .tc-underline[More] People .font-grey[1/2]
 
 ![Teams of specialists added one column at a time, work handed down each column](./img/org-headcount.svg)
+
+.flex-row.spread[
+
+### .icon[arrow-up] Expectation
+
+]
 
 ---
 
@@ -110,6 +116,8 @@ class: middle
 ## .tc-underline[More] People .font-grey[1/2 Reality]
 
 ![Six teams of four, dimmed, with a big red cross over them](./img/org-headcount-struck.svg)
+
+--
 
 .flex-row.spread[
 
