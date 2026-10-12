@@ -90,8 +90,44 @@
         function () {
           renderIcons();
           reserveIncrementalSpace();
+          prefetchImages();
         }
       );
+
+      // Every SVG in the deck (plus the confetti) is downloaded once at load and kept
+      // in memory. Restarting an animation needs a new URL per show; a fresh blob: URL
+      // of the cached file gives that without going back to the network.
+      var imageCache = {};
+      function originalSrc(img) {
+        return img.dataset.src || img.getAttribute("src").split("?")[0];
+      }
+      function prefetchImages() {
+        var srcs = { "./img/confetti.svg": true };
+        document.querySelectorAll('.remark-slide-content img[src*=".svg"]').forEach(function (img) {
+          srcs[originalSrc(img)] = true;
+        });
+        Object.keys(srcs).forEach(loadImage);
+      }
+      // Promise of the image's data (one download per file, shared by every caller).
+      function loadImage(src) {
+        if (!imageCache[src]) {
+          imageCache[src] = fetch(src)
+            .then(function (r) {
+              return r.ok ? r.blob() : null;
+            })
+            .catch(function () {
+              return null;
+            });
+        }
+        return imageCache[src];
+      }
+      // Calls back with a URL for `src` that the browser treats as new (so animations
+      // restart) but that is served from memory, never the network.
+      function withFreshUrl(src, done) {
+        loadImage(src).then(function (blob) {
+          done(blob ? URL.createObjectURL(blob) : src + "?t=" + Date.now());
+        });
+      }
 
       // `--` builds: remark renders each step as its own slide holding only the
       // content revealed so far, so centred layouts re-centre on every step.
@@ -136,7 +172,8 @@
       }
       function svgImages(container) {
         return Array.prototype.filter.call(
-          container.querySelectorAll('img[src*=".svg"]:not(.celebrate-overlay)'),
+          // data-src: images already swapped to an in-memory blob: URL.
+          container.querySelectorAll('img[src*=".svg"]:not(.celebrate-overlay), img[data-src]:not(.celebrate-overlay)'),
           function (img) {
             return !img.closest(".incremental-pending") && !img.closest(".slide-preview");
           }
@@ -197,8 +234,8 @@
           // Same slide, next/previous build step: move the playing images across.
           var playing = svgImages(contents[lastIndex]);
           current.forEach(function (img, k) {
-            var src = playing[k] && playing[k].getAttribute("src").split("?")[0];
-            if (src && src === img.getAttribute("src").split("?")[0]) {
+            var src = playing[k] && originalSrc(playing[k]);
+            if (src && src === originalSrc(img)) {
               var placeholder = playing[k].cloneNode();
               playing[k].replaceWith(placeholder);
               img.replaceWith(playing[k]);
@@ -210,9 +247,14 @@
         lastIndex = index;
         current.forEach(function (img) {
             // A fresh element (not just a new src) gets its own animation timeline.
-            var fresh = img.cloneNode();
-            fresh.src = img.getAttribute("src").split("?")[0] + "?t=" + Date.now();
-            img.replaceWith(fresh);
+            var src = originalSrc(img);
+            withFreshUrl(src, function (url) {
+              if (!img.isConnected) return; // slide changed meanwhile
+              var fresh = img.cloneNode();
+              fresh.dataset.src = src;
+              fresh.src = url;
+              img.replaceWith(fresh);
+            });
           });
         // `class: celebrate` slides get a fresh confetti burst on every show.
         document.querySelectorAll(".celebrate-overlay").forEach(function (el) {
@@ -223,8 +265,10 @@
           var burst = document.createElement("img");
           burst.className = "celebrate-overlay";
           burst.alt = "";
-          burst.src = "./img/confetti.svg?t=" + Date.now();
-          slide.appendChild(burst);
+          withFreshUrl("./img/confetti.svg", function (url) {
+            burst.src = url;
+            slide.appendChild(burst);
+          });
         }
       });
     </script>
