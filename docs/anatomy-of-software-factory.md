@@ -49,7 +49,6 @@ class: grid-2 center
 
 # .icon[arrow-right] .tc-underline[100%] Auto Generated
 
-.font-grey.font-sm[Illustrative]
 
 ---
 
@@ -171,9 +170,11 @@ class: diagram
 
 ## .icon[bot] Works Autonomously .font-grey[1/6]
 
-### .font-grey[Fixes] Bottlenecks
-
 ![Work queues behind a human in the loop, but flows past a human on the loop](./img/tenets/autonomous-3.svg)
+
+.text-center[
+### .font-grey[Fixes] Bottlenecks
+]
 
 ---
 
@@ -181,9 +182,11 @@ class: diagram
 
 ## .icon[expand] Highly Scalable .font-grey[2/6]
 
-### .font-grey[Fixes] Coordination
-
 ![A surge of work lands and the agent fleet grows to drain it, then shrinks back](./img/tenets/scalable-1.svg)
+
+.text-center[
+### .font-grey[Fixes] Coordination
+]
 
 ---
 
@@ -191,9 +194,11 @@ class: diagram
 
 ## .icon[piggy-bank] Cost Effective .font-grey[3/6]
 
-### .font-grey[Fixes] Cost
-
 ![Same budget shifts from manual work to agents and ships more](./img/tenets/cost-4.svg)
+
+.text-center[
+### .font-grey[Fixes] Cost
+]
 
 ---
 
@@ -201,9 +206,11 @@ class: diagram
 
 ## .icon[chart-line] Measurable .font-grey[4/6]
 
-### .font-grey[Fixes] Signal
-
 ![Each shipped item records its value, cycle time, defects and cost](./img/tenets/measures-4.svg)
+
+.text-center[
+### .font-grey[Fixes] Signal
+]
 
 ---
 
@@ -211,9 +218,11 @@ class: diagram
 
 ## .icon[refresh-cw] Improves Automatically .font-grey[5/6]
 
-### .font-grey[Fixes] Feedback
-
 ![The factory hill-climbs a metric: each experiment that beats the best so far is kept and steps the best score up, the rest are dropped](./img/tenets/improves-hill.svg)
+
+.text-center[
+### .font-grey[Fixes] Feedback
+]
 
 ---
 
@@ -221,9 +230,11 @@ class: diagram
 
 ## .icon[sliders-horizontal] Business Controlled .font-grey[6/6]
 
-### .font-grey[Fixes] Control
-
 ![Business goals re-rank the backlog the factory works from](./img/tenets/controlled-2.svg)
+
+.text-center[
+### .font-grey[Fixes] Control
+]
 
 ---
 
