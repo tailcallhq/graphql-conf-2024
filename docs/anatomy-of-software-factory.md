@@ -93,7 +93,7 @@ class: middle
 
 ### .font-grey[Part 2]
 
-# .tc-underline[Scaling] Software Engineering .icon[arrow-right]
+# .tc-underline[Scaling] Software Engineering .icon[message-circle-question-mark]
 
 ---
 
