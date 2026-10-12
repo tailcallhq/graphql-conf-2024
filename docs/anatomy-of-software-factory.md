@@ -241,7 +241,7 @@ class: diagram
 
 class: diagram
 
-## .icon[trending-up] High ROI .font-grey[3/6]
+## .icon[piggy-bank] Cost Effective .font-grey[3/6]
 
 ![The same budget, moved from manual work to agents, ships far more](./img/tenets/cost-4.svg)
 
@@ -249,7 +249,7 @@ class: diagram
 
 .text-center[
 
-### .icon[arrow-right] Beats Hiring and Outsourcing
+### .icon[arrow-right] Beats Outsourcing
 
 ]
 
@@ -317,7 +317,7 @@ class: grid-2 top
 
 ### .icon[expand] Highly Scalable
 
-### .icon[trending-up] High ROI
+### .icon[piggy-bank] Cost Effective
 
 ]
 
