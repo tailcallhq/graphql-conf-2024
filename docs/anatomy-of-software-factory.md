@@ -334,7 +334,6 @@ class: grid-2 celebrate
 
 ### .icon[calendar] Book a Demo
 
-.font-grey[Tushar Mathur · CEO ForgeCode]
 ]
 
 .cell.text-center[
